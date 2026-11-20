@@ -10,9 +10,11 @@ Ramp is a Claude-powered accessibility copilot for Shopify merchants. It audits 
 
 ## 🔍 Why I Built This
 
-**The typical Shopify store leaves 47% of its product images with no description.** A blind shopper using a screen reader hears nothing about what those products look like.
+**Many Shopify stores aren't built for every shopper.** Across 422 stores, I found barriers for blind shoppers, low-vision and older shoppers, people with tremors, and voice-control users.
 
-I scraped 500 Shopify stores to find out how big the problem is, who it affects, and what causes it. Then I built Ramp to fix it.
+The biggest single gap is **image descriptions**: the typical store leaves **47%** of its product images undescribed. Anyone relying on a screen reader gets no picture of the product, and the same descriptions help search engines and AI shopping agents understand it too.
+
+I scraped 500 Shopify stores to measure how big these barriers are, who they affect, and what causes them. Then I built Ramp to fix the biggest one.
 
 ---
 
