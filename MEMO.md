@@ -1,10 +1,10 @@
-# 📄 Memo: Closing the Image Description Gap with Shopify Magic
+# 📄 Memo: Extending Shopify Magic to Accessibility
 
 | | |
 |---|---|
 | **To** | Shopify Magic product team |
 | **From** | Lalithya Raavi |
-| **Re** | Evidence for AI image descriptions, and how to test them |
+| **Re** | A proposal to extend Shopify Magic to image descriptions, with evidence and a test plan |
 
 ---
 
@@ -12,9 +12,9 @@
 
 > - The typical Shopify store leaves **47% of its product images undescribed**.
 > - It's a **merchant habit, not a theme problem**, so the fix belongs in the product workflow.
-> - **Recommendation:** Shopify Magic suggests an image description when a merchant uploads a product image, and the merchant approves it.
+> - **Recommendation: extend Shopify Magic.** It already writes product descriptions, email subject lines and blog posts. It should also write **image descriptions** when a merchant uploads a product image, for the merchant to approve.
 > - AI descriptions were **97% accurate** on 100 real images, so suggest-and-approve is safe; auto-publishing is not.
-> - Test it with an A/B test analysed with **CUPED**: about 1,000 merchants per group.
+> - I built **Ramp**, a working prototype of this extension, and designed the A/B test to roll it out (analysed with **CUPED**, about 1,000 merchants per group).
 
 ---
 
@@ -47,7 +47,18 @@ I audited 422 Shopify stores:
 
 ---
 
-## ✨ The proposal
+## ✨ The proposal: extend Shopify Magic
+
+Shopify Magic already helps merchants write content. Image descriptions are a natural next step, and they're the biggest accessibility gap I found.
+
+| | Shopify Magic today | With this extension |
+|---|---|---|
+| ✍️ Product descriptions | ✅ | ✅ |
+| 📧 Email subject lines, blog posts | ✅ | ✅ |
+| 🖼️ Image descriptions (alt text) | ❌ | ✅ suggested on upload |
+| ♿ Accessibility check on the catalog | ❌ | ✅ bulk review prompt |
+
+**How it works:**
 
 1. **On upload:** when a merchant adds a product image, Shopify Magic suggests a description. The merchant can accept, edit or skip it.
 2. **For existing catalogs:** a one-time prompt, *"42 images have no description. Review suggestions?"*
@@ -55,7 +66,7 @@ I audited 422 Shopify stores:
 
 **Why approval is required:** on 100 real undescribed images, AI descriptions were **97% accurate**, but **9%** had some issue: skipped printed text, several products summarised instead of named, and a few colour mistakes.
 
-🛠️ **Prototype:** I built **Ramp**, which runs this flow on a real Shopify dev store through the Admin API.
+🛠️ **Prototype:** I built **Ramp**, a working prototype of this Shopify Magic extension. It runs the full flow (audit, suggest, approve, save) on a real Shopify dev store through the Admin API. *Ramp is independent and not part of Shopify Magic.*
 
 ---
 
