@@ -1,6 +1,6 @@
 # ♿🛍 Ramp: Accessibility Copilot for Shopify (MCP Server)
 
-Ramp is a Claude-powered accessibility copilot for Shopify merchants. It audits a store against research on **422 real Shopify stores**, finds the barriers that shut shoppers out, from missing or junk image descriptions to low-contrast text, and writes and saves AI image descriptions through the Shopify Admin API, all wired through a Model Context Protocol (MCP) server. A working prototype of what accessibility could look like in **Shopify Magic**.
+Ramp is a Claude-powered accessibility copilot for Shopify merchants. It audits a store against research on **422 real Shopify stores**, finds the barriers that shut shoppers out, like missing or junk image descriptions and hard-to-read product text, and writes and saves AI image descriptions through the Shopify Admin API, all wired through a Model Context Protocol (MCP) server. A working prototype of what accessibility could look like in **Shopify Magic**.
 
 > 🎥 **[Watch the demo video](#)** ← *See Ramp audit and fix a store*
 >
