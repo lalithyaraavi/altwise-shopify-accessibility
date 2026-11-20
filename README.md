@@ -162,11 +162,12 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 
 ## 🔮 Next steps
 
-- **Build it into the Shopify admin** as an embedded app, so merchants get suggestions right where they upload images.
+- **Build it into Shopify Magic**, so a suggested image description appears right when a merchant uploads a product image, next to Magic's product description suggestions.
+- **Run the A/B test** from this project on real merchants to measure how many images get described and how often merchants accept the AI's suggestion.
+- **Measure business impact** in the same test: conversion and traffic from search and AI shopping agents.
 - **Use a random sample of Shopify stores** instead of curated lists, which likely understate the problem.
 - **Add a second rater** for the AI evaluation and measure how often raters agree.
 - **Share theme-level findings** (like colour contrast, which failed on 60% of product pages) with Shopify's theme team.
-- **Measure business impact** in a real test: conversion and traffic from search and AI shopping agents.
 
 ---
 
