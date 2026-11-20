@@ -34,6 +34,27 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 
 ---
 
+## 🧭 How I did it
+
+![How it works](analysis/charts/0_workflow.png)
+
+| Stage | Skills | Where to look |
+|---|---|---|
+| Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
+| Validate | Checking a data source against a second one | `scrape_products.py` |
+| Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
+| Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
+| Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
+| Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
+| Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
+| Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
+
+**The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages checked with axe-core. Every excluded store has a logged reason.
+
+**A check that changed the project:** I first assumed a missing alt field in Shopify's bulk product feed meant "no description." Checking a second source showed the bulk feed *never* includes alt text: 2,106 of 3,662 images I would have counted as missing actually had descriptions. I switched sources before analysing anything.
+
+---
+
 ## 📊 What I found
 
 #### 🖼️ 1. Most product images aren't usefully described
@@ -59,27 +80,6 @@ Share of stores with at least one automatically detected barrier:
 
 #### 🧩 3. It's a merchant habit, not a theme problem
 With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect disappeared. A regression on 390 stores (theme, store size, brand vs. smaller merchant, category) found no significant predictors *(all p > 0.4, R² = 0.09)*. So the fix belongs where merchants add products, not in themes.
-
----
-
-## 🧭 How I did it
-
-![How it works](analysis/charts/0_workflow.png)
-
-| Stage | Skills | Where to look |
-|---|---|---|
-| Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
-| Validate | Checking a data source against a second one | `scrape_products.py` |
-| Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
-| Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
-| Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
-| Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
-| Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
-| Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
-
-**The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages checked with axe-core. Every excluded store has a logged reason.
-
-**A check that changed the project:** I first assumed a missing alt field in Shopify's bulk product feed meant "no description." Checking a second source showed the bulk feed *never* includes alt text: 2,106 of 3,662 images I would have counted as missing actually had descriptions. I switched sources before analysing anything.
 
 ---
 
