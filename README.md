@@ -1,183 +1,160 @@
-# ♿🛍 Ramp: Accessibility Copilot for Shopify (MCP Server)
+# How Accessible Are Shopify Stores?
 
-Ramp is a Claude-powered accessibility copilot for Shopify merchants. It audits a store against research on **422 real Shopify stores**, finds the barriers that shut shoppers out, like missing or junk image descriptions and hard-to-read product text, and writes and saves AI image descriptions through the Shopify Admin API, all wired through a Model Context Protocol (MCP) server. A working prototype of what accessibility could look like in **Shopify Magic**.
+### A 422-store study, and Ramp: a prototype that fixes the biggest gap
 
-> 🎥 **[Watch the demo video](#)** ← *See Ramp audit and fix a store*
->
-> 📄 **[Read the product memo](MEMO.md)** ← *The case for Shopify Magic, plus the A/B test*
+I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**, and most stores have barriers for shoppers with disabilities. Then I built **Ramp**, a tool that audits a store against this research and writes the missing image descriptions, as a prototype of what this could look like in Shopify Magic.
 
----
-
-## 🔍 Why I Built This
-
-**Many Shopify stores aren't built for every shopper.** Across 422 stores, I found barriers for blind shoppers, low-vision and older shoppers, people with tremors, and voice-control users.
-
-The biggest single gap is **image descriptions**: the typical store leaves **47%** of its product images undescribed. Anyone relying on a screen reader gets no picture of the product, and the same descriptions help search engines and AI shopping agents understand it too.
-
-I scraped 500 Shopify stores to measure how big these barriers are, who they affect, and what causes them. Then I built Ramp to fix the biggest one.
+**[Demo video](#)** · **[Product memo](MEMO.md)**
 
 ---
 
-## 🧭 How It Works
+## The problem
 
-![How it works](analysis/charts/0_workflow.png)
+Many Shopify stores aren't built for every shopper. I found barriers for blind shoppers, low-vision and older shoppers, people with tremors, and voice-control users.
 
-| Stage | Skills | Where |
-|---|---|---|
-| 🕸️ Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
-| ✅ Validate | Data validation, checking a source against a second one | `scrape_products.py` |
-| 🧹 Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
-| 🗄️ Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
-| 📈 Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
-| 🛠️ Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
-| 🎯 Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
-| 🧪 Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
+The biggest single gap is **image descriptions** (alt text). Without them, anyone using a screen reader gets no picture of the product, and search engines and AI shopping agents understand it less too.
+
+I wanted to answer three questions:
+1. How common are these barriers, and who do they affect?
+2. What explains which stores have them?
+3. Can AI fix the biggest gap reliably enough to build into a product?
 
 ---
 
-## 📊 Research Findings
+## What I found
 
-#### 🖼️ Most product images aren't usefully described
-- **42%** descriptive · **11%** minimal · **10%** junk (file names, internal codes like `PDP2 Option[...] MAIN`) · **37%** missing
-- The typical store is missing descriptions on **46.6%** of images *(95% CI: 42.5 to 50.7%)*
-- Worst categories: **handmade (75%)**, **art (72%)**, **watches (70%)**, exactly where the photo sells the product
+**1. Most product images aren't usefully described.**
+I classified the alt text of 30,661 product images from 401 stores:
+- **42%** descriptive
+- **11%** minimal (3 words or fewer)
+- **10%** junk (file names, internal codes like `PDP2 Option[...] MAIN`)
+- **37%** missing
+
+Averaged per store, the typical store is missing descriptions on **46.6%** of images *(95% CI: 42.5 to 50.7%)*. Handmade (75%), art (72%) and watches (70%) stores miss the most, exactly where the photo sells the product.
 
 ![Alt text breakdown](analysis/charts/1_alt_text_breakdown.png)
 
-#### 👥 Barriers affect many shoppers (share of stores with at least one)
-- 🦯 **85%** block blind shoppers (screen readers)
-- 👓 **67%** have text too faint for low-vision and older shoppers
-- ✋ **56%** have buttons too small for shoppers with tremors
-- 🎙️ **50%** confuse voice-control users
-- 🔎 **10%** block zooming entirely
+**2. Barriers affect many groups of shoppers.**
+Share of stores with at least one automatically detected barrier:
+- **85%** for screen-reader users
+- **67%** for low-vision and older shoppers (text too faint)
+- **56%** for shoppers with tremors (buttons too small)
+- **50%** for voice-control users
+- **10%** block zooming entirely
 
 ![Top page failures](analysis/charts/3_top_page_failures.png)
 
-#### 🧩 It's a merchant habit, not a theme problem
-- With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect **disappeared**.
-- A regression on 390 stores (theme, store size, brand vs. small merchant, category) found **no significant predictors** *(all p > 0.4, R² = 0.09)*
-- So the fix belongs in the **content workflow**, where merchants add products, not in themes.
+**3. It's a merchant habit, not a theme problem.**
+With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect disappeared. A regression on 390 stores (theme, store size, brand vs. smaller merchant, category) found no significant predictors *(all p > 0.4, R² = 0.09)*. So the fix belongs where merchants add products, not in themes.
 
 ---
 
-## 🛠️ Ramp Tools (5 Total)
+## How I did it
 
-Each tool runs on the Ramp MCP server and is callable by Claude.
+![How it works](analysis/charts/0_workflow.png)
 
-#### 🏬 Merchant Tools
-- `audit_store`: accessibility report card, benchmarked against 401 researched stores
-- `get_images_needing_alt`: shows Claude the images with missing or junk descriptions
-- `update_image_alt`: saves an approved description to Shopify and logs the change
+| Stage | Skills | Where to look |
+|---|---|---|
+| Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
+| Validate | Checking a data source against a second one | `scrape_products.py` |
+| Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
+| Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
+| Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
+| Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
+| Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
+| Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
 
-#### 🧪 Evaluation Tools
-- `get_research_images`: serves 100 real undescribed images (1 per store) for testing
-- `save_ai_description`: records AI descriptions for hand-scoring
+**The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages checked with axe-core. Every excluded store has a logged reason.
 
----
-
-## ✅ Is the AI Good Enough?
-
-I generated descriptions for **100 real images merchants had left blank** and hand-scored every one.
-
-- 🎯 **97%** accurate *(95% CI: 91.5 to 99.0%)*
-- 💡 **98%** useful to a blind shopper
-- ✂️ **100%** concise (under 125 characters)
-- ⚠️ **9%** had some issue, mostly on busy images (skipped printed text, several products summarised, a few colour mistakes)
-
-**Takeaway:** AI should *suggest* descriptions for merchants to approve, not publish them automatically.
+**A check that changed the project:** I first assumed a missing alt field in Shopify's bulk product feed meant "no description." Checking a second source showed the bulk feed *never* includes alt text: 2,106 of 3,662 images I would have counted as missing actually had descriptions. I switched sources before analysing anything.
 
 ---
 
-## 🧪 A/B Test Design
+## Ramp: turning the research into a fix
 
-Only Shopify can randomise real merchants, so I designed the test and **checked it by simulation** on the real store data.
+Ramp connects Claude to a Shopify store through the Admin API, using an MCP server. A merchant asks *"audit my store and fix the image descriptions,"* and Ramp:
 
-- **Randomise by merchant** · **Metric:** % of images with descriptive alt text after 30 days · **Guardrail:** time to publish a product
-- The standard formula says **~1,000 merchants per group** to detect a 5-point lift
-- **The simulation showed that's not enough:** a plain t-test caught the lift only **62%** of the time
-- Adjusting for each merchant's pre-test coverage (**CUPED**) raised that to **100%**, with false alarms still at the expected level (6%)
+1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing descriptions than 52% of stores studied."*
+2. **Shows Claude the images** that need descriptions, so it can draft them.
+3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
+
+It's an independent prototype, not part of Shopify Magic or Sidekick.
+
+**Tools**
+- `audit_store`: accessibility report, benchmarked against the research
+- `get_images_needing_alt`: images with missing or junk descriptions
+- `update_image_alt`: saves an approved description to Shopify
+- `get_research_images`, `save_ai_description`: used for the AI evaluation below
+
+---
+
+## Is the AI good enough?
+
+I generated descriptions for **100 real images merchants had left blank** (one per store) and scored each one by hand.
+
+- **97%** accurate *(95% CI: 91.5 to 99.0%)*
+- **98%** useful to someone who can't see the image
+- **100%** concise (under 125 characters)
+- **9%** had some issue, mostly on busy images: skipped printed text, several products summarised, a few colour mistakes
+
+So AI should **suggest** descriptions for merchants to approve, not publish them automatically.
+
+---
+
+## How Shopify could test it
+
+Only Shopify can randomise real merchants, so I designed the A/B test and checked it by simulation on the real store data.
+
+- **Design:** randomise by merchant. Metric: share of images with descriptive alt text after 30 days. Guardrail: time to publish a product.
+- **Sample size:** the standard formula says about 1,000 merchants per group to detect a 5-point lift.
+- **The simulation showed that isn't enough:** a plain t-test caught the lift only 62% of the time, because stores are so spread out (31% at 0%, 11% at 100%).
+- **The fix:** adjusting for each merchant's coverage before the test (CUPED) raised that to 100%, with false alarms still at the expected level (6%).
 
 ![A/B power simulation](analysis/charts/5_ab_power_simulation.png)
 
 ---
 
-## 🚀 Setup Guide
+## Try it yourself
 
-### 1. Clone the Repo
+**Run Ramp on your own Shopify dev store**
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/lalithyaraavi/ramp-shopify-accessibility.git
+   cd ramp-shopify-accessibility
+   ```
+2. In the [Shopify Dev Dashboard](https://dev.shopify.com/dashboard), create a free dev store and an app with the scopes `read_products,write_products,read_files,write_files`, then install it on your store.
+3. Copy `.env.example` to `.env` and add your store address, Client ID and Client secret.
+4. Install [uv](https://docs.astral.sh/uv/) and test the connection:
+   ```bash
+   uv run --script ramp/server.py --test
+   ```
+5. Add Ramp to Claude Desktop's `claude_desktop_config.json`, then restart Claude Desktop:
+   ```json
+   "mcpServers": {
+     "ramp": { "command": "/path/to/uv", "args": ["run", "--script", "/path/to/ramp/server.py"] }
+   }
+   ```
+6. Ask Claude: *"Audit my store's accessibility."*
+
+**Rerun the research**
 ```bash
-git clone https://github.com/lalithyaraavi/ramp-shopify-accessibility.git
-cd ramp-shopify-accessibility
-```
-
-### 2. Create a Shopify Dev Store and App
-In the [Shopify Dev Dashboard](https://dev.shopify.com/dashboard), create a free dev store and an app with these scopes, then install it on your store:
-```
-read_products,write_products,read_files,write_files
-```
-
-### 3. Add Your Credentials
-Copy `.env.example` to `.env` and fill it in:
-```
-SHOPIFY_STORE=your-store.myshopify.com
-SHOPIFY_CLIENT_ID=your-client-id
-SHOPIFY_CLIENT_SECRET=your-client-secret
-```
-
-### 4. Test the Connection
-Install [uv](https://docs.astral.sh/uv/), then:
-```bash
-uv run --script ramp/server.py --test
-```
-
-### 5. Connect to Claude Desktop
-Add this to your `claude_desktop_config.json`, then restart Claude Desktop:
-```json
-"mcpServers": {
-  "ramp": {
-    "command": "/path/to/uv",
-    "args": ["run", "--script", "/path/to/ramp/server.py"]
-  }
-}
-```
-
----
-
-## 🕹 Example Prompts to Try
-
-- "Audit my store's accessibility."
-- "Show me the images that need descriptions."
-- "Write descriptions for these and save the ones I approve."
-- "How does my store compare to other Shopify stores?"
-
----
-
-## 🔬 Reproduce the Research
-
-```bash
-python3 scrape_products.py     # product feeds + theme names
+python3 scrape_products.py     # product feeds and theme names
 python3 fetch_alt.py           # real alt text, 10 random products per store
 pip3 install playwright && python3 -m playwright install chromium
 python3 page_check.py          # axe-core checks on 2 pages per store
 python3 build_tables.py        # clean tables for BigQuery
 ```
-
-- `analysis/step3_measure.sql`: BigQuery SQL (classification view, confidence intervals, window functions)
-- `analysis/step4_compare.ipynb`: group comparisons, regression, charts
-- `analysis/step5_ab_test.ipynb`: A/B test sizing and simulation
-
-**A validation that changed the project:** Shopify's bulk product feed *never* includes alt text. I caught this by checking a second source. Without that check, every store would have looked like it had zero image descriptions.
+Then run `analysis/step3_measure.sql` in BigQuery, or open the notebooks in `analysis/`.
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
-- Automated checks catch only some accessibility issues ("issues detected automatically," not compliance audits)
-- Stores came from curated lists, which lean toward well-designed stores
-- AI evaluation used one rater and one model family
-- Ramp is an independent prototype, not part of Shopify Magic or Sidekick
+- Automated checks catch only some accessibility issues, so these are "issues detected automatically," not compliance audits.
+- Stores came from curated lists, which lean toward well-designed stores.
+- The AI evaluation used one rater and one model family.
 
 ---
-
-## 💬 Questions or Feedback?
 
 Built by **Lalithya Raavi** · [lalithya-website.vercel.app](https://lalithya-website.vercel.app)
