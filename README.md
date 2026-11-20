@@ -1,6 +1,6 @@
-# Unseen: Measuring and Fixing Accessibility Gaps Across Shopify Stores
+# ♿🛍 Ramp: Accessibility Copilot for Shopify (MCP Server)
 
-I audited **422 real Shopify stores** to measure how accessible they are for shoppers with disabilities, found what drives the biggest gap (missing image descriptions), and built **Ramp**, a working prototype that audits a Shopify store and fixes its image descriptions, benchmarked against my research.
+Ramp is a Claude-powered accessibility copilot for Shopify merchants. It audits a store against research on 422 real Shopify stores, finds product images that screen-reader users can't "see," and writes and saves AI image descriptions through the Shopify Admin API, all wired through a Model Context Protocol (MCP) server. A working prototype of what accessibility could look like in Shopify Magic.
 
 **The headline:** the typical Shopify store leaves **47% of its product images with no description**, so a blind shopper using a screen reader hears nothing about what the product looks like.
 
