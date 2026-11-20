@@ -1,8 +1,12 @@
 # Memo: Closing the image description gap with Shopify Magic
 
-**To:** Shopify Magic product team
-**From:** Lalithya Raavi
-**Re:** Evidence for AI image descriptions, and how to test them
+| | |
+|---|---|
+| **To** | Shopify Magic product team |
+| **From** | Lalithya Raavi |
+| **Re** | Evidence for AI image descriptions, and how to test them |
+
+---
 
 ## The problem
 
