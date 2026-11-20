@@ -20,21 +20,7 @@ I scraped 500 Shopify stores to measure how big these barriers are, who they aff
 
 ## 🧭 How It Works
 
-```mermaid
-flowchart LR
-    A["🕸️ Web Scraping<br/><i>Python · 500 stores</i>"] --> B["✅ Data Validation<br/><i>caught a missing field</i>"]
-    B --> C["🧹 Data Cleaning<br/><i>pandas · 6 tables</i>"]
-    C --> D["🗄️ SQL Analysis<br/><i>BigQuery · CTEs, window functions</i>"]
-    D --> E["📈 Statistics<br/><i>confidence intervals · regression</i>"]
-    E --> F["🛠️ Ramp MCP Tool<br/><i>Shopify Admin API</i>"]
-    F --> G["🎯 AI Evaluation<br/><i>100 hand-scored descriptions</i>"]
-    G --> H["🧪 A/B Test Design<br/><i>power simulation · CUPED</i>"]
-
-    classDef data fill:#e3f1df,stroke:#008060,color:#004c3f
-    classDef build fill:#008060,stroke:#004c3f,color:#ffffff
-    class A,B,C,D,E data
-    class F,G,H build
-```
+![How it works](analysis/charts/0_workflow.png)
 
 | Stage | Skills | Where |
 |---|---|---|
