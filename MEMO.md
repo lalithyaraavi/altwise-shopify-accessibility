@@ -1,10 +1,10 @@
-# 📄 Memo: Extending Shopify Magic to Accessibility
+# 📄 Memo: An Accessibility Skill for Shopify Sidekick
 
 | | |
 |---|---|
-| **To** | Shopify Magic product team |
+| **To** | Shopify Sidekick product team |
 | **From** | Lalithya Raavi |
-| **Re** | A proposal to extend Shopify Magic to image descriptions, with evidence and a test plan |
+| **Re** | A proposal for Sidekick to find and fix missing image descriptions, with evidence and a test plan |
 
 ---
 
@@ -37,26 +37,28 @@ I audited 422 Shopify stores:
 
 ---
 
-## ✨ The proposal: extend Shopify Magic
+## ✨ The proposal: teach Sidekick accessibility
 
-Shopify Magic already helps merchants write content. Image descriptions are a natural next step, and they're the biggest accessibility gap I found.
+Sidekick already writes content and edits products when merchants ask. But merchants don't know their images are undescribed, so they never ask. Sidekick should spot the gap and offer to fix it. Image descriptions are the biggest accessibility gap I found.
 
-| | Shopify Magic today | With this extension |
+| | Sidekick today | With this skill |
 |---|---|---|
-| ✍️ Product descriptions | ✅ | ✅ |
-| 📧 Email subject lines, blog posts | ✅ | ✅ |
-| 🖼️ Image descriptions (alt text) | ❌ | ✅ suggested on upload |
-| ♿ Accessibility check on the catalog | ❌ | ✅ bulk review prompt |
+| ✍️ Writes product descriptions, blog posts | ✅ | ✅ |
+| 🛠️ Edits products when asked | ✅ | ✅ |
+| ♿ Accessibility audit, benchmarked against real stores | ❌ | ✅ |
+| 🔔 Flags images with no description (Sidekick Pulse) | ❌ | ✅ |
+| 🖼️ Suggests a description when an image is uploaded | ❌ | ✅ |
 
 **How it works:**
 
-1. **On upload:** when a merchant adds a product image, Shopify Magic suggests a description. The merchant can accept, edit or skip it.
-2. **For existing catalogs:** a one-time prompt, *"42 images have no description. Review suggestions?"*
-3. **Extra care on busy images:** flag images with printed text or several products for a closer look.
+1. **Sidekick Pulse:** a recommendation on the admin home, *"42 of your product images have no description. Review suggestions?"*
+2. **In chat:** a merchant asks *"audit my store's accessibility"* and Sidekick reports, suggests descriptions and saves the approved ones.
+3. **On upload:** when a merchant adds a product image, Sidekick suggests a description. The merchant can accept, edit or skip it.
+4. **Extra care on busy images:** flag images with printed text or several products for a closer look.
 
 **Why approval is required:** on 100 real undescribed images, AI descriptions were **97% accurate**, but **9%** had some issue: skipped printed text, several products summarised instead of named, and a few colour mistakes.
 
-🛠️ **Prototype:** I built **AltWise**, a working prototype of this Shopify Magic extension. It runs the full flow (audit, suggest, approve, save) on a real Shopify dev store through the Admin API. *AltWise is independent and not part of Shopify Magic.*
+🛠️ **Prototype:** I built **AltWise**, a working prototype of the chat flow. A merchant chats with an AI assistant that runs the full flow (audit, suggest, approve, save) on a real Shopify dev store through the Admin API. *AltWise is independent and not part of Shopify Sidekick.*
 
 ---
 
@@ -67,7 +69,7 @@ Shopify Magic already helps merchants write content. Image descriptions are a na
 |---|---|
 | **Design** | A/B test, randomised by merchant |
 | **Control** | Current experience, no suggestions |
-| **Treatment** | Suggested descriptions on upload, plus the bulk review prompt |
+| **Treatment** | Sidekick Pulse card plus suggested descriptions on upload |
 | **Duration** | At least 4 weeks, so results aren't driven by novelty |
 
 #### Metrics
@@ -76,7 +78,7 @@ Shopify Magic already helps merchants write content. Image descriptions are a na
 | 🎯 **Primary** | Share of a merchant's images with descriptive alt text after 30 days |
 | 💰 **Business** | Conversion rate on fixed products; traffic from search and AI shopping agents |
 | 📈 **Secondary** | Suggestion acceptance rate; edit rate before accepting |
-| 🛡️ **Guardrails** | Time to publish a product; merchants turning off Magic; reported wrong descriptions |
+| 🛡️ **Guardrails** | Time to publish a product; merchants dismissing the Sidekick suggestions; reported wrong descriptions |
 
 #### Sample size, checked by simulation
 - **Baseline:** 39% of a typical store's images are descriptive, with a huge spread between stores *(SD 40 points)*.
