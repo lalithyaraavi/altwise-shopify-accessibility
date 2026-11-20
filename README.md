@@ -1,14 +1,14 @@
-# How Accessible Are Shopify Stores?
+# 🛍️ How Accessible Are Shopify Stores?
 
-### A 422-store study, and Ramp: a prototype that fixes the biggest gap
+### A 422-store study, and Ramp: Shopify Magic, extended to accessibility
 
-I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**, and most stores have barriers for shoppers with disabilities. Then I built **Ramp**, a tool that audits a store against this research and writes the missing image descriptions, as a prototype of what this could look like in Shopify Magic.
+I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **Ramp**, a prototype that extends what Shopify Magic does today (writing product content) to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
 
-**[Demo video](#)** · **[Product memo](MEMO.md)**
+🎥 **[Demo video](#)** · 📄 **[Product memo](MEMO.md)**
 
 ---
 
-## The problem
+## 🔍 The problem
 
 Many Shopify stores aren't built for every shopper. I found barriers for blind shoppers, low-vision and older shoppers, people with tremors, and voice-control users.
 
@@ -21,9 +21,22 @@ I wanted to answer three questions:
 
 ---
 
-## What I found
+## 💼 Why this matters to Shopify
 
-**1. Most product images aren't usefully described.**
+Shopify grows when its merchants sell more and stay on Shopify. Missing image descriptions get in the way of that:
+
+- ⚖️ **Legal risk for merchants:** most e-commerce accessibility lawsuits in 2025 targeted companies with under $25M in revenue, Shopify's core base.[^1] A lawsuit can push a small merchant off the platform.
+- 🇪🇺 **Selling in Europe:** the European Accessibility Act has been enforced since June 2025.[^2]
+- 🤖 **AI shopping agents:** agents rely on structured product information, not photos.[^3] An undescribed image is close to invisible to them, as Shopify bets on agentic commerce.
+- 🛒 **More shoppers who can buy:** every shopper who can't use a store is a lost sale.
+
+> **What this project does *not* claim:** that fixing alt text increases sales. That's what the A/B test below is designed to measure.
+
+---
+
+## 📊 What I found
+
+#### 🖼️ 1. Most product images aren't usefully described
 I classified the alt text of 30,661 product images from 401 stores:
 - **42%** descriptive
 - **11%** minimal (3 words or fewer)
@@ -34,22 +47,22 @@ Averaged per store, the typical store is missing descriptions on **46.6%** of im
 
 ![Alt text breakdown](analysis/charts/1_alt_text_breakdown.png)
 
-**2. Barriers affect many groups of shoppers.**
+#### 👥 2. Barriers affect many groups of shoppers
 Share of stores with at least one automatically detected barrier:
-- **85%** for screen-reader users
-- **67%** for low-vision and older shoppers (text too faint)
-- **56%** for shoppers with tremors (buttons too small)
-- **50%** for voice-control users
-- **10%** block zooming entirely
+- 🦯 **85%** for screen-reader users
+- 👓 **67%** for low-vision and older shoppers (text too faint)
+- ✋ **56%** for shoppers with tremors (buttons too small)
+- 🎙️ **50%** for voice-control users
+- 🔎 **10%** block zooming entirely
 
 ![Top page failures](analysis/charts/3_top_page_failures.png)
 
-**3. It's a merchant habit, not a theme problem.**
+#### 🧩 3. It's a merchant habit, not a theme problem
 With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect disappeared. A regression on 390 stores (theme, store size, brand vs. smaller merchant, category) found no significant predictors *(all p > 0.4, R² = 0.09)*. So the fix belongs where merchants add products, not in themes.
 
 ---
 
-## How I did it
+## 🧭 How I did it
 
 ![How it works](analysis/charts/0_workflow.png)
 
@@ -70,17 +83,15 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 ---
 
-## Ramp: turning the research into a fix
+## ✨ Ramp: Shopify Magic, extended to accessibility
 
-Ramp connects Claude to a Shopify store through the Admin API, using an MCP server. A merchant asks *"audit my store and fix the image descriptions,"* and Ramp:
+Shopify Magic already writes product descriptions, email subject lines and blog posts for merchants, but not image descriptions.[^4] Ramp prototypes that missing piece, backed by the research. It connects Claude to a Shopify store through the Admin API, using an MCP server. A merchant asks *"audit my store and fix the image descriptions,"* and Ramp:
 
 1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing descriptions than 52% of stores studied."*
 2. **Shows Claude the images** that need descriptions, so it can draft them.
 3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
 
-It's an independent prototype, not part of Shopify Magic or Sidekick.
-
-**Tools**
+#### 🛠️ Tools
 - `audit_store`: accessibility report, benchmarked against the research
 - `get_images_needing_alt`: images with missing or junk descriptions
 - `update_image_alt`: saves an approved description to Shopify
@@ -88,24 +99,27 @@ It's an independent prototype, not part of Shopify Magic or Sidekick.
 
 ---
 
-## Is the AI good enough?
+## ✅ Is the AI good enough?
 
 I generated descriptions for **100 real images merchants had left blank** (one per store) and scored each one by hand.
 
-- **97%** accurate *(95% CI: 91.5 to 99.0%)*
-- **98%** useful to someone who can't see the image
-- **100%** concise (under 125 characters)
-- **9%** had some issue, mostly on busy images: skipped printed text, several products summarised, a few colour mistakes
+- 🎯 **97%** accurate *(95% CI: 91.5 to 99.0%)*
+- 💡 **98%** useful to someone who can't see the image
+- ✂️ **100%** concise (under 125 characters)
+- ⚠️ **9%** had some issue, mostly on busy images: skipped printed text, several products summarised, a few colour mistakes
 
 So AI should **suggest** descriptions for merchants to approve, not publish them automatically.
 
 ---
 
-## How Shopify could test it
+## 🧪 How Shopify could test it
 
 Only Shopify can randomise real merchants, so I designed the A/B test and checked it by simulation on the real store data.
 
-- **Design:** randomise by merchant. Metric: share of images with descriptive alt text after 30 days. Guardrail: time to publish a product.
+- **Design:** randomise by merchant, run for 4+ weeks.
+- **Primary metric:** share of images with descriptive alt text after 30 days (what the feature directly changes).
+- **Business metrics:** conversion rate on fixed products, and traffic from search and AI shopping agents. This is how Shopify would learn whether it drives sales.
+- **Guardrail:** time to publish a product.
 - **Sample size:** the standard formula says about 1,000 merchants per group to detect a 5-point lift.
 - **The simulation showed that isn't enough:** a plain t-test caught the lift only 62% of the time, because stores are so spread out (31% at 0%, 11% at 100%).
 - **The fix:** adjusting for each merchant's coverage before the test (CUPED) raised that to 100%, with false alarms still at the expected level (6%).
@@ -114,9 +128,9 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 
 ---
 
-## Try it yourself
+## 🚀 Try it yourself
 
-**Run Ramp on your own Shopify dev store**
+#### Run Ramp on your own Shopify dev store
 
 1. Clone the repo:
    ```bash
@@ -137,7 +151,7 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
    ```
 6. Ask Claude: *"Audit my store's accessibility."*
 
-**Rerun the research**
+#### Rerun the research
 ```bash
 python3 scrape_products.py     # product feeds and theme names
 python3 fetch_alt.py           # real alt text, 10 random products per store
@@ -149,12 +163,18 @@ Then run `analysis/step3_measure.sql` in BigQuery, or open the notebooks in `ana
 
 ---
 
-## Limitations
+## ⚠️ Limitations
 
 - Automated checks catch only some accessibility issues, so these are "issues detected automatically," not compliance audits.
 - Stores came from curated lists, which lean toward well-designed stores.
 - The AI evaluation used one rater and one model family.
+- Ramp is an independent prototype, not part of Shopify Magic or Sidekick.
 
 ---
 
 Built by **Lalithya Raavi** · [lalithya-website.vercel.app](https://lalithya-website.vercel.app)
+
+[^1]: [KEYT / Stacker: Accessibility lawsuits rose 37% in 2025](https://keyt.com/news/money-and-business/stacker-money/2026/01/14/accessibility-lawsuits-rose-by-37-in-2025-why-small-businesses-can-no-longer-ignore-their-websites/)
+[^2]: [TestParty: Shopify digital accessibility guide](https://testparty.ai/blog/the-complete-guide-to-shopify-digital-accessibility-what-every-e-commerce-store-o)
+[^3]: [ChannelEngine: Ecommerce predictions 2026](https://www.channelengine.com/en/blog/ecommerce-predictions)
+[^4]: [Shopify Help Center: Shopify Magic](https://help.shopify.com/manual/shopify-admin/productivity-tools/shopify-magic)

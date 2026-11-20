@@ -10,6 +10,15 @@ I audited 422 Shopify stores. The typical store leaves **47% of its product imag
 
 This is also a merchant risk. Missing image descriptions are one of the most common issues cited in website accessibility lawsuits, and most e-commerce defendants are small businesses, which is Shopify's core merchant base.
 
+## Why this matters to Shopify
+
+- **Merchant retention:** most e-commerce accessibility lawsuits target small businesses, Shopify's core base. A lawsuit can push a merchant off the platform.
+- **International sales:** the European Accessibility Act has been enforced since June 2025.
+- **AI shopping agents:** agents rely on structured product information. Undescribed images are close to invisible to them, as Shopify invests in agentic commerce.
+- **More buyers:** every shopper who can't use a store is a lost sale.
+
+I don't claim this lifts sales; the test below is designed to measure that.
+
 ## Why a product fix, not a theme fix
 
 Missing alt text is not explained by theme, store size or brand size. In a regression on 390 stores, none of these were significant (all p > 0.4), and together they explained only 9% of the variation. The gap comes from whether each merchant writes descriptions when they add products. A theme update can't fix that. A prompt in the product workflow can.
@@ -32,6 +41,7 @@ I built a working prototype (Ramp) that runs this flow on a real Shopify dev sto
 | **Control** | Current experience, no suggestions |
 | **Treatment** | Suggested description on image upload, plus the bulk review prompt |
 | **Primary metric** | Share of a merchant's product images with a descriptive alt text after 30 days |
+| **Business metrics** | Conversion rate on fixed products, traffic from search and AI shopping agents |
 | **Secondary metrics** | Suggestion acceptance rate, edit rate before accepting |
 | **Guardrails** | Time to publish a product, rate of merchants dismissing or turning off Magic, reported incorrect descriptions |
 | **Analysis** | Difference in means, adjusted for each merchant's coverage before the test (CUPED) |
