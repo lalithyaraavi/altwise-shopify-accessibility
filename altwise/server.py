@@ -301,7 +301,7 @@ def set_alt(media_id, alt):
         raise RuntimeError(d["userErrors"])
 
 
-HOOK_PRODUCT = "The Complete Snowboard"
+HOOK_PRODUCT = "The Collection Snowboard: Liquid"
 
 
 def make_demo():
