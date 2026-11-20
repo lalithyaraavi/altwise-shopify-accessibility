@@ -1,8 +1,8 @@
 # 🛍️♿ How Accessible Are Shopify Stores?
 
-### A 422-store study, and Ramp: Shopify Magic, extended to accessibility
+### A 422-store study, and AltWise: Shopify Magic, extended to accessibility
 
-I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **Ramp**, a prototype that extends what Shopify Magic does today (writing product content) to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
+I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **AltWise**, a prototype that extends what Shopify Magic does today (writing product content) to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
 
 🎥 **[Demo video](#)** · 📄 **[Product memo](MEMO.md)**
 
@@ -46,8 +46,8 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 | Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
 | Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
 | Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
-| Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
-| Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
+| Build | Python, MCP server, Shopify Admin API | `altwise/server.py` |
+| Evaluate | Metric design, measuring AI quality | `altwise/ai_descriptions.csv` |
 | Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
 
 **The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages (a homepage and a product page per store) tested with **axe-core**, the industry-standard accessibility checker, which flags WCAG problems like low-contrast text, unlabeled buttons and small tap targets. Every excluded store has a logged reason.
@@ -84,9 +84,9 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 ---
 
-## ✨ Ramp: Shopify Magic, extended to accessibility
+## ✨ AltWise: Shopify Magic, extended to accessibility
 
-Shopify Magic already writes product descriptions, email subject lines and blog posts for merchants, but not image descriptions.[^4] Ramp prototypes that missing piece, backed by the research. It connects Claude to a Shopify store through the Admin API, using an MCP server. A merchant asks *"audit my store and fix the image descriptions,"* and Ramp:
+Shopify Magic already writes product descriptions, email subject lines and blog posts for merchants, but not image descriptions.[^4] AltWise prototypes that missing piece, backed by the research. It connects Claude to a Shopify store through the Admin API, using an MCP server. A merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
 
 1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing descriptions than 52% of stores studied."*
 2. **Shows Claude the images** that need descriptions, so it can draft them.
@@ -131,7 +131,7 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 
 ## 🚀 Try it yourself
 
-#### Run Ramp on your own Shopify dev store
+#### Run AltWise on your own Shopify dev store
 
 1. Clone the repo:
    ```bash
@@ -142,12 +142,12 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 3. Copy `.env.example` to `.env` and add your store address, Client ID and Client secret.
 4. Install [uv](https://docs.astral.sh/uv/) and test the connection:
    ```bash
-   uv run --script ramp/server.py --test
+   uv run --script altwise/server.py --test
    ```
-5. Add Ramp to Claude Desktop's `claude_desktop_config.json`, then restart Claude Desktop:
+5. Add AltWise to Claude Desktop's `claude_desktop_config.json`, then restart Claude Desktop:
    ```json
    "mcpServers": {
-     "ramp": { "command": "/path/to/uv", "args": ["run", "--script", "/path/to/ramp/server.py"] }
+     "altwise": { "command": "/path/to/uv", "args": ["run", "--script", "/path/to/altwise/server.py"] }
    }
    ```
 6. Ask Claude: *"Audit my store's accessibility."*
@@ -169,7 +169,7 @@ Then run `analysis/step3_measure.sql` in BigQuery, or open the notebooks in `ana
 - Automated checks catch only some accessibility issues, so these are "issues detected automatically," not compliance audits.
 - Stores came from curated lists, which lean toward well-designed stores.
 - The AI evaluation used one rater and one model family.
-- Ramp is an independent prototype, not part of Shopify Magic or Sidekick.
+- AltWise is an independent prototype, not part of Shopify Magic or Sidekick.
 
 ---
 

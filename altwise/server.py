@@ -4,7 +4,7 @@
 # dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27"]
 # ///
 """
-Ramp: an accessibility audit + image-description fixer for a Shopify store, as an MCP server.
+AltWise: an accessibility audit + image-description fixer for a Shopify store, as an MCP server.
 
 It connects Claude (Desktop) to your Shopify store through the Admin API and offers tools to:
   - audit_store                 -> report card: missing/junk alt text, hard-to-read descriptions,
@@ -17,9 +17,9 @@ It connects Claude (Desktop) to your Shopify store through the Admin API and off
 Credentials are read from ../.env  (SHOPIFY_STORE, SHOPIFY_CLIENT_ID, SHOPIFY_CLIENT_SECRET).
 
 Command-line helpers (run in Terminal from the project folder):
-    uv run --script ramp/server.py --test           # check the connection + print an audit
-    uv run --script ramp/server.py --make-demo      # make the demo store look like a typical store
-    uv run --script ramp/server.py --restore-demo   # put the original alt text back
+    uv run --script altwise/server.py --test           # check the connection + print an audit
+    uv run --script altwise/server.py --make-demo      # make the demo store look like a typical store
+    uv run --script altwise/server.py --restore-demo   # put the original alt text back
 """
 import csv, json, os, re, sys, time
 from datetime import datetime, timezone
@@ -142,7 +142,7 @@ _cache = {}  # media_id -> image info, so updates can be logged with context
 
 
 # ---------------------------------------------------------------- MCP tools
-mcp = FastMCP("ramp")
+mcp = FastMCP("altwise")
 
 
 @mcp.tool()
@@ -307,7 +307,7 @@ def make_demo():
     imgs = sorted(images_of(fetch_products()), key=lambda i: i["media_id"])
     if not os.path.exists(DEMO_BACKUP):
         json.dump({i["media_id"]: i["alt"] for i in imgs}, open(DEMO_BACKUP, "w"), indent=1)
-        print(f"Backed up original alt text for {len(imgs)} images -> ramp/demo_backup.json")
+        print(f"Backed up original alt text for {len(imgs)} images -> altwise/demo_backup.json")
     n_missing = round(len(imgs) * 0.47)
     junk = ["IMG_4821.jpg", "PDP2 Option[Main] LIFESTYLE"]
     for k, i in enumerate(imgs):
