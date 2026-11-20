@@ -6,6 +6,8 @@ I studied 422 Shopify stores and found that **the typical store leaves 47% of it
 
 🎥 **[Demo video](#)** · 📄 **[Product memo](MEMO.md)**
 
+**Contents:** [The problem](#-the-problem) · [Why it matters](#-why-this-matters-to-shopify) · [How I did it](#-how-i-did-it) · [What I found](#-what-i-found) · [AltWise](#-altwise-shopify-magic-extended-to-accessibility) · [AI evaluation](#-is-the-ai-good-enough) · [A/B test](#-how-shopify-could-test-it) · [What I learned](#-what-i-learned) · [Next steps](#-next-steps) · [Try it yourself](#-try-it-yourself)
+
 ---
 
 ## 🔍 The problem
@@ -65,6 +67,16 @@ I classified the alt text of 30,661 product images from 401 stores:
 - **10%** junk (file names, internal codes like `PDP2 Option[...] MAIN`)
 - **37%** missing
 
+Real examples of "junk" alt text a screen reader would read out loud:
+
+| Alt text found | What it actually is |
+|---|---|
+| `PDP2 Option[Flamingo] LIFESTYLE` | An internal photo label |
+| `Color:Ocean;` | A product option, not a description |
+| `IMG_4821.jpg` | A file name |
+| `#color_Phantom Blue` | A colour code |
+| `natural-diamond` | A URL slug |
+
 Averaged per store, the typical store is missing descriptions on **46.6%** of images *(95% CI: 42.5 to 50.7%)*. Handmade (75%), art (72%) and watches (70%) stores miss the most, exactly where the photo sells the product.
 
 ![Alt text breakdown](analysis/charts/1_alt_text_breakdown.png)
@@ -109,6 +121,15 @@ I generated descriptions for **100 real images merchants had left blank** (one p
 - ✂️ **100%** concise (under 125 characters)
 - ⚠️ **9%** had some issue, mostly on busy images: skipped printed text, several products summarised, a few colour mistakes
 
+Examples from the evaluation:
+
+| Product | AI description | Verdict |
+|---|---|---|
+| Paperclip chain bracelet | "Rose gold paperclip chain bracelet with elongated links and a lobster clasp, laid in a circle on white" | ✅ Accurate and useful |
+| Women's lace-up sneakers | "Pair of brick-red suede and canvas lace-up sneakers with cream laces and white soles" | ✅ Accurate and useful |
+| Cereal treats variety pack | "Six Magic Spoon protein treat boxes in different flavours, each on a colourful background..." | ⚠️ Didn't name the flavours shown |
+| Flower posy gift | "Native flower posy with pincushion protea and eucalyptus in a glass jar beside a kraft LVLY gift box" | ⚠️ Skipped the printed message on the box |
+
 So AI should **suggest** descriptions for merchants to approve, not publish them automatically.
 
 ---
@@ -126,6 +147,26 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 - **The fix:** adjusting for each merchant's coverage before the test (CUPED) raised that to 100%, with false alarms still at the expected level (6%).
 
 ![A/B power simulation](analysis/charts/5_ab_power_simulation.png)
+
+---
+
+## 🧠 What I learned
+
+- **Validate the data source before trusting it.** Shopify's bulk product feed never includes alt text. If I hadn't checked a second source, every store would have looked like it had zero image descriptions, and the headline would have been wrong.
+- **Don't trust small samples.** With 12 stores, off-the-shelf themes looked twice as good. I expanded the sample, and with 52 stores the effect disappeared. That changed my recommendation from "fix themes" to "fix the content workflow."
+- **The unit of analysis changes the answer.** Pooling all images gave 37% missing; averaging per store gave 47%, because image-heavy stores describe their images better. I report the store-level number, since the merchant is who Shopify would act on.
+- **Check formulas against the real data.** The standard sample-size formula said 1,000 merchants per group was enough. Simulating the test on the real store data showed only 62% power. CUPED fixed it.
+- **A metric needs more than yes/no.** "Has alt text" hides junk like `IMG_4821.jpg`. A four-level metric (missing, junk, minimal, descriptive) told the real story.
+
+---
+
+## 🔮 Next steps
+
+- **Build it into the Shopify admin** as an embedded app, so merchants get suggestions right where they upload images.
+- **Use a random sample of Shopify stores** instead of curated lists, which likely understate the problem.
+- **Add a second rater** for the AI evaluation and measure how often raters agree.
+- **Share theme-level findings** (like colour contrast, which failed on 60% of product pages) with Shopify's theme team.
+- **Measure business impact** in a real test: conversion and traffic from search and AI shopping agents.
 
 ---
 
