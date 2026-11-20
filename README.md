@@ -1,12 +1,12 @@
 # 🛍️♿ How Accessible Are Shopify Stores?
 
-### Measuring accessibility across 422 Shopify stores, and prototyping a Shopify Sidekick skill to close the gap
+### Measuring accessibility across 422 Shopify stores, and extending Shopify Sidekick to close the gap
 
-I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **AltWise**, a prototype of an accessibility skill for Shopify Sidekick: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
+I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **AltWise**, a prototype that extends Shopify Sidekick to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
 
 🎥 **[Demo video](#)** · 📄 **[Product memo](MEMO.md)**
 
-**Contents:** [The problem](#-the-problem) · [Why it matters](#-why-this-matters-to-shopify) · [How I did it](#-how-i-did-it) · [What I found](#-what-i-found) · [AltWise](#-altwise-an-accessibility-skill-for-shopify-sidekick) · [AI evaluation](#-is-the-ai-good-enough) · [A/B test](#-how-shopify-could-test-it) · [What I learned](#-what-i-learned) · [Next steps](#-next-steps) · [Try it yourself](#-try-it-yourself)
+**Contents:** [The problem](#-the-problem) · [Why it matters](#-why-this-matters-to-shopify) · [How I did it](#-how-i-did-it) · [What I found](#-what-i-found) · [AltWise](#-altwise-extending-shopify-sidekick-to-accessibility) · [AI evaluation](#-is-the-ai-good-enough) · [A/B test](#-how-shopify-could-test-it) · [What I learned](#-what-i-learned) · [Next steps](#-next-steps) · [Try it yourself](#-try-it-yourself)
 
 ---
 
@@ -96,9 +96,9 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 ---
 
-## ✨ AltWise: an accessibility skill for Shopify Sidekick
+## ✨ AltWise: extending Shopify Sidekick to accessibility
 
-Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing skill, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server. The merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
+Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing feature, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server. The merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
 
 1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing descriptions than 52% of stores studied."*
 2. **Shows Claude the images** that need descriptions, so it can draft them.

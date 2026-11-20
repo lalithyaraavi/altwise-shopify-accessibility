@@ -1,4 +1,4 @@
-# 📄 Memo: An Accessibility Skill for Shopify Sidekick
+# 📄 Memo: Extending Shopify Sidekick to Accessibility
 
 | | |
 |---|---|
@@ -41,7 +41,7 @@ I audited 422 Shopify stores:
 
 Sidekick already writes content and edits products when merchants ask. But merchants don't know their images are undescribed, so they never ask. Sidekick should spot the gap and offer to fix it. Image descriptions are the biggest accessibility gap I found.
 
-| | Sidekick today | With this skill |
+| | Sidekick today | With this extension |
 |---|---|---|
 | ✍️ Writes product descriptions, blog posts | ✅ | ✅ |
 | 🛠️ Edits products when asked | ✅ | ✅ |
