@@ -1,4 +1,4 @@
-# 🛍️ How Accessible Are Shopify Stores?
+# 🛍️♿ How Accessible Are Shopify Stores?
 
 ### A 422-store study, and Ramp: Shopify Magic, extended to accessibility
 
