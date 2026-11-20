@@ -18,6 +18,37 @@ I scraped 500 Shopify stores to measure how big these barriers are, who they aff
 
 ---
 
+## 🧭 How It Works
+
+```mermaid
+flowchart LR
+    A["🕸️ Web Scraping<br/><i>Python · 500 stores</i>"] --> B["✅ Data Validation<br/><i>caught a missing field</i>"]
+    B --> C["🧹 Data Cleaning<br/><i>pandas · 6 tables</i>"]
+    C --> D["🗄️ SQL Analysis<br/><i>BigQuery · CTEs, window functions</i>"]
+    D --> E["📈 Statistics<br/><i>confidence intervals · regression</i>"]
+    E --> F["🛠️ Ramp MCP Tool<br/><i>Shopify Admin API</i>"]
+    F --> G["🎯 AI Evaluation<br/><i>100 hand-scored descriptions</i>"]
+    G --> H["🧪 A/B Test Design<br/><i>power simulation · CUPED</i>"]
+
+    classDef data fill:#e3f1df,stroke:#008060,color:#004c3f
+    classDef build fill:#008060,stroke:#004c3f,color:#ffffff
+    class A,B,C,D,E data
+    class F,G,H build
+```
+
+| Stage | Skills | Where |
+|---|---|---|
+| 🕸️ Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
+| ✅ Validate | Data validation, checking a source against a second one | `scrape_products.py` |
+| 🧹 Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
+| 🗄️ Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
+| 📈 Explain | Confidence intervals, group comparisons, regression | `analysis/step4_compare.ipynb` |
+| 🛠️ Build | Python, MCP server, Shopify Admin API | `ramp/server.py` |
+| 🎯 Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
+| 🧪 Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
+
+---
+
 ## 📊 Research Findings
 
 #### 🖼️ Most product images aren't usefully described
