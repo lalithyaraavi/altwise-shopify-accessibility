@@ -8,16 +8,6 @@
 
 ---
 
-## 📌 TL;DR
-
-> - The typical Shopify store leaves **47% of its product images undescribed**.
-> - It's a **merchant habit, not a theme problem**, so the fix belongs in the product workflow.
-> - **Recommendation: extend Shopify Magic.** It already writes product descriptions, email subject lines and blog posts. It should also write **image descriptions** when a merchant uploads a product image, for the merchant to approve.
-> - AI descriptions were **97% accurate** on 100 real images, so suggest-and-approve is safe; auto-publishing is not.
-> - I built **AltWise**, a working prototype of this extension, and designed the A/B test to roll it out (analysed with **CUPED**, about 1,000 merchants per group).
-
----
-
 ## 🔍 The problem
 
 I audited 422 Shopify stores:
