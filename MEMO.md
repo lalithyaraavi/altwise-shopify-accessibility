@@ -66,7 +66,7 @@ Shopify Magic already helps merchants write content. Image descriptions are a na
 
 **Why approval is required:** on 100 real undescribed images, AI descriptions were **97% accurate**, but **9%** had some issue: skipped printed text, several products summarised instead of named, and a few colour mistakes.
 
-🛠️ **Prototype:** I built **AltWise**, a working prototype of this Shopify Magic extension. It runs the full flow (audit, suggest, approve, save) on a real Shopify dev store through the Admin API. *AltWise is independent and not part of Shopify Magic.*
+🛠️ **Prototype:** I built **AltWise**, a working prototype of this Shopify Magic extension. It runs the full flow (audit, suggest, approve, save) on Lali's Little Snow Shop, a real Shopify dev store, through the Admin API. *AltWise is independent and not part of Shopify Magic.*
 
 ---
 

@@ -18,7 +18,7 @@ Credentials are read from ../.env  (SHOPIFY_STORE, SHOPIFY_CLIENT_ID, SHOPIFY_CL
 
 Command-line helpers (run in Terminal from the project folder):
     uv run --script altwise/server.py --test           # check the connection + print an audit
-    uv run --script altwise/server.py --make-demo      # make the demo store look like a typical store
+    uv run --script altwise/server.py --make-demo      # make Lali's Little Snow Shop look like a typical store
     uv run --script altwise/server.py --restore-demo   # put the original alt text back
 """
 import csv, json, os, re, sys, time
@@ -305,7 +305,7 @@ HOOK_PRODUCT = "The Complete Snowboard"
 
 
 def make_demo():
-    """Make the demo store look like a typical store from the research (~half of images with no
+    """Make the demo store (Lali's Little Snow Shop) look like a typical store from the research (~half of images with no
     description, a couple with junk text). Saves the original alt text first so it can be restored."""
     imgs = sorted(images_of(fetch_products()), key=lambda i: i["media_id"])
     if not os.path.exists(DEMO_BACKUP):

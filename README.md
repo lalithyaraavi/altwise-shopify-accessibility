@@ -104,6 +104,8 @@ Shopify Magic already writes product descriptions, email subject lines and blog 
 2. **Shows Claude the images** that need descriptions, so it can draft them.
 3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
 
+I tested it end to end on **Lali's Little Snow Shop**, a Shopify dev store I set up with sample snowboard products.
+
 #### 🛠️ Tools
 - `audit_store`: accessibility report, benchmarked against the research
 - `get_images_needing_alt`: images with missing or junk descriptions
