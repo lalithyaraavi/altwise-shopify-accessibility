@@ -1,0 +1,845 @@
+domain,page_type,category,theme_schema_name,url,status,checked_at,n_rule_violations,n_elements_affected,n_page_images,n_img_no_alt_attr,n_img_empty_alt,rule_color-contrast,rule_image-alt,rule_button-name,rule_link-name,rule_label,rule_html-has-lang,rule_aria-allowed-attr,rule_list,rule_heading-order,rule_select-name,rule_role-img-alt,rule_svg-img-alt
+fashionnova.com,product,clothing,,https://fashionnova.com/products/undercover-floral-baseball-hat-fncolorname-camouflage,ok,2026-11-18T04:33:20+00:00,2,9,19,0,2,5,0,0,0,0,0,0,0,0,0,0,0
+aloyoga.com,product,clothing,Production (refs/tags/re),https://aloyoga.com/products/w2788r-supernatural-sweater-henley-tank-black,ok,2026-11-18T04:33:25+00:00,11,60,28,0,0,2,0,10,2,1,0,1,0,0,0,0,0
+endclothing.com,product,clothing,By Association Only,https://endclothing.com/products/vans-x-needles-otw-mountain-edition-vibram-boot-vn000v8fbla,ok,2026-11-18T04:33:31+00:00,2,12,120,0,39,6,0,0,0,0,0,6,0,0,0,0,0
+comfrt.com,product,clothing,,https://comfrt.com/products/rockies-teddy-full-zip-jacket,ok,2026-11-18T04:33:36+00:00,4,11,18,0,1,8,0,0,1,1,0,0,0,0,0,0,0
+boden.com,product,clothing,fuse2.0,https://www.boden.com/products/girls-printed-pointelle-vest-red-vintage-floral-g6295red,ok,2026-11-18T04:33:42+00:00,3,4,2,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+us.princesspolly.com,product,clothing,Princess Polly by Pivot,https://us.princesspolly.com/products/avori-capri-pants-blue-check,ok,2026-11-18T04:33:46+00:00,6,25,66,0,0,0,1,0,1,0,0,0,0,0,3,0,0
+windsorstore.com,product,clothing,Windsor,https://windsorstore.com/products/plush-obsession-faux-fur-shoulder-bag-07203000248020,ok,2026-11-18T04:33:51+00:00,12,298,116,0,0,19,0,0,18,0,0,1,5,0,0,0,0
+libas.in,product,clothing,Impulse,https://libas.in/products/libas-mauve-floral-woven-design-embellished-silk-blend-saree-1106607p,ok,2026-11-18T04:33:56+00:00,3,6,17,0,1,4,0,1,0,0,0,0,0,0,0,0,0
+neweracap.com,product,clothing,Dawn,https://neweracap.com/products/los-angeles-dodgers-rhinestone-script-casual-classic-adjustable,ok,2026-11-18T04:34:00+00:00,3,13,31,0,1,2,0,0,0,0,0,0,0,0,0,0,0
+chubbies.com,product,clothing,,https://chubbies.com/products/the-great-pink-sharks-4-classic-lined-swim-trunk,ok,2026-11-18T04:34:06+00:00,13,107,74,1,57,23,1,34,6,1,0,0,0,0,0,1,0
+taylorstitch.com,product,clothing,Taylor Stitch Retail Web,https://taylorstitch.com/products/roamer-pant-in-navy-corduroy-2611,ok,2026-11-18T04:34:13+00:00,2,2,13,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+outdoorvoices.com,product,clothing,Outdoor Voices Theme,https://outdoorvoices.com/products/w-puffer-vest-war-plum,ok,2026-11-18T04:34:18+00:00,2,3,25,0,17,1,0,0,0,0,0,0,0,0,0,0,0
+everlane.com,product,clothing,Dawn,https://everlane.com/products/f-btdn-fla-clr-ls-grph,ok,2026-11-18T04:34:22+00:00,2,9,31,8,8,0,3,0,0,0,0,0,0,0,0,0,0
+tentree.com,product,clothing,Shopify Theme Lab,https://tentree.com/products/winslow-t-shirt-deep-burgundy-heather,ok,2026-11-18T04:34:27+00:00,4,25,28,0,10,11,0,1,8,0,0,0,0,0,0,0,0
+kotn.com,product,clothing,Skeleton,https://kotn.com/products/grid-stitch-wool-throw-in-natural-taupe,ok,2026-11-18T04:34:32+00:00,2,3,5,0,1,2,0,0,0,0,0,0,0,0,0,0,0
+frankandoak.com,product,clothing,Symmetry,https://frankandoak.com/products/mens-woven-shirt-optic-white-2mwc002fe-whi,ok,2026-11-18T04:34:37+00:00,4,24,27,0,26,9,0,0,8,0,0,0,0,0,0,0,0
+pangaia.com,product,clothing,Adastra,https://pangaia.com/products/womens-heavyweight-drawstring-zip-up-hoodie-and-track-pants-set-crimson-echo,ok,2026-11-18T04:34:42+00:00,6,37,39,23,1,6,24,0,0,0,0,0,0,0,0,0,0
+girlfriend.com,product,clothing,Palo Alto,https://girlfriend.com/products/black-meredith-bow-tank,ok,2026-11-18T04:34:47+00:00,6,23,31,2,0,4,1,1,0,2,0,0,0,0,0,0,0
+tradlands.com,product,clothing,Turbo,https://tradlands.com/products/castine-3-4-sleeve-midi-dress,ok,2026-11-18T04:34:51+00:00,2,6,53,33,2,3,0,0,3,0,0,0,0,0,0,0,0
+outerknown.com,product,clothing,,https://outerknown.com/products/iconoclast-high-rise-skinny-bbfqp3ycwj-resale,ok,2026-11-18T04:34:56+00:00,4,6,33,0,13,1,0,3,0,0,0,0,0,0,0,0,0
+marinelayer.com,product,clothing,Marine Layer Theme,https://marinelayer.com/products/mens-signature-sea-change-crew-tee-in-white,ok,2026-11-18T04:35:03+00:00,2,9,22,0,4,8,1,0,0,0,0,0,0,0,0,0,0
+birddogs.com,product,clothing,,https://birddogs.com/products/birddogs-beanie-copy,ok,2026-11-18T04:35:07+00:00,1,14,17,0,3,14,0,0,0,0,0,0,0,0,0,0,0
+tommyjohn.com,product,clothing,,https://tommyjohn.com/products/ornament,ok,2026-11-18T04:35:13+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+cotopaxi.com,product,clothing,Cotopaxi,https://cotopaxi.com/products/contiguo-encima-fleece-pullover-dark-mode-mens,ok,2026-11-18T04:35:16+00:00,3,5,35,0,10,3,0,0,0,0,0,0,1,0,0,0,0
+velasca.com,product,clothing,,https://velasca.com/products/braida-tsr037,ok,2026-11-18T04:35:21+00:00,7,30,19,2,5,15,2,1,1,0,0,0,0,0,0,0,0
+gymreapers.com,product,clothing,,https://gymreapers.com/products/5-5-skull-wristband,ok,2026-11-18T04:35:26+00:00,3,7,67,0,8,5,0,0,1,0,0,0,0,0,0,0,0
+youngla.com,product,clothing,Prestige,https://youngla.com/products/w2296-1,ok,2026-11-18T04:35:31+00:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+representclo.com,product,clothing,Blank Shopify Theme,https://representclo.com/products/represent-owners-club-hoodie-black,ok,2026-11-18T04:35:36+00:00,6,25,90,0,30,4,0,3,6,0,0,4,0,0,0,0,0
+lskd.co,product,clothing,Impulse,https://lskd.co/products/stride-quarter-zip-jacket-ground-coffee,ok,2026-11-18T04:35:42+00:00,1,9,38,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+culturekings.com,product,clothing,Pivotmade theme,https://culturekings.com/products/73-studio-e-day-skull-beanie-black,ok,2026-11-18T04:35:47+00:00,2,17,17,0,3,1,0,0,0,0,0,0,0,0,0,0,0
+peppermayo.com,product,clothing,Peppermayo Fresh,https://peppermayo.com/products/reverie-midi-dress-sunset-stripe,ok,2026-11-18T04:35:52+00:00,3,15,15,0,0,13,0,0,0,0,0,0,0,0,0,0,0
+whitefoxboutique.com,product,clothing,Astro,https://whitefoxboutique.com/products/dangerous-curves-embellished-long-sleeve-mini-dress-dark-cherry,ok,2026-11-18T04:35:56+00:00,1,2,17,6,3,0,0,0,0,0,0,0,0,0,0,0,0
+beginningboutique.com.au,product,clothing,Beginning Boutique,https://beginningboutique.com.au/products/bryce-red-strawberry-diamante-claw-clip,ok,2026-11-18T04:36:01+00:00,8,15,17,0,1,1,0,1,5,0,0,1,1,0,0,0,0
+showpo.com,product,clothing,,https://showpo.com/products/billini-donte-sandals-in-black,ok,2026-11-18T04:36:06+00:00,2,5,8,0,1,4,0,0,0,0,0,0,0,0,0,0,0
+edikted.com,product,clothing,AvexTheme,https://edikted.com/products/acc2296_silver,ok,2026-11-18T04:36:11+00:00,3,4,249,205,9,2,1,0,0,0,0,0,0,0,0,0,0
+knix.com,product,clothing,Knix (v5.7.0),https://knix.com/products/the-night-routine-sleep-kit,ok,2026-11-18T04:36:17+00:00,6,70,39,0,6,4,0,3,0,0,0,0,0,0,0,0,0
+provinceofcanada.com,product,clothing,,https://provinceofcanada.com/products/almost-pyjama-rib-henley-oatmeal-unisex,ok,2026-11-18T04:36:22+00:00,1,116,5,0,2,116,0,0,0,0,0,0,0,0,0,0,0
+cuyana.com,product,clothing,Prestige,https://cuyana.com/products/nova-bag-croco-v1,ok,2026-11-18T04:36:27+00:00,1,1,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+sollybaby.com,product,baby,Pipeline,https://sollybaby.com/products/baby-wrap-carrier-cream-floral,ok,2026-11-18T04:36:31+00:00,3,24,59,2,2,8,3,0,0,0,0,0,0,0,0,0,0
+tegu.com,product,baby,Ella,https://tegu.com/products/babys-first-blocks-15-piece,ok,2026-11-18T04:36:36+00:00,7,30,15,1,1,14,1,2,0,0,1,0,0,0,0,0,0
+stevemadden.com,product,shoes,Dawn,https://stevemadden.com/products/bmavi-chocolate,ok,2026-11-18T04:36:40+00:00,6,57,29,0,10,31,0,0,0,0,0,0,0,0,0,0,0
+allbirds.com,product,shoes,allbirds-theme,https://allbirds.com/products/womens-wool-cruiser-port-port-sole,ok,2026-11-18T04:36:45+00:00,1,2,52,0,26,0,0,2,0,0,0,0,0,0,0,0,0
+rothys.com,product,shoes,DNA,https://rothys.com/products/womens-point-flat-iii-revelvet-cobalt,ok,2026-11-18T04:36:50+00:00,4,16,18,0,14,0,0,1,3,0,0,0,0,0,0,0,0
+koio.co,product,shoes,Rebase,https://koio.co/products/capri-x-in-onyx,ok,2026-11-18T04:36:55+00:00,6,17,67,0,4,0,0,3,8,1,0,0,2,0,0,0,0
+vessi.com,product,shoes,Vessi,https://vessi.com/products/womens-soho-sneaker-white-beam,ok,2026-11-18T04:37:01+00:00,4,21,45,0,1,0,0,0,3,0,0,0,0,0,0,0,0
+birdies.com,product,shoes,Prestige,https://birdies.com/products/womens-flats-goldfinch-15-bracelet-black-velvet,ok,2026-11-18T04:37:06+00:00,2,4,61,0,30,3,0,0,0,0,0,0,0,0,0,0,0
+nisolo.com,product,shoes,Edge,https://nisolo.com/products/womens-leather-mule-woven-brandy,ok,2026-11-18T04:37:11+00:00,3,58,69,6,41,49,3,0,0,0,0,0,0,0,0,0,0
+thursdayboots.com,product,shoes,Atlantic,https://thursdayboots.com/products/w-mens-court-leather-sneaker-wheat,ok,2026-11-18T04:37:15+00:00,3,27,12,0,0,25,0,0,1,0,0,0,0,0,1,0,0
+olivercabell.com,product,shoes,Baseline,https://olivercabell.com/products/gat-ds-stone-mens,ok,2026-11-18T04:37:20+00:00,1,1,29,0,13,0,1,0,0,0,0,0,0,0,0,0,0
+colourpop.com,product,beauty,Colourpop,https://colourpop.com/products/liked-christmas-a-lot-shadow-stix-set,ok,2026-11-18T04:37:25+00:00,7,45,40,0,2,24,0,2,1,0,0,0,0,0,0,0,0
+kyliecosmetics.com,product,beauty,KYLIE,https://kyliecosmetics.com/products/kylies-governors-awards-look-bundle,ok,2026-11-18T04:37:32+00:00,3,16,7,0,5,10,0,0,0,0,0,0,0,0,0,0,0
+glossier.com,product,beauty,Glossier,https://glossier.com/products/pink-zipper-pouch,ok,2026-11-18T04:37:38+00:00,4,51,48,0,12,0,0,0,0,0,0,0,10,0,0,0,0
+olaplex.com,product,beauty,Olaplex Theme,https://olaplex.com/products/the-key-to-shine-set-us,ok,2026-11-18T04:37:42+00:00,2,9,42,0,18,0,0,0,1,0,0,0,0,0,0,0,0
+discoverpilgrim.com,product,beauty,Focal,https://discoverpilgrim.com/products/pilgrim-vanity-bag-3,ok,2026-11-18T04:37:47+00:00,5,25,16,3,5,12,0,3,0,0,0,7,0,0,0,0,0
+jeffreestarcosmetics.com,product,beauty,Jeffrey Star Custom Theme,https://jeffreestarcosmetics.com/products/the-ultimate-powder-kit-5pc-face-brush-set,ok,2026-11-18T04:37:51+00:00,3,5,126,0,12,3,0,0,0,0,0,0,0,0,0,0,0
+fentybeauty.com,product,beauty,Fenty Theme,https://fentybeauty.com/products/micro-duffle-bag-charm-cocoa-nude,ok,2026-11-18T04:37:55+00:00,2,3,7,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+rarebeauty.com,product,beauty,SDG Shopify Skeleton,https://rarebeauty.com/products/warby-parker-x-rare-beauty-elwell-sunglasses-blush-bundle-encourage,ok,2026-11-18T04:38:00+00:00,2,23,20,0,12,0,0,0,0,0,0,0,1,0,0,0,0
+milkmakeup.com,product,beauty,Milk Makeup,https://milkmakeup.com/products/the-dress-code-custom-set,ok,2026-11-18T04:38:05+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+summerfridays.com,product,beauty,Summer Fridays by AW,https://summerfridays.com/products/glossy-travel-case-in-mocha,ok,2026-11-18T04:38:10+00:00,1,8,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+alephbeauty.com,product,beauty,Aleph Beauty,https://alephbeauty.com/products/makeup-artist-appointment,ok,2026-11-18T04:38:15+00:00,4,28,72,43,20,2,10,0,15,1,0,0,0,0,0,0,0
+herbivorebotanicals.com,product,beauty,Horizon,https://herbivorebotanicals.com/products/nova-skincare-set-1,ok,2026-11-18T04:38:20+00:00,7,10,32,0,21,0,1,0,0,1,0,4,1,0,0,0,0
+kosas.com,product,beauty,Kosas,https://kosas.com/products/brighten-blur-set,ok,2026-11-18T04:38:25+00:00,3,7,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+iliabeauty.com,product,beauty,ILIA,https://iliabeauty.com/products/the-mini-overglaze-lip-gloss-trio,ok,2026-11-18T04:38:29+00:00,2,6,24,3,1,0,3,0,0,0,0,0,0,0,0,0,0
+meritbeauty.com,product,beauty,Starter theme,https://meritbeauty.com/products/the-compact-merit-x-completedworks,ok,2026-11-18T04:38:34+00:00,5,5,20,1,8,0,1,0,0,0,0,0,1,0,0,0,0
+saiehello.com,product,beauty,Saie,https://saiehello.com/products/rockys-jet-set-kit,ok,2026-11-18T04:38:39+00:00,5,30,23,0,8,0,0,0,7,0,0,0,0,0,0,0,0
+glowrecipe.com,product,beauty,Simplistic,https://glowrecipe.com/products/glass-balm-set,ok,2026-11-18T04:38:45+00:00,2,2,15,0,10,0,0,0,0,0,0,0,0,0,0,0,0
+tower28beauty.com,product,beauty,Tower,https://tower28beauty.com/products/mini-tote,ok,2026-11-18T04:38:49+00:00,3,7,52,0,2,1,0,0,0,0,0,0,0,0,0,0,0
+bubbleskincare.com,product,beauty,,https://bubbleskincare.com/products/show-stopper,ok,2026-11-18T04:38:54+00:00,7,51,13,0,4,28,0,0,3,1,0,1,0,0,0,0,0
+cocokind.com,product,beauty,shopify-vite,https://cocokind.com/products/calming-magnesium-cushion,ok,2026-11-18T04:38:59+00:00,3,4,22,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+necessaire.com,product,beauty,Nécessaire,https://necessaire.com/products/the-body-wash-the-body-exfoliator-olibanum,ok,2026-11-18T04:39:03+00:00,3,16,19,0,6,8,0,0,0,0,0,0,0,0,0,0,0
+oseamalibu.com,product,beauty,Ocean,https://oseamalibu.com/products/undaria-algae-body-oil-9-6-fl-oz,ok,2026-11-18T04:39:07+00:00,0,0,7,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+theouai.com,product,beauty,OUAI,https://theouai.com/products/hair-body-fragrance-mist-morocco,ok,2026-11-18T04:39:11+00:00,5,15,60,1,0,0,2,2,0,0,0,0,0,0,0,0,0
+mykitsch.com,product,beauty,Unick,https://mykitsch.com/products/kitsch-holiday-advent-calendar-2026,ok,2026-11-18T04:39:17+00:00,3,33,54,0,1,6,0,0,0,0,0,0,0,0,0,0,0
+beautyblender.com,product,beauty,Prestige,https://beautyblender.com/products/eclipse-blend-store-2-piece-set,ok,2026-11-18T04:39:22+00:00,2,3,22,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+versedskin.com,product,beauty,DNA,https://versedskin.com/products/lips-2,ok,2026-11-18T04:39:27+00:00,2,6,30,0,21,2,0,0,0,0,0,0,0,0,0,0,0
+florencebymills.com,product,beauty,dAgency,,no_products,2026-11-18T04:39:32+00:00,,,,,,,,,,,,,,,,,
+soldejaneiro.com,product,beauty,Iakoe,https://soldejaneiro.com/products/sol-passport-splash-of-sol,ok,2026-11-18T04:39:32+00:00,1,1,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+herocosmetics.com,product,beauty,Hero Cosmetics,https://herocosmetics.us/products/candy-hair-clips,ok,2026-11-18T04:39:37+00:00,1,1,21,0,18,1,0,0,0,0,0,0,0,0,0,0,0
+bondisands.com,product,beauty,Process Creative,https://bondisands.com/products/exfoliation-mitt,ok,2026-11-18T04:39:42+00:00,5,14,52,0,27,6,0,1,0,0,0,0,0,0,0,0,0
+frankbody.com,product,beauty,Wonder,https://frankbody.com/products/little-lip-treats-kit,ok,2026-11-18T04:39:47+00:00,3,5,45,0,18,1,0,0,0,0,0,0,2,0,0,0,0
+jonesroadbeauty.com,product,beauty,Base,https://jonesroadbeauty.com/products/the-illuminator,ok,2026-11-18T04:39:51+00:00,6,15,26,0,4,4,0,0,4,0,0,0,0,0,0,0,0
+dedcool.com,product,beauty,Dusk,https://dedcool.com/products/mochi-milk-fragrance-duo-2,ok,2026-11-18T04:39:55+00:00,3,7,49,0,22,1,0,0,0,0,0,0,0,0,0,0,0
+resilia.shop,product,supplements,Dawn,https://resilia.shop/products/cinnamon-otp,ok,2026-11-18T04:39:59+00:00,3,4,24,0,3,2,0,0,0,0,0,0,0,0,0,0,0
+ritual.com,product,supplements,Ritual Foundation,https://ritual.com/products/hers-his-daily-health-support-ritual,ok,2026-11-18T04:40:04+00:00,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+gruns.co,product,supplements,Gruns,https://gruns.co/products/grinch-cherry-lime,ok,2026-11-18T04:40:09+00:00,0,0,49,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+goli.com,product,supplements,LangShop Theme,https://goli.com/products/goli-stiks-trio-bundle,ok,2026-11-18T04:40:14+00:00,3,28,32,0,0,9,0,0,0,0,0,0,0,0,0,0,0
+ghostlifestyle.com,product,supplements,Ghost x Sparky Redesign,https://ghostlifestyle.com/products/ghost-hydration-case-merica-pop,ok,2026-11-18T04:40:18+00:00,4,9,25,5,14,0,5,0,0,1,0,0,2,0,0,0,0
+transparentlabs.com,product,supplements,TL x SB,https://transparentlabs.com/products/creatine-hmb-variety-pack,ok,2026-11-18T04:40:23+00:00,5,42,96,0,28,33,1,0,0,0,0,0,0,0,1,0,0
+rysesupps.com,product,supplements,,https://rysesupps.com/products/fall-loaded-protein-bundle,ok,2026-11-18T04:40:28+00:00,5,20,39,1,30,3,4,0,7,1,0,0,0,0,0,0,0
+bloomnu.com,product,supplements,Themekit template theme,https://bloomnu.com/products/rocket-blast-bundle,ok,2026-11-18T04:40:32+00:00,4,7,49,1,17,4,1,0,0,0,0,0,0,0,0,0,0
+livemomentous.com,product,supplements,Themekit template theme,https://livemomentous.com/products/pre-workout,ok,2026-11-18T04:40:36+00:00,2,7,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+liquid-iv.com,product,supplements,,https://liquid-iv.com/products/ashlee-simpson-holiday-chaos-bundle-with-mug,ok,2026-11-18T04:40:41+00:00,3,10,26,0,1,7,0,0,0,0,0,0,0,0,0,0,0
+gorillamind.com,product,supplements,Unified Theme,https://gorillamind.com/products/gorilla-mind-core-logo-tee,ok,2026-11-18T04:40:46+00:00,5,13,20,0,1,1,0,0,0,3,0,0,0,0,0,0,0
+deathwishcoffee.com,product,food,Dawn,https://deathwishcoffee.com/products/whole-bean-valhalla-java-lto-bag-valhalla-java-medallion-mug,ok,2026-11-18T04:40:51+00:00,3,105,36,0,4,101,0,0,1,0,0,0,0,0,0,0,0
+theloadedteashop.com,product,food,Elixir,https://theloadedteashop.com/products/creamsicle-caffeine-free,ok,2026-11-18T04:40:56+00:00,1,7,46,0,2,7,0,0,0,0,0,0,0,0,0,0,0
+flybyjing.com,product,food,Shapes,https://flybyjing.com/products/triple-threat-gift-box,ok,2026-11-18T04:41:00+00:00,2,6,27,2,0,4,2,0,0,0,0,0,0,0,0,0,0
+partakefoods.com,product,food,Partake (hasmerit.co),https://partakefoods.com/products/girl-scouts-sparkables,ok,2026-11-18T04:41:05+00:00,2,9,67,2,13,7,2,0,0,0,0,0,0,0,0,0,0
+graza.co,product,food,Graza,https://graza.co/products/the-graza-tote,ok,2026-11-18T04:41:09+00:00,1,5,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+brightland.co,product,food,Impact,https://brightland.co/products/the-holiday-hosting-set-2026,ok,2026-11-18T04:41:13+00:00,6,16,53,0,12,7,0,0,1,0,0,0,1,0,0,0,0
+magicspoon.com,product,food,,https://magicspoon.com/products/variety6-protein-with-marshmallows,ok,2026-11-18T04:41:18+00:00,2,4,50,0,26,1,0,0,0,0,0,0,0,0,0,0,0
+drinkolipop.com,product,food,Olipop,https://drinkolipop.com/products/pomegranate-sparkle,ok,2026-11-18T04:41:24+00:00,0,0,39,0,20,0,0,0,0,0,0,0,0,0,0,0,0
+liquiddeath.com,product,food,,https://liquiddeath.com/products/liquid-death-x-half-sumo-death-match-boxing-gloves,ok,2026-11-18T04:41:29+00:00,2,5,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+athleticbrewing.com,product,food,Athletic Brewing Co.,https://athleticbrewing.com/products/blackberry-sour,ok,2026-11-18T04:41:34+00:00,1,1,64,0,22,0,0,0,0,0,0,0,0,0,0,0,0
+onyxcoffeelab.com,product,food,Onyx,https://onyxcoffeelab.com/products/trophy-shirt,ok,2026-11-18T04:41:38+00:00,2,3,7,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+lairdsuperfood.com,product,food,Horizon,https://lairdsuperfood.com/products/electrolyte-coffee,ok,2026-11-18T04:41:42+00:00,8,19,47,0,13,1,0,4,6,0,0,0,1,0,1,0,0
+cometeer.com,product,food,Shiro,https://cometeer.com/products/peak-season-sunday-drive,ok,2026-11-18T04:41:47+00:00,0,0,12,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+drinktrade.com,product,food,Shopify Shell theme,https://drinktrade.com/products/cold-brew-coffee-gift-subscription,ok,2026-11-18T04:41:52+00:00,3,19,42,0,3,11,0,0,7,0,0,0,0,0,0,0,0
+mudwtr.com,product,food,mudwtr,https://mudwtr.com/products/psl-bag,ok,2026-11-18T04:41:57+00:00,4,4,41,1,11,0,1,0,0,0,0,0,1,0,0,0,0
+lesserevil.com,product,food,Dawn,https://lesserevil.com/products/sweet-salty,ok,2026-11-18T04:42:02+00:00,1,1,35,1,4,0,1,0,0,0,0,0,0,0,0,0,0
+hukitchen.com,product,food,,https://hukitchen.com/products/semi-sweet-chocolate-baking-chips,ok,2026-11-18T04:42:07+00:00,4,4,19,0,6,1,0,0,0,0,0,0,0,0,0,0,0
+tonyschocolonely.com,product,food,Tony's Theme,https://tonyschocolonely.com/products/milk-hazelnut,ok,2026-11-18T04:42:12+00:00,2,2,29,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+shop.momofuku.com,product,food,Ignition,https://shop.momofuku.com/products/sweet-and-sour-sauce,ok,2026-11-18T04:42:16+00:00,3,5,21,0,5,1,0,0,0,0,0,0,0,0,0,1,0
+diasporaco.com,product,food,Pebble,https://diasporaco.com/products/the-dinner-party-collection,ok,2026-11-18T04:42:21+00:00,3,11,107,0,5,6,0,0,0,0,0,0,0,0,0,0,0
+brooklinen.com,product,home,Dawn,https://brooklinen.com/products/linen-shower-curtain-last-call,ok,2026-11-18T04:42:26+00:00,1,9,18,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+stanley1913.com,product,home,Dawn,https://stanley1913.com/products/the-all-day-julienne-mini-cooler-10-can,ok,2026-11-18T04:42:31+00:00,4,18,39,0,2,11,0,1,0,0,0,0,5,0,0,0,0
+ollies.com,product,home,Ollies,https://ollies.com/products/lehi-valley-golden-caramel-corn-puffs-13-oz,ok,2026-11-18T04:42:36+00:00,2,3,34,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+thefleececompany.com,product,home,Be Yours,https://thefleececompany.com/products/wireless-wall-sconce,ok,2026-11-18T04:42:40+00:00,3,23,31,0,3,21,0,0,0,0,0,0,0,0,0,0,0
+clalena.com,product,home,Shrine PRO,https://clalena.com/products/nagelgel-stift-pao,ok,2026-11-18T04:42:45+00:00,5,6,84,1,25,1,1,1,0,0,0,0,0,0,1,0,0
+parachutehome.com,product,home,Dawn,https://parachutehome.com/products/gwp-fingertip-mosaic-towel-set-multi,ok,2026-11-18T04:42:49+00:00,4,33,64,0,61,0,0,0,12,0,0,0,0,0,0,0,0
+fromourplace.com,product,home,Our Place,https://fromourplace.com/products/petite-perfect-pot,ok,2026-11-18T04:42:53+00:00,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+greatjonesgoods.com,product,home,Great Jones,https://greatjonesgoods.com/products/great-jones-gift-card,ok,2026-11-18T04:42:58+00:00,7,25,19,0,5,12,0,0,1,2,0,3,2,0,2,0,0
+hexclad.com,product,home,Shiro,https://hexclad.com/products/small-magnetic-knife-block-walnut,ok,2026-11-18T04:43:02+00:00,5,15,47,0,18,3,1,0,0,0,0,0,1,0,0,0,0
+bollandbranch.com,product,home,,https://bollandbranch.com/products/spa-bath-towel-set-of-2_,ok,2026-11-18T04:43:07+00:00,4,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+buffy.co,product,home,Dawn,https://buffy.co/products/organic-cotton-waffle-throw,ok,2026-11-18T04:43:12+00:00,2,4,8,0,3,2,0,0,2,0,0,0,0,0,0,0,0
+bearaby.com,product,home,Dawn,https://bearaby.com/products/velvet-napper,ok,2026-11-18T04:43:17+00:00,6,41,53,0,12,19,0,2,1,0,0,0,0,0,0,0,0
+floydhome.com,product,home,HH Floyd,https://floydhome.com/products/the-media-console,ok,2026-11-18T04:43:22+00:00,2,5,26,1,6,4,1,0,0,0,0,0,0,0,0,0,0
+blueland.com,product,home,,https://blueland.com/products/holidays-at-home-hand-soaps-tablet-refills,ok,2026-11-18T04:43:26+00:00,6,24,51,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+publicgoods.com,product,home,Carbon,https://publicgoods.com/products/assorted-candle-set-12-3-oz,ok,2026-11-18T04:43:31+00:00,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+branchfurniture.com,product,home,,https://branchfurniture.com/products/open-box-standing-desk,ok,2026-11-18T04:43:36+00:00,7,90,143,0,53,21,0,2,2,0,0,0,1,0,0,0,0
+otherland.com,product,candles,Otherland,https://otherland.com/products/fireside-edit,ok,2026-11-18T04:43:43+00:00,4,19,36,0,13,9,0,0,1,0,0,0,0,0,0,0,0
+boysmells.com,product,candles,Revyrie Commerce Volt,https://boysmells.com/products/minty-candle-9oz,ok,2026-11-18T04:43:48+00:00,4,18,14,2,6,14,2,1,0,0,0,0,0,0,0,0,0
+brooklyncandlestudio.com,product,candles,Prestige,https://brooklyncandlestudio.com/products/thai-basil-xl-3-wick-candle,ok,2026-11-18T04:43:52+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+homesick.com,product,candles,Sleek,https://homesick.com/products/parks-project-zion-candle,ok,2026-11-18T04:43:56+00:00,2,11,46,0,13,10,0,0,0,1,0,0,0,0,0,0,0
+voluspa.com,product,candles,Turbo,https://voluspa.com/products/japonica-archive-12-votive-gift-set-2,ok,2026-11-18T04:44:00+00:00,5,30,18,0,1,0,0,0,1,0,0,0,1,0,0,0,0
+pfcandleco.com,product,candles,Baseline,https://pfcandleco.com/products/the-celestial-bundle,ok,2026-11-18T04:44:05+00:00,3,5,8,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+puravidabracelets.com,product,jewelry,Pura Vida,https://puravidabracelets.com/products/silver-harper-textured-heart-charm,ok,2026-11-18T04:44:10+00:00,5,20,72,0,12,10,5,2,2,0,0,0,0,0,0,0,0
+gorjana.com,product,jewelry,Gorjana,https://gorjana.com/products/roxie-trio-bracelet-gold,ok,2026-11-18T04:44:15+00:00,2,11,26,0,0,6,0,0,0,0,0,0,0,0,0,0,0
+missoma.com,product,jewelry,MISSOMA,https://missoma.com/products/hera-dome-triple-small-hoop-earrings-18ct-gold-plated,ok,2026-11-18T04:44:20+00:00,9,38,109,7,1,0,7,1,18,0,0,1,0,0,2,0,0
+astridandmiyu.com,product,jewelry,Astrid & Miyu by BAO,https://astridandmiyu.com/products/new-astrid-story-chain-necklace-in-solid-white-gold,ok,2026-11-18T04:44:26+00:00,7,14,309,27,5,2,4,2,1,0,0,0,0,0,1,0,0
+camillebrinch.com,product,jewelry,CBJ,https://camillebrinch.com/products/gift-camille-brinch-limited-2026-gold-plated,ok,2026-11-18T04:44:32+00:00,4,35,56,37,0,26,0,0,7,0,0,0,1,0,0,0,0
+auratenewyork.com,product,jewelry,Aurate New York,https://auratenewyork.com/products/stainless-steel-everyday-bracelet-stack,ok,2026-11-18T04:44:36+00:00,4,19,23,0,12,1,0,0,0,0,0,0,0,0,0,0,0
+ringconcierge.com,product,jewelry,Ascent,https://ringconcierge.com/products/lg797616231,ok,2026-11-18T04:44:41+00:00,1,1,5,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+linjer.co,product,jewelry,,https://linjer.co/products/floating-pearl-necklace-10k-gold-caris,ok,2026-11-18T04:44:46+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vincerocollective.com,product,watches,,https://vincerocollective.com/products/the-icon-automatic-factor-x-edition,ok,2026-11-18T04:44:50+00:00,5,21,27,0,0,13,0,0,0,0,0,1,0,0,0,0,0
+nordgreen.com,product,watches,Atelier,https://nordgreen.com/products/native-32mm-gold-watch-with-white-dial-and-gold-mesh-strap,ok,2026-11-18T04:44:54+00:00,6,22,46,2,8,1,2,0,1,0,0,0,1,0,0,0,0
+danielwellington.com,product,watches,Taiga,https://danielwellington.com/products/ophelia-mini-mesh-silver-classic-tennis-bracelet-silver,ok,2026-11-18T04:44:59+00:00,2,4,15,0,0,2,0,0,2,0,0,0,0,0,0,0,0
+originalgrain.com,product,watches,Dawn,https://originalgrain.com/products/burlwood-3-watch-display,ok,2026-11-18T04:45:05+00:00,5,48,94,5,7,32,1,0,0,0,0,0,0,0,1,0,0
+mvmt.com,product,watches,Prestige,https://mvmt.com/products/odyssey-ii-carnation-gold-25mm-28000352,ok,2026-11-18T04:45:10+00:00,3,4,74,0,11,0,0,0,0,0,0,1,0,0,0,0,0
+dagnedover.com,product,bags,,https://dagnedover.com/products/reid-computer-sling-16-inch-onyx,ok,2026-11-18T04:45:14+00:00,3,12,35,0,6,10,0,0,0,0,0,1,0,0,0,0,0
+peakdesign.com,product,bags,,https://peakdesign.com/products/roller-lite-trunk-95l-bundle-1-black,ok,2026-11-18T04:45:20+00:00,0,0,6,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+nomatic.com,product,bags,Stiletto,https://nomatic.com/products/system-lightweight-packing-cube-set,ok,2026-11-18T04:45:25+00:00,4,12,72,4,27,5,5,0,0,0,0,0,0,0,0,0,0
+herschel.com,product,bags,iamota Theme Foundation,https://herschel.com/products/kaslo-camera-bag-tech,ok,2026-11-18T04:45:31+00:00,3,13,37,0,24,0,0,0,0,0,0,0,1,0,0,0,0
+loandsons.com,product,bags,Pitch,https://loandsons.com/products/catalina-air-recycled-nylon-black,ok,2026-11-18T04:45:35+00:00,5,21,30,4,2,0,3,0,0,0,0,13,1,0,0,0,0
+monos.com,product,bags,Monos,https://monos.com/products/milspec-heritage-g-class,ok,2026-11-18T04:45:40+00:00,3,51,12,0,0,41,0,0,1,0,0,0,0,0,0,0,0
+calpaktravel.com,product,bags,Vanilla,https://calpaktravel.com/products/luka-3-piece-bag-charm-gift-set,ok,2026-11-18T04:45:45+00:00,1,1,27,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+beistravel.com,product,bags,BEIS,https://beistravel.com/products/the-card-holder-in-midnight,ok,2026-11-18T04:45:50+00:00,3,5,24,0,11,3,0,0,0,0,0,1,0,0,0,0,0
+tourparavel.com,product,bags,Underscore,https://tourparavel.com/products/plp-spot-20-off-sign-up-2026-uk-au-only,ok,2026-11-18T04:45:54+00:00,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boat-lifestyle.com,product,electronics,Focal,https://boat-lifestyle.com/products/boat-bassheads-210-active-black-buy-1-get-1-free,ok,2026-11-18T04:46:00+00:00,5,121,49,1,0,71,1,0,0,0,0,0,0,0,0,1,0
+gonoise.com,product,electronics,Section plus,https://gonoise.com/products/noise-master-buds-open-ows-secret-link,ok,2026-11-18T04:46:04+00:00,6,31,42,0,0,5,0,11,0,0,0,0,1,0,0,0,0
+plaud.ai,product,electronics,TL,https://plaud.ai/products/plaud-one,ok,2026-11-18T04:46:09+00:00,4,31,27,0,18,21,0,0,1,0,0,0,0,0,0,0,0
+jbhifi.com.au,product,electronics,JB Hi-Fi,https://jbhifi.com.au/products/dell-optiplex-7090-sff-intel-i5-11500-2-70ghz-16gb-ram-256gb-ssd-win-11-refurbished-very-good,ok,2026-11-18T04:46:13+00:00,3,5,18,0,0,0,0,0,3,0,0,0,0,0,0,0,0
+mous.co,product,electronics,Quickfire,https://mous.co/products/super-thin-plus-phone-case-stone,ok,2026-11-18T04:46:18+00:00,7,31,153,10,54,7,10,0,3,0,0,0,0,0,0,0,0
+pelacase.com,product,electronics,Pela Case rebuild,https://pelacase.com/products/clear-iphone-18-pro-max-case-with-noir-ridge-magsafe-included,ok,2026-11-18T04:46:23+00:00,0,0,33,0,20,0,0,0,0,0,0,0,0,0,0,0,0
+satechi.net,product,electronics,DYODE,https://satechi.net/products/findall-magnetic-wallet-stand,ok,2026-11-18T04:46:28+00:00,2,13,28,0,13,0,0,0,0,0,0,0,0,0,0,0,0
+twelvesouth.com,product,electronics,Twelve South,https://twelvesouth.com/products/cablesnap-coastal,ok,2026-11-18T04:46:37+00:00,4,28,42,0,7,0,0,0,3,0,0,22,0,0,0,0,0
+keychron.com,product,electronics,Enterprise,https://keychron.com/products/keychron-t1-he-wireless-adjustable-trackball-mouse,ok,2026-11-18T04:46:41+00:00,3,22,77,8,18,12,8,0,2,0,0,0,0,0,0,0,0
+wildone.com,product,pets,Dawn,https://wildone.com/products/cat-harness-leash-collar-kit,ok,2026-11-18T04:46:47+00:00,4,146,48,0,15,121,0,0,0,0,0,0,0,0,0,0,0
+fablepets.com,product,pets,Shopify Theme Lab,https://fablepets.com/products/reggie-raccoon-huggleflatties™-durable-plush-dog-toy,ok,2026-11-18T04:46:51+00:00,3,9,14,0,1,7,0,1,0,0,0,0,0,0,0,0,0
+pupford.com,product,pets,Dawn,https://pupford.com/products/crunchies-trio,ok,2026-11-18T04:46:56+00:00,5,31,25,1,12,27,1,0,0,0,0,0,0,0,0,0,0
+maxbone.com,product,pets,Maxbone,https://maxbone.com/products/terrain-gf-beef,ok,2026-11-18T04:47:01+00:00,7,47,40,0,23,19,0,0,0,0,0,0,1,0,0,0,0
+earthrated.com,product,pets,iamota Theme Foundation,https://earthrated.com/products/bag-refills,ok,2026-11-18T04:47:05+00:00,6,17,46,0,25,10,0,0,2,0,0,0,1,0,0,0,0
+decathlon.com,product,outdoors,Horizon,https://decathlon.com/products/quechua-men-s-nh100-warm-and-water-repellent-hiking-pants,ok,2026-11-18T04:47:11+00:00,5,15,31,2,1,2,2,0,0,0,0,0,1,0,0,0,0
+radpowerbikes.com,product,outdoors,Fluid Framework,https://radpowerbikes.com/products/gift-card,ok,2026-11-18T04:47:15+00:00,7,17,19,0,0,0,0,0,0,0,0,0,2,0,0,0,0
+rumpl.com,product,outdoors,Base,https://rumpl.com/products/shady-pouch-cypress,ok,2026-11-18T04:47:19+00:00,2,6,1,0,0,0,0,1,5,0,0,0,0,0,0,0,0
+orukayak.com,product,outdoors,,https://orukayak.com/products/oru-beach-sport-white-edition,ok,2026-11-18T04:47:24+00:00,2,11,28,0,23,10,0,0,1,0,0,0,0,0,0,0,0
+bioliteenergy.com,product,outdoors,Stiletto,https://bioliteenergy.com/products/basecharge-600-portable-power-station,ok,2026-11-18T04:47:29+00:00,3,44,85,0,0,15,0,0,0,0,0,0,0,0,0,0,0
+goodr.com,product,outdoors,goodr,https://goodr.com/products/pineapple-painkillers,ok,2026-11-18T04:47:34+00:00,5,32,26,1,3,6,1,1,16,0,0,0,0,0,0,0,0
+manduka.com,product,outdoors,Manduka,https://manduka.com/products/vahni-headband,ok,2026-11-18T04:47:38+00:00,3,4,29,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+therabody.com,product,outdoors,Therabody Theme,https://therabody.com/products/recoverypulse-calf-medium,ok,2026-11-18T04:47:43+00:00,2,3,55,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+worldofbooks.com,product,books,Dawn,https://worldofbooks.com/products/les-profs-tome-16-1-2-3-rentree-book-9782818925317,ok,2026-11-18T04:47:48+00:00,4,8,32,0,4,5,0,0,1,0,0,0,1,0,0,0,0
+indigo.ca,product,books,Dawn,https://indigo.ca/products/patria-portuguese-political-poetry-of-national-betrayal-and-the-hope-of-renewal,ok,2026-11-18T04:47:52+00:00,3,5,65,0,36,2,0,0,0,0,0,1,0,0,0,0,0
+myfonts.com,product,digital,myfonts,https://www.myfonts.com/products/modern-type-collection-package-1269567,ok,2026-11-18T04:47:57+00:00,3,4,43,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+tattly.com,product,art,Horizon,,no_products,2026-11-18T04:48:02+00:00,,,,,,,,,,,,,,,,,
+tecovas.com,product,shoes,,https://tecovas.com/products/the-garrett-peanut-ostrich,ok,2026-11-18T04:48:02+00:00,1,5,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+negativeunderwear.com,product,clothing,Dawn,https://negativeunderwear.com/products/pulse-feel-good-varsity-sock,ok,2026-11-18T04:48:07+00:00,2,2,8,0,5,1,1,0,0,0,0,0,0,0,0,0,0
+mackweldon.com,product,clothing,Anatta,https://mackweldon.com/products/9-pack-18-hour-jersey-boxer-briefs,ok,2026-11-18T04:48:12+00:00,2,6,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+lunya.co,product,clothing,Symmetry,https://lunya.co/products/mens-soft-modal-boxer-brief-immersed-black-1,ok,2026-11-18T04:48:17+00:00,0,0,18,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+ministryofsupply.com,product,clothing,,https://ministryofsupply.com/products/mens-composite-merino-boxer-brief-slate,ok,2026-11-18T04:48:21+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+fellowproducts.com,product,home,Fellow Foundation,https://fellowproducts.com/products/chai-bright-shopify-collective,ok,2026-11-18T04:48:25+00:00,2,3,9,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+misen.com,product,home,Misen Custom Theme,https://misen.com/products/misenware-12-piece-mixed-black,ok,2026-11-18T04:48:30+00:00,5,22,69,1,12,16,1,0,0,0,0,0,1,0,0,0,0
+riflepaperco.com,product,art,Pact,https://riflepaperco.com/products/jigsaw-puzzle-haunted-house,ok,2026-11-18T04:48:44+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ugmonk.com,product,art,Tinker,https://ugmonk.com/products/the-ultimate-analog-black-friday-bundle,ok,2026-11-18T04:48:48+00:00,6,22,18,0,0,1,1,0,0,0,0,12,1,0,0,0,0
+fashionnova.com,home,clothing,,https://fashionnova.com/,ok,2026-11-18T07:30:02+00:00,0,0,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+aloyoga.com,home,clothing,Production (refs/tags/re),https://aloyoga.com/,ok,2026-11-18T07:30:06+00:00,7,12,36,14,6,1,0,0,2,1,0,0,0,0,0,0,0
+endclothing.com,home,clothing,By Association Only,https://endclothing.com/,ok,2026-11-18T07:30:11+00:00,3,12,171,0,47,6,0,0,0,0,0,3,0,0,0,0,0
+comfrt.com,home,clothing,,https://comfrt.com/,ok,2026-11-18T07:30:15+00:00,4,10,34,0,8,0,0,0,1,1,0,0,0,0,0,0,0
+boden.com,home,clothing,fuse2.0,https://www.boden.com/,ok,2026-11-18T07:30:21+00:00,3,17,33,2,9,2,2,0,0,0,0,0,0,0,0,0,0
+us.princesspolly.com,home,clothing,Princess Polly by Pivot,https://us.princesspolly.com/,ok,2026-11-18T07:30:26+00:00,5,25,15,0,0,0,1,0,4,0,0,0,0,0,0,0,0
+windsorstore.com,home,clothing,Windsor,https://windsorstore.com/,ok,2026-11-18T07:30:30+00:00,9,284,106,6,1,8,7,0,12,0,0,0,3,0,0,0,0
+libas.in,home,clothing,Impulse,https://libas.in/,ok,2026-11-18T07:30:35+00:00,3,26,44,2,22,0,2,0,23,0,0,0,0,0,0,0,0
+neweracap.com,home,clothing,Dawn,https://neweracap.com/,ok,2026-11-18T07:30:39+00:00,1,1,27,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+chubbies.com,home,clothing,,https://chubbies.com/,ok,2026-11-18T07:30:44+00:00,11,96,20,1,13,7,1,27,25,1,0,0,0,0,0,1,0
+taylorstitch.com,home,clothing,Taylor Stitch Retail Web,https://taylorstitch.com/,ok,2026-11-18T07:30:48+00:00,1,4,68,0,0,0,0,0,0,0,0,0,4,0,0,0,0
+outdoorvoices.com,home,clothing,Outdoor Voices Theme,https://outdoorvoices.com/,ok,2026-11-18T07:30:53+00:00,0,0,229,0,72,0,0,0,0,0,0,0,0,0,0,0,0
+everlane.com,home,clothing,Dawn,https://everlane.com/,ok,2026-11-18T07:30:57+00:00,2,20,26,24,0,0,17,0,3,0,0,0,0,0,0,0,0
+tentree.com,home,clothing,Shopify Theme Lab,https://tentree.com/,ok,2026-11-18T07:31:02+00:00,2,24,29,0,20,6,0,0,18,0,0,0,0,0,0,0,0
+kotn.com,home,clothing,Skeleton,https://kotn.com/,ok,2026-11-18T07:31:07+00:00,4,9,14,2,12,2,2,0,4,0,0,0,0,0,0,0,0
+frankandoak.com,home,clothing,Symmetry,https://frankandoak.com/,ok,2026-11-18T07:31:11+00:00,2,6,63,0,42,1,0,0,0,0,0,0,0,0,0,0,0
+pangaia.com,home,clothing,Adastra,https://pangaia.com/,ok,2026-11-18T07:31:16+00:00,2,12,29,11,0,0,11,0,0,0,0,0,0,0,0,0,0
+girlfriend.com,home,clothing,Palo Alto,https://girlfriend.com/,ok,2026-11-18T07:31:20+00:00,3,7,19,3,0,0,2,0,4,0,0,0,0,0,0,0,0
+tradlands.com,home,clothing,Turbo,https://tradlands.com/,ok,2026-11-18T07:31:24+00:00,4,12,64,38,3,1,7,0,3,0,0,0,0,0,0,0,0
+outerknown.com,home,clothing,,https://outerknown.com/,ok,2026-11-18T07:31:29+00:00,4,15,38,4,5,0,6,2,6,0,0,0,0,0,0,0,0
+marinelayer.com,home,clothing,Marine Layer Theme,https://marinelayer.com/,ok,2026-11-18T07:31:35+00:00,3,7,45,0,36,0,2,0,4,0,0,0,0,0,0,0,0
+birddogs.com,home,clothing,,https://birddogs.com/,ok,2026-11-18T07:31:40+00:00,1,60,80,0,20,60,0,0,0,0,0,0,0,0,0,0,0
+tommyjohn.com,home,clothing,,https://tommyjohn.com/,ok,2026-11-18T07:31:46+00:00,3,8,31,0,21,1,0,0,0,0,0,0,0,0,0,0,0
+cotopaxi.com,home,clothing,Cotopaxi,https://cotopaxi.com/,ok,2026-11-18T07:31:54+00:00,2,6,16,0,3,3,0,0,3,0,0,0,0,0,0,0,0
+velasca.com,home,clothing,,https://velasca.com/,ok,2026-11-18T07:31:59+00:00,4,10,25,1,7,5,1,3,1,0,0,0,0,0,0,0,0
+gymreapers.com,home,clothing,,https://gymreapers.com/,ok,2026-11-18T07:32:03+00:00,3,15,107,0,11,8,0,0,6,0,0,0,0,0,0,0,0
+youngla.com,home,clothing,Prestige,https://youngla.com/,ok,2026-11-18T07:32:09+00:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+representclo.com,home,clothing,Blank Shopify Theme,https://representclo.com/,ok,2026-11-18T07:32:14+00:00,5,12,14,0,13,0,0,2,3,0,0,4,0,0,0,0,0
+lskd.co,home,clothing,Impulse,https://lskd.co/,ok,2026-11-18T07:32:18+00:00,0,0,20,0,12,0,0,0,0,0,0,0,0,0,0,0,0
+culturekings.com,home,clothing,Pivotmade theme,https://culturekings.com/,ok,2026-11-18T07:32:24+00:00,4,35,117,0,8,1,0,0,0,0,0,0,0,0,0,0,0
+peppermayo.com,home,clothing,Peppermayo Fresh,https://peppermayo.com/,ok,2026-11-18T07:32:29+00:00,4,13,36,5,10,5,5,0,0,0,0,0,0,0,0,0,0
+whitefoxboutique.com,home,clothing,Astro,https://whitefoxboutique.com/,ok,2026-11-18T07:32:35+00:00,2,6,12,3,8,0,0,0,2,0,0,0,0,0,0,0,0
+beginningboutique.com.au,home,clothing,Beginning Boutique,https://beginningboutique.com.au/,ok,2026-11-18T07:32:41+00:00,5,15,28,1,2,5,0,1,1,0,0,0,0,0,0,0,0
+showpo.com,home,clothing,,https://showpo.com/,ok,2026-11-18T07:32:45+00:00,3,7,42,0,3,3,0,0,3,0,0,0,0,0,0,0,0
+edikted.com,home,clothing,AvexTheme,https://edikted.com/,ok,2026-11-18T07:32:49+00:00,2,3,376,205,23,2,1,0,0,0,0,0,0,0,0,0,0
+knix.com,home,clothing,Knix (v5.7.0),https://knix.com/,ok,2026-11-18T07:32:55+00:00,6,79,39,0,19,6,0,3,5,0,0,0,0,0,0,0,0
+provinceofcanada.com,home,clothing,,https://provinceofcanada.com/,ok,2026-11-18T07:33:01+00:00,2,143,32,0,24,137,0,0,6,0,0,0,0,0,0,0,0
+cuyana.com,home,clothing,Prestige,https://cuyana.com/,ok,2026-11-18T07:33:05+00:00,1,3,11,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+sollybaby.com,home,baby,Pipeline,https://sollybaby.com/,ok,2026-11-18T07:33:09+00:00,2,2,95,2,0,0,1,0,0,0,0,0,0,0,0,0,0
+tegu.com,home,baby,Ella,https://tegu.com/,ok,2026-11-18T07:33:14+00:00,8,38,29,4,4,24,4,2,1,0,1,0,0,0,0,0,0
+stevemadden.com,home,shoes,Dawn,https://stevemadden.com/,ok,2026-11-18T07:33:18+00:00,3,38,88,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+allbirds.com,home,shoes,allbirds-theme,https://allbirds.com/,ok,2026-11-18T07:33:23+00:00,1,2,38,0,12,0,0,2,0,0,0,0,0,0,0,0,0
+rothys.com,home,shoes,DNA,https://rothys.com/,ok,2026-11-18T07:33:28+00:00,5,25,21,0,17,1,0,1,11,0,0,0,0,0,0,0,0
+koio.co,home,shoes,Rebase,https://koio.co/,ok,2026-11-18T07:33:33+00:00,4,16,50,0,4,0,0,3,11,1,0,0,1,0,0,0,0
+vessi.com,home,shoes,Vessi,https://vessi.com/,ok,2026-11-18T07:33:38+00:00,3,4,57,0,2,0,0,1,0,0,0,0,0,0,0,0,0
+birdies.com,home,shoes,Prestige,https://birdies.com/,ok,2026-11-18T07:33:42+00:00,5,10,67,1,34,3,2,0,1,0,0,0,0,0,0,0,0
+nisolo.com,home,shoes,Edge,https://nisolo.com/,ok,2026-11-18T07:33:47+00:00,2,24,152,0,64,23,0,0,1,0,0,0,0,0,0,0,0
+thursdayboots.com,home,shoes,Atlantic,https://thursdayboots.com/,ok,2026-11-18T07:33:51+00:00,3,24,27,0,8,22,0,0,1,0,0,0,0,0,1,0,0
+olivercabell.com,home,shoes,Baseline,https://olivercabell.com/,ok,2026-11-18T07:33:55+00:00,1,1,46,0,25,0,1,0,0,0,0,0,0,0,0,0,0
+colourpop.com,home,beauty,Colourpop,https://colourpop.com/,ok,2026-11-18T07:34:00+00:00,6,39,50,0,17,24,0,2,4,0,0,0,0,0,0,0,0
+kyliecosmetics.com,home,beauty,KYLIE,https://kyliecosmetics.com/,ok,2026-11-18T07:34:06+00:00,1,2,21,0,20,2,0,0,0,0,0,0,0,0,0,0,0
+glossier.com,home,beauty,Glossier,https://glossier.com/,ok,2026-11-18T07:34:11+00:00,3,21,31,0,26,0,0,0,0,0,0,0,5,0,0,0,0
+olaplex.com,home,beauty,Olaplex Theme,https://olaplex.com/,ok,2026-11-18T07:34:15+00:00,2,4,39,0,19,0,0,0,1,0,0,0,0,0,0,3,0
+discoverpilgrim.com,home,beauty,Focal,https://discoverpilgrim.com/,ok,2026-11-18T07:34:20+00:00,5,217,120,8,55,165,0,0,49,0,0,1,0,0,0,0,0
+jeffreestarcosmetics.com,home,beauty,Jeffrey Star Custom Theme,https://jeffreestarcosmetics.com/,ok,2026-11-18T07:34:26+00:00,2,10,388,0,13,0,0,0,0,0,0,0,0,0,0,0,0
+fentybeauty.com,home,beauty,Fenty Theme,https://fentybeauty.com/,ok,2026-11-18T07:34:30+00:00,3,39,109,21,0,0,21,0,1,0,0,0,0,0,0,0,0
+rarebeauty.com,home,beauty,SDG Shopify Skeleton,https://rarebeauty.com/,ok,2026-11-18T07:34:36+00:00,2,23,38,0,18,0,0,0,0,0,0,0,1,0,0,0,0
+milkmakeup.com,home,beauty,Milk Makeup,https://milkmakeup.com/,ok,2026-11-18T07:34:40+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+summerfridays.com,home,beauty,Summer Fridays by AW,https://summerfridays.com/,ok,2026-11-18T07:34:44+00:00,2,28,128,0,0,13,0,0,0,0,0,0,0,0,0,0,0
+alephbeauty.com,home,beauty,Aleph Beauty,https://alephbeauty.com/,ok,2026-11-18T07:34:49+00:00,4,54,107,57,29,9,17,7,21,0,0,0,0,0,0,0,0
+herbivorebotanicals.com,home,beauty,Horizon,https://herbivorebotanicals.com/,ok,2026-11-18T07:34:54+00:00,7,30,47,1,22,0,2,0,4,1,0,0,1,0,0,0,0
+kosas.com,home,beauty,Kosas,https://kosas.com/,ok,2026-11-18T07:34:59+00:00,5,15,16,0,10,4,0,0,1,0,0,0,0,0,0,0,0
+iliabeauty.com,home,beauty,ILIA,https://iliabeauty.com/,ok,2026-11-18T07:35:03+00:00,3,10,28,3,17,0,3,0,0,0,0,0,0,0,0,0,0
+meritbeauty.com,home,beauty,Starter theme,https://meritbeauty.com/,ok,2026-11-18T07:35:08+00:00,3,3,21,0,10,0,0,0,0,0,0,0,1,0,0,0,0
+saiehello.com,home,beauty,Saie,https://saiehello.com/,ok,2026-11-18T07:35:12+00:00,5,30,23,0,8,0,0,0,7,0,0,0,0,0,0,0,0
+glowrecipe.com,home,beauty,Simplistic,https://glowrecipe.com/,ok,2026-11-18T07:35:17+00:00,3,12,42,0,38,8,0,0,0,0,0,0,0,0,0,0,0
+tower28beauty.com,home,beauty,Tower,https://tower28beauty.com/,ok,2026-11-18T07:35:22+00:00,1,11,78,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+bubbleskincare.com,home,beauty,,https://bubbleskincare.com/,ok,2026-11-18T07:35:27+00:00,6,69,57,0,18,39,2,0,3,0,0,0,0,0,0,0,0
+cocokind.com,home,beauty,shopify-vite,https://cocokind.com/,ok,2026-11-18T07:35:31+00:00,0,0,52,0,26,0,0,0,0,0,0,0,0,0,0,0,0
+necessaire.com,home,beauty,Nécessaire,https://necessaire.com/,ok,2026-11-18T07:35:36+00:00,1,1,24,0,4,0,1,0,0,0,0,0,0,0,0,0,0
+oseamalibu.com,home,beauty,Ocean,https://oseamalibu.com/,ok,2026-11-18T07:35:40+00:00,1,1,47,1,3,0,0,0,0,0,0,0,0,0,0,0,0
+theouai.com,home,beauty,OUAI,https://theouai.com/,ok,2026-11-18T07:35:44+00:00,4,13,45,6,0,0,5,0,0,0,0,0,0,0,0,0,0
+mykitsch.com,home,beauty,Unick,https://mykitsch.com/,ok,2026-11-18T07:35:49+00:00,2,8,24,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+beautyblender.com,home,beauty,Prestige,https://beautyblender.com/,ok,2026-11-18T07:35:54+00:00,2,6,29,0,8,5,1,0,0,0,0,0,0,0,0,0,0
+versedskin.com,home,beauty,DNA,https://versedskin.com/,ok,2026-11-18T07:35:58+00:00,2,3,88,0,18,2,1,0,0,0,0,0,0,0,0,0,0
+florencebymills.com,home,beauty,dAgency,https://florencebymills.com/,ok,2026-11-18T07:36:03+00:00,1,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+soldejaneiro.com,home,beauty,Iakoe,https://soldejaneiro.com/,ok,2026-11-18T07:36:07+00:00,1,1,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+herocosmetics.com,home,beauty,Hero Cosmetics,https://herocosmetics.us/,ok,2026-11-18T07:36:12+00:00,3,7,38,0,31,3,0,0,0,0,0,0,0,0,0,0,0
+bondisands.com,home,beauty,Process Creative,https://bondisands.com/,ok,2026-11-18T07:36:17+00:00,3,3,54,0,37,1,0,1,0,0,0,0,0,0,0,0,0
+frankbody.com,home,beauty,Wonder,https://frankbody.com/,ok,2026-11-18T07:36:22+00:00,3,6,67,0,10,0,1,0,0,0,0,0,1,0,0,0,0
+jonesroadbeauty.com,home,beauty,Base,https://jonesroadbeauty.com/,ok,2026-11-18T07:36:26+00:00,6,10,25,3,12,1,3,0,2,0,0,0,0,0,0,0,0
+dedcool.com,home,beauty,Dusk,https://dedcool.com/,ok,2026-11-18T07:36:30+00:00,0,0,60,0,24,0,0,0,0,0,0,0,0,0,0,0,0
+resilia.shop,home,supplements,Dawn,https://resilia.shop/,ok,2026-11-18T07:36:35+00:00,3,12,12,0,0,10,0,0,0,0,0,0,0,0,0,0,0
+ritual.com,home,supplements,Ritual Foundation,https://ritual.com/,ok,2026-11-18T07:36:39+00:00,1,4,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0
+gruns.co,home,supplements,Gruns,https://gruns.co/,ok,2026-11-18T07:36:43+00:00,1,1,78,0,31,0,0,0,0,0,0,0,0,0,0,0,0
+goli.com,home,supplements,LangShop Theme,https://goli.com/,ok,2026-11-18T07:36:47+00:00,3,35,52,0,16,0,0,0,0,0,0,0,0,0,0,0,0
+ghostlifestyle.com,home,supplements,Ghost x Sparky Redesign,https://ghostlifestyle.com/,ok,2026-11-18T07:36:52+00:00,2,3,27,0,20,0,0,0,0,0,0,0,2,0,0,0,0
+transparentlabs.com,home,supplements,TL x SB,https://transparentlabs.com/,ok,2026-11-18T07:36:56+00:00,4,20,523,0,15,4,1,0,0,0,0,0,0,0,0,0,0
+rysesupps.com,home,supplements,,https://rysesupps.com/,ok,2026-11-18T07:37:01+00:00,3,24,38,1,25,4,1,0,19,0,0,0,0,0,0,0,0
+bloomnu.com,home,supplements,Themekit template theme,https://bloomnu.com/,ok,2026-11-18T07:37:07+00:00,3,29,171,24,14,4,24,0,0,0,0,0,0,0,0,0,0
+livemomentous.com,home,supplements,Themekit template theme,https://livemomentous.com/,ok,2026-11-18T07:37:11+00:00,1,2,27,0,16,0,0,0,0,0,0,0,0,0,0,0,0
+liquid-iv.com,home,supplements,,https://liquid-iv.com/,ok,2026-11-18T07:37:16+00:00,2,7,13,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+gorillamind.com,home,supplements,Unified Theme,https://gorillamind.com/,ok,2026-11-18T07:37:21+00:00,1,8,55,0,13,0,0,0,0,0,0,0,0,0,0,0,0
+deathwishcoffee.com,home,food,Dawn,https://deathwishcoffee.com/,ok,2026-11-18T07:37:26+00:00,3,47,51,0,7,43,0,0,1,0,0,0,0,0,0,0,0
+theloadedteashop.com,home,food,Elixir,https://theloadedteashop.com/,ok,2026-11-18T07:37:30+00:00,2,7,76,2,9,5,2,0,0,0,0,0,0,0,0,0,0
+flybyjing.com,home,food,Shapes,https://flybyjing.com/,ok,2026-11-18T07:37:35+00:00,2,6,3,2,0,4,2,0,0,0,0,0,0,0,0,0,0
+partakefoods.com,home,food,Partake (hasmerit.co),https://partakefoods.com/,ok,2026-11-18T07:37:39+00:00,1,15,61,0,7,15,0,0,0,0,0,0,0,0,0,0,0
+graza.co,home,food,Graza,https://graza.co/,ok,2026-11-18T07:37:43+00:00,1,4,41,0,9,4,0,0,0,0,0,0,0,0,0,0,0
+brightland.co,home,food,Impact,https://brightland.co/,ok,2026-11-18T07:37:57+00:00,6,22,57,0,18,7,7,0,2,0,0,0,1,0,0,0,0
+magicspoon.com,home,food,,https://magicspoon.com/,ok,2026-11-18T07:38:02+00:00,0,0,45,0,32,0,0,0,0,0,0,0,0,0,0,0,0
+drinkolipop.com,home,food,Olipop,https://drinkolipop.com/,ok,2026-11-18T07:38:07+00:00,1,1,30,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+liquiddeath.com,home,food,,https://liquiddeath.com/,ok,2026-11-18T07:38:12+00:00,1,1,30,0,26,1,0,0,0,0,0,0,0,0,0,0,0
+athleticbrewing.com,home,food,Athletic Brewing Co.,https://athleticbrewing.com/,ok,2026-11-18T07:38:16+00:00,2,8,71,3,4,5,3,0,0,0,0,0,0,0,0,0,0
+onyxcoffeelab.com,home,food,Onyx,https://onyxcoffeelab.com/,ok,2026-11-18T07:38:21+00:00,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+lairdsuperfood.com,home,food,Horizon,https://lairdsuperfood.com/,ok,2026-11-18T07:38:24+00:00,4,10,70,0,26,0,0,0,6,0,0,0,1,0,0,0,0
+cometeer.com,home,food,Shiro,https://cometeer.com/,ok,2026-11-18T07:38:29+00:00,2,2,37,1,2,0,1,1,0,0,0,0,0,0,0,0,0
+drinktrade.com,home,food,Shopify Shell theme,https://drinktrade.com/,ok,2026-11-18T07:38:34+00:00,3,22,65,0,7,14,0,0,7,0,0,0,0,0,0,0,0
+mudwtr.com,home,food,mudwtr,https://mudwtr.com/,ok,2026-11-18T07:38:39+00:00,3,31,39,0,16,0,12,0,0,0,0,0,0,0,0,0,18
+lesserevil.com,home,food,Dawn,https://lesserevil.com/,ok,2026-11-18T07:38:44+00:00,1,1,26,1,9,0,1,0,0,0,0,0,0,0,0,0,0
+hukitchen.com,home,food,,https://hukitchen.com/,ok,2026-11-18T07:38:48+00:00,3,13,34,0,15,11,0,0,0,0,0,0,0,0,0,0,0
+tonyschocolonely.com,home,food,Tony's Theme,https://tonyschocolonely.com/,ok,2026-11-18T07:38:53+00:00,3,8,35,0,4,6,0,0,0,0,0,0,0,0,0,0,0
+shop.momofuku.com,home,food,Ignition,https://shop.momofuku.com/,ok,2026-11-18T07:38:57+00:00,5,17,25,0,5,1,0,0,0,0,0,1,0,0,0,1,0
+diasporaco.com,home,food,Pebble,https://diasporaco.com/,ok,2026-11-18T07:39:02+00:00,3,12,96,2,9,6,2,0,0,0,0,0,0,0,0,0,0
+brooklinen.com,home,home,Dawn,https://brooklinen.com/,ok,2026-11-18T07:39:06+00:00,1,2,40,0,24,0,0,0,0,0,0,0,0,0,0,0,0
+stanley1913.com,home,home,Dawn,https://stanley1913.com/,ok,2026-11-18T07:39:12+00:00,2,5,15,0,14,0,0,1,4,0,0,0,0,0,0,0,0
+ollies.com,home,home,Ollies,https://ollies.com/,ok,2026-11-18T07:39:16+00:00,2,23,60,0,0,0,0,0,0,0,0,21,0,0,0,0,0
+thefleececompany.com,home,home,Be Yours,https://thefleececompany.com/,ok,2026-11-18T07:39:21+00:00,4,38,38,0,9,12,0,0,0,24,0,0,0,0,0,0,0
+clalena.com,home,home,Shrine PRO,https://clalena.com/,ok,2026-11-18T07:39:26+00:00,3,9,14,1,1,7,1,1,0,0,0,0,0,0,0,0,0
+parachutehome.com,home,home,Dawn,https://parachutehome.com/,ok,2026-11-18T07:39:30+00:00,3,123,171,0,105,0,0,0,1,0,0,0,0,0,0,0,0
+fromourplace.com,home,home,Our Place,https://fromourplace.com/,ok,2026-11-18T07:39:36+00:00,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+greatjonesgoods.com,home,home,Great Jones,https://greatjonesgoods.com/,ok,2026-11-18T07:39:40+00:00,4,8,13,0,8,0,0,0,1,0,0,0,2,0,0,0,0
+hexclad.com,home,home,Shiro,https://hexclad.com/,ok,2026-11-18T07:39:45+00:00,6,15,75,0,61,2,1,0,1,0,0,0,1,0,0,0,0
+bollandbranch.com,home,home,,https://bollandbranch.com/,ok,2026-11-18T07:39:49+00:00,3,5,14,0,12,0,0,0,0,0,0,0,0,0,0,0,0
+buffy.co,home,home,Dawn,https://buffy.co/,ok,2026-11-18T07:39:53+00:00,3,27,16,0,10,0,0,0,2,0,0,0,0,0,0,0,0
+bearaby.com,home,home,Dawn,https://bearaby.com/,ok,2026-11-18T07:39:58+00:00,4,50,45,12,2,31,12,0,1,0,0,0,0,0,0,0,0
+floydhome.com,home,home,HH Floyd,https://floydhome.com/,ok,2026-11-18T07:40:02+00:00,0,0,31,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+blueland.com,home,home,,https://blueland.com/,ok,2026-11-18T07:40:06+00:00,5,8,45,0,0,2,0,2,0,0,0,0,0,0,0,0,0
+publicgoods.com,home,home,Carbon,https://publicgoods.com/,ok,2026-11-18T07:40:11+00:00,1,3,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+branchfurniture.com,home,home,,https://branchfurniture.com/,ok,2026-11-18T07:40:15+00:00,7,103,138,0,64,43,1,2,1,0,0,0,0,0,0,0,0
+otherland.com,home,candles,Otherland,https://otherland.com/,ok,2026-11-18T07:40:21+00:00,2,8,32,0,11,5,0,0,0,0,0,0,0,0,0,0,0
+boysmells.com,home,candles,Revyrie Commerce Volt,https://boysmells.com/,ok,2026-11-18T07:40:26+00:00,4,26,35,9,0,2,9,13,0,0,0,0,0,0,0,0,0
+brooklyncandlestudio.com,home,candles,Prestige,https://brooklyncandlestudio.com/,ok,2026-11-18T07:40:30+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+homesick.com,home,candles,Sleek,https://homesick.com/,ok,2026-11-18T07:40:34+00:00,1,29,84,0,34,29,0,0,0,0,0,0,0,0,0,0,0
+voluspa.com,home,candles,Turbo,https://voluspa.com/,ok,2026-11-18T07:40:39+00:00,4,28,19,0,2,0,0,0,1,0,0,0,1,0,0,0,0
+pfcandleco.com,home,candles,Baseline,https://pfcandleco.com/,ok,2026-11-18T07:40:43+00:00,3,4,62,0,24,0,0,0,0,0,0,2,1,0,0,0,0
+puravidabracelets.com,home,jewelry,Pura Vida,https://puravidabracelets.com/,ok,2026-11-18T07:40:48+00:00,3,18,131,0,38,13,0,2,3,0,0,0,0,0,0,0,0
+gorjana.com,home,jewelry,Gorjana,https://gorjana.com/,ok,2026-11-18T07:40:52+00:00,1,5,10,0,0,5,0,0,0,0,0,0,0,0,0,0,0
+missoma.com,home,jewelry,MISSOMA,https://missoma.com/,ok,2026-11-18T07:40:56+00:00,5,29,92,0,1,0,0,1,24,0,0,1,0,0,2,0,0
+astridandmiyu.com,home,jewelry,Astrid & Miyu by BAO,https://astridandmiyu.com/,ok,2026-11-18T07:41:01+00:00,4,5,339,19,3,0,2,1,1,0,0,0,0,0,1,0,0
+camillebrinch.com,home,jewelry,CBJ,https://camillebrinch.com/,ok,2026-11-18T07:41:07+00:00,5,155,169,47,6,28,11,0,114,0,0,0,1,0,0,0,0
+auratenewyork.com,home,jewelry,Aurate New York,https://auratenewyork.com/,ok,2026-11-18T07:41:12+00:00,3,21,60,1,12,0,1,0,0,0,0,0,0,0,0,0,0
+ringconcierge.com,home,jewelry,Ascent,https://ringconcierge.com/,ok,2026-11-18T07:41:18+00:00,1,1,28,0,10,0,0,0,0,0,0,0,0,0,0,0,0
+linjer.co,home,jewelry,,https://linjer.co/,ok,2026-11-18T07:41:23+00:00,3,22,25,0,1,12,0,0,1,0,0,0,0,0,0,0,0
+vincerocollective.com,home,watches,,https://vincerocollective.com/,ok,2026-11-18T07:41:27+00:00,1,16,40,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+nordgreen.com,home,watches,Atelier,https://nordgreen.com/,ok,2026-11-18T07:41:32+00:00,5,93,91,18,29,0,36,0,3,0,0,0,1,0,0,0,0
+danielwellington.com,home,watches,Taiga,https://danielwellington.com/,ok,2026-11-18T07:41:39+00:00,0,0,23,0,21,0,0,0,0,0,0,0,0,0,0,0,0
+originalgrain.com,home,watches,Dawn,https://originalgrain.com/,ok,2026-11-18T07:41:44+00:00,5,29,69,6,11,10,7,0,1,0,0,0,0,0,1,0,0
+mvmt.com,home,watches,Prestige,https://mvmt.com/,ok,2026-11-18T07:41:49+00:00,1,2,62,0,21,0,0,0,0,0,0,0,0,0,0,0,0
+dagnedover.com,home,bags,,https://dagnedover.com/,ok,2026-11-18T07:41:53+00:00,1,9,50,0,11,9,0,0,0,0,0,0,0,0,0,0,0
+peakdesign.com,home,bags,,https://peakdesign.com/,ok,2026-11-18T07:41:59+00:00,0,0,53,0,22,0,0,0,0,0,0,0,0,0,0,0,0
+nomatic.com,home,bags,Stiletto,https://nomatic.com/,ok,2026-11-18T07:42:03+00:00,4,12,72,4,27,5,5,0,0,0,0,0,0,0,0,0,0
+herschel.com,home,bags,iamota Theme Foundation,https://herschel.com/,ok,2026-11-18T07:42:09+00:00,3,10,38,0,27,0,0,0,0,0,0,0,1,0,0,0,0
+loandsons.com,home,bags,Pitch,https://loandsons.com/,ok,2026-11-18T07:42:13+00:00,5,14,18,1,6,0,1,0,6,0,0,0,1,0,0,0,0
+monos.com,home,bags,Monos,https://monos.com/,ok,2026-11-18T07:42:17+00:00,2,42,34,0,12,38,0,0,0,0,0,0,0,0,0,0,0
+calpaktravel.com,home,bags,Vanilla,https://calpaktravel.com/,ok,2026-11-18T07:42:22+00:00,1,1,60,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+beistravel.com,home,bags,BEIS,https://beistravel.com/,ok,2026-11-18T07:42:27+00:00,1,3,18,0,11,3,0,0,0,0,0,0,0,0,0,0,0
+tourparavel.com,home,bags,Underscore,https://tourparavel.com/,ok,2026-11-18T07:42:32+00:00,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boat-lifestyle.com,home,electronics,Focal,https://boat-lifestyle.com/,ok,2026-11-18T07:42:37+00:00,5,169,115,1,0,104,1,0,0,0,0,0,0,0,0,0,0
+gonoise.com,home,electronics,Section plus,https://gonoise.com/,ok,2026-11-18T07:42:42+00:00,4,34,67,0,0,11,0,11,0,0,0,0,0,0,0,0,0
+plaud.ai,home,electronics,TL,https://plaud.ai/,ok,2026-11-18T07:42:46+00:00,4,27,41,0,8,23,0,0,1,0,0,1,0,0,0,0,0
+jbhifi.com.au,home,electronics,JB Hi-Fi,https://jbhifi.com.au/,ok,2026-11-18T07:42:51+00:00,3,19,139,0,1,9,0,0,0,0,0,0,0,0,0,0,0
+mous.co,home,electronics,Quickfire,https://mous.co/,ok,2026-11-18T07:42:56+00:00,6,107,123,51,54,8,51,4,33,0,0,0,0,0,0,0,0
+pelacase.com,home,electronics,Pela Case rebuild,https://pelacase.com/,ok,2026-11-18T07:43:01+00:00,1,1,131,0,48,0,0,1,0,0,0,0,0,0,0,0,0
+satechi.net,home,electronics,DYODE,https://satechi.net/,ok,2026-11-18T07:43:05+00:00,2,15,45,0,23,0,0,0,0,0,0,0,0,0,0,0,0
+twelvesouth.com,home,electronics,Twelve South,https://twelvesouth.com/,ok,2026-11-18T07:43:10+00:00,5,32,33,0,8,0,1,0,1,0,0,24,0,0,0,0,0
+keychron.com,home,electronics,Enterprise,https://keychron.com/,ok,2026-11-18T07:43:14+00:00,4,17,98,8,45,8,7,0,1,0,0,0,0,0,0,0,0
+wildone.com,home,pets,Dawn,https://wildone.com/,ok,2026-11-18T07:43:20+00:00,4,48,48,0,26,23,0,0,3,0,0,0,0,0,0,0,0
+fablepets.com,home,pets,Shopify Theme Lab,https://fablepets.com/,ok,2026-11-18T07:43:24+00:00,4,19,41,0,18,11,0,5,0,0,0,0,0,0,0,0,0
+pupford.com,home,pets,Dawn,https://pupford.com/,ok,2026-11-18T07:43:29+00:00,2,42,42,0,21,41,0,0,0,0,0,0,0,0,0,0,0
+maxbone.com,home,pets,Maxbone,https://maxbone.com/,ok,2026-11-18T07:43:33+00:00,5,15,31,1,25,1,2,0,5,0,0,0,1,0,0,0,0
+earthrated.com,home,pets,iamota Theme Foundation,https://earthrated.com/,ok,2026-11-18T07:43:38+00:00,4,20,54,0,50,8,0,0,9,0,0,0,1,0,0,0,0
+decathlon.com,home,outdoors,Horizon,https://decathlon.com/,ok,2026-11-18T07:43:43+00:00,5,21,53,2,14,6,3,0,0,0,0,0,1,0,0,0,0
+radpowerbikes.com,home,outdoors,Fluid Framework,https://radpowerbikes.com/,ok,2026-11-18T07:43:47+00:00,11,28,61,0,0,4,1,0,0,3,0,0,2,0,0,0,0
+rumpl.com,home,outdoors,Base,https://rumpl.com/,ok,2026-11-18T07:43:52+00:00,6,48,51,9,0,5,9,1,17,0,0,0,0,0,0,0,0
+orukayak.com,home,outdoors,,https://orukayak.com/,ok,2026-11-18T07:43:56+00:00,2,11,28,0,23,10,0,0,1,0,0,0,0,0,0,0,0
+bioliteenergy.com,home,outdoors,Stiletto,https://bioliteenergy.com/,ok,2026-11-18T07:44:04+00:00,1,35,38,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+goodr.com,home,outdoors,goodr,https://goodr.com/,ok,2026-11-18T07:44:08+00:00,5,9,66,1,23,3,1,1,3,0,0,0,0,0,0,1,0
+manduka.com,home,outdoors,Manduka,https://manduka.com/,ok,2026-11-18T07:44:13+00:00,3,11,17,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+therabody.com,home,outdoors,Therabody Theme,https://therabody.com/,ok,2026-11-18T07:44:18+00:00,5,10,66,2,33,0,2,1,0,0,0,0,1,0,0,0,0
+worldofbooks.com,home,books,Dawn,https://worldofbooks.com/,ok,2026-11-18T07:44:22+00:00,4,21,65,0,22,16,0,0,1,0,0,0,0,0,0,0,0
+indigo.ca,home,books,Dawn,https://indigo.ca/,ok,2026-11-18T07:44:27+00:00,3,7,183,0,123,2,0,0,0,0,0,0,0,0,0,0,0
+myfonts.com,home,digital,myfonts,https://www.myfonts.com/,ok,2026-11-18T07:44:31+00:00,6,20,30,0,0,0,0,2,0,0,0,10,0,0,0,0,0
+tattly.com,home,art,Horizon,https://tattly.com/,ok,2026-11-18T07:44:36+00:00,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+tecovas.com,home,shoes,,https://tecovas.com/,ok,2026-11-18T07:44:40+00:00,1,4,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+negativeunderwear.com,home,clothing,Dawn,https://negativeunderwear.com/,ok,2026-11-18T07:44:44+00:00,3,4,28,0,7,1,1,0,0,0,0,0,0,0,0,0,0
+mackweldon.com,home,clothing,Anatta,https://mackweldon.com/,ok,2026-11-18T07:44:50+00:00,2,2,19,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+lunya.co,home,clothing,Symmetry,https://lunya.co/,ok,2026-11-18T07:44:55+00:00,1,4,18,0,15,0,0,0,4,0,0,0,0,0,0,0,0
+ministryofsupply.com,home,clothing,,https://ministryofsupply.com/,ok,2026-11-18T07:44:59+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+fellowproducts.com,home,home,Fellow Foundation,https://fellowproducts.com/,ok,2026-11-18T07:45:04+00:00,4,38,43,20,0,0,20,0,3,0,0,0,0,0,0,0,0
+misen.com,home,home,Misen Custom Theme,https://misen.com/,ok,2026-11-18T07:45:09+00:00,6,30,60,1,13,17,1,0,7,0,0,0,1,0,0,0,0
+riflepaperco.com,home,art,Pact,https://riflepaperco.com/,ok,2026-11-18T07:45:21+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ugmonk.com,home,art,Tinker,https://ugmonk.com/,ok,2026-11-18T07:45:25+00:00,5,20,49,0,1,0,2,0,2,0,0,0,1,0,0,0,0
+artstar.com,product,art,Canopy,https://artstar.com/products/ludwig-favre-oculus,ok,2026-11-18T07:45:30+00:00,5,18,72,3,9,2,3,0,6,0,0,0,0,0,0,0,0
+artstar.com,home,art,Canopy,https://artstar.com/,ok,2026-11-18T07:45:35+00:00,6,27,46,1,1,2,2,0,7,0,0,0,0,0,0,0,0
+drool-art.com,product,art,Horizon,https://drool-art.com/products/nine-lives-one-circle-by-exsiloris,ok,2026-11-18T07:45:39+00:00,8,56,124,1,15,29,1,0,4,0,0,0,1,0,0,0,0
+drool-art.com,home,art,Horizon,https://drool-art.com/,ok,2026-11-18T07:45:45+00:00,5,16,103,0,18,7,0,0,6,0,0,0,1,0,0,0,0
+exhibitiona.com,product,art,Superstore,https://exhibitiona.com/products/changing-room,ok,2026-11-18T07:45:50+00:00,3,5,16,0,9,3,0,0,1,0,0,0,1,0,0,0,0
+exhibitiona.com,home,art,Superstore,https://exhibitiona.com/,ok,2026-11-18T07:45:54+00:00,6,77,47,2,33,1,3,0,14,0,0,0,4,0,0,0,0
+juniperprintshop.com,product,art,Dawn,https://juniperprintshop.com/products/honey-modern,ok,2026-11-18T07:45:58+00:00,2,12,17,0,10,3,0,0,0,9,0,0,0,0,0,0,0
+juniperprintshop.com,home,art,Dawn,https://juniperprintshop.com/,ok,2026-11-18T07:46:04+00:00,2,20,36,0,7,8,0,0,12,0,0,0,0,0,0,0,0
+newbloodart.com,product,art,Studio,https://newbloodart.com/products/efface-the-streak,ok,2026-11-18T07:46:08+00:00,2,9,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+newbloodart.com,home,art,Studio,https://newbloodart.com/,ok,2026-11-18T07:46:13+00:00,5,124,11,0,0,5,0,0,109,0,0,0,0,0,0,0,0
+pstrstudio.com,product,art,PSTR studio,https://pstrstudio.com/products/bravebirdie-can-you-trust-me,ok,2026-11-18T07:46:17+00:00,2,9,54,0,0,8,0,0,0,0,0,0,0,0,0,0,0
+pstrstudio.com,home,art,PSTR studio,https://pstrstudio.com/,ok,2026-11-18T07:46:22+00:00,2,11,216,0,0,10,1,0,0,0,0,0,0,0,0,0,0
+shrigshop.com,product,art,Debut,https://shrigshop.com/products/david-shrigley-homewares-rat-scented-candle,ok,2026-11-18T07:46:27+00:00,6,37,21,2,10,0,1,0,12,0,0,0,1,0,0,0,0
+shrigshop.com,home,art,Debut,https://shrigshop.com/,ok,2026-11-18T07:46:31+00:00,3,28,7,0,6,0,0,0,26,0,0,1,0,0,0,0,0
+soniceditions.com,product,art,sonic-edtions Theme,https://soniceditions.com/products/grateful-dead-94,ok,2026-11-18T07:46:35+00:00,5,25,30,0,29,0,0,2,16,0,0,0,1,0,0,0,0
+soniceditions.com,home,art,sonic-edtions Theme,https://soniceditions.com/,ok,2026-11-18T07:46:40+00:00,5,44,106,0,82,0,0,1,36,0,0,0,1,0,0,0,0
+tappancollective.com,product,art,Prestige,https://tappancollective.com/products/vein,ok,2026-11-18T07:46:44+00:00,4,16,53,0,0,8,0,0,0,0,0,0,0,0,0,0,0
+tappancollective.com,home,art,Prestige,https://tappancollective.com/,ok,2026-11-18T07:46:50+00:00,4,15,69,0,9,8,0,0,1,0,0,0,0,0,0,0,0
+wallofart.com,product,art,Revolution,https://wallofart.com/products/gap,ok,2026-11-18T07:46:54+00:00,6,45,55,0,1,5,0,8,0,0,0,13,2,0,0,0,0
+wallofart.com,home,art,Revolution,https://wallofart.com/,ok,2026-11-18T07:46:58+00:00,5,13,21,0,2,3,0,4,0,0,0,4,1,0,0,0,0
+adamspolishes.com,product,automotive,Focal,https://adamspolishes.com/products/adams-halloween-metallic-3-sticker-2026,ok,2026-11-18T07:47:01+00:00,1,1,42,22,10,0,0,0,0,0,0,0,0,0,0,0,0
+adamspolishes.com,home,automotive,Focal,https://adamspolishes.com/,ok,2026-11-18T07:47:06+00:00,3,9,57,28,13,2,6,0,0,0,0,0,0,0,0,0,0
+autofinesse.com,product,automotive,Palo Alto,https://autofinesse.com/products/glass-protection-kit,ok,2026-11-18T07:47:10+00:00,5,12,10,2,0,7,2,0,0,1,0,1,0,0,0,0,0
+autofinesse.com,home,automotive,Palo Alto,https://autofinesse.com/,ok,2026-11-18T07:47:15+00:00,3,10,25,1,0,8,1,0,0,0,0,0,0,0,0,0,0
+boostautoparts.com,product,automotive,Focal,https://boostautoparts.com/products/premium-floor-mats-2019-2024-ram-1500,ok,2026-11-18T07:47:19+00:00,2,2,66,0,19,0,0,0,0,0,0,0,0,0,0,0,0
+boostautoparts.com,home,automotive,Focal,https://boostautoparts.com/,ok,2026-11-18T07:47:23+00:00,2,2,72,0,17,0,0,0,0,0,0,0,0,0,0,0,0
+chassisunlimited.com,product,automotive,Icon,,no_products,2026-11-18T07:47:27+00:00,,,,,,,,,,,,,,,,,
+chassisunlimited.com,home,automotive,Icon,https://chassisunlimited.com/,ok,2026-11-18T07:47:27+00:00,5,11,14,4,9,0,4,0,2,0,0,0,0,0,0,0,1
+chemicalguys.com,product,automotive,Dawn,https://chemicalguys.com/products/4pk-50-50-hex-pad-white-orange,ok,2026-11-18T07:47:32+00:00,3,16,28,0,19,0,0,0,0,0,0,0,1,0,0,0,0
+chemicalguys.com,home,automotive,Dawn,https://chemicalguys.com/,ok,2026-11-18T07:47:37+00:00,7,47,54,0,37,16,2,0,0,0,0,0,1,0,0,0,0
+ctek.com,product,automotive,coi,https://ctek.com/products/rb-2000,ok,2026-11-18T07:47:41+00:00,6,14,88,0,66,0,0,1,0,0,0,1,0,0,0,0,0
+ctek.com,home,automotive,coi,https://ctek.com/,ok,2026-11-18T07:47:46+00:00,3,7,140,0,66,0,0,0,0,0,0,0,0,0,0,0,0
+darche.com.au,product,automotive,Pursuit,https://darche.com.au/products/swag-hutch-lite,ok,2026-11-18T07:47:51+00:00,6,64,23,0,9,39,0,0,14,4,0,0,0,0,1,0,0
+darche.com.au,home,automotive,Pursuit,https://darche.com.au/,ok,2026-11-18T07:47:55+00:00,6,64,23,0,9,39,0,0,14,4,0,0,0,0,1,0,0
+dipyourcar.com,product,automotive,Ascent,https://dipyourcar.com/products/ncs-ncs-green-s5040-b90g-luna-oem-basecoat,ok,2026-11-18T07:47:59+00:00,7,17,24,1,4,1,0,0,0,1,0,0,0,0,0,0,1
+dipyourcar.com,home,automotive,Ascent,https://dipyourcar.com/,ok,2026-11-18T07:48:04+00:00,4,23,61,1,7,11,0,0,0,0,0,0,0,0,0,0,0
+magnaflow.com,product,automotive,Pivotmade theme,,no_products,2026-11-18T07:48:09+00:00,,,,,,,,,,,,,,,,,
+magnaflow.com,home,automotive,Pivotmade theme,https://magnaflow.com/,ok,2026-11-18T07:48:09+00:00,0,0,10,0,9,0,0,0,0,0,0,0,0,0,0,0,0
+mudstuff.co.uk,product,automotive,Warehouse,https://mudstuff.co.uk/products/sealand-pro-wool-felt-bag,ok,2026-11-18T07:48:13+00:00,6,26,29,3,4,3,3,0,0,0,0,4,0,0,2,0,0
+mudstuff.co.uk,home,automotive,Warehouse,https://mudstuff.co.uk/,ok,2026-11-18T07:48:17+00:00,2,24,50,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+obsessedgarage.com,product,automotive,Ignite,https://obsessedgarage.com/products/levrack-grid-system,ok,2026-11-18T07:48:21+00:00,4,33,13,0,6,25,0,0,0,0,0,0,0,0,0,0,0
+obsessedgarage.com,home,automotive,Ignite,https://obsessedgarage.com/,ok,2026-11-18T07:48:26+00:00,6,39,36,5,27,25,5,0,1,0,0,0,0,0,0,0,0
+theragcompany.com,product,automotive,Venue,https://theragcompany.com/products/detail-factory-pet-hair-brush,ok,2026-11-18T07:48:30+00:00,8,28,24,1,2,6,1,0,4,3,0,0,0,0,4,0,0
+theragcompany.com,home,automotive,Venue,https://theragcompany.com/,ok,2026-11-18T07:48:35+00:00,5,22,73,5,26,5,5,0,7,0,0,0,0,0,0,0,0
+torquedetail.com,product,automotive,Focal,https://torquedetail.com/products/torque-wheel-tire-brush-combo,ok,2026-11-18T07:48:39+00:00,4,30,13,0,5,17,0,0,0,0,0,0,0,0,0,0,0
+torquedetail.com,home,automotive,Focal,https://torquedetail.com/,ok,2026-11-18T07:48:44+00:00,5,5,25,1,13,1,1,0,0,0,0,0,0,0,0,0,0
+urotuning.com,product,automotive,,https://urotuning.com/products/034motorsport-12mm-head-stud-kit-ea839-2-9t-3-0t-0-0-star-rating-write-a-review-034-201-5027,ok,2026-11-18T07:48:48+00:00,3,13,41,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+urotuning.com,home,automotive,,https://urotuning.com/,ok,2026-11-18T07:48:54+00:00,3,8,73,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bobochoses.com,product,baby,Dawn,https://bobochoses.com/products/b226ai096-donna-wilson-bobo-choses-happy-monster,ok,2026-11-18T07:48:58+00:00,7,31,35,4,15,4,3,6,1,0,0,15,0,0,0,0,0
+bobochoses.com,home,baby,Dawn,https://bobochoses.com/,ok,2026-11-18T07:49:03+00:00,6,24,22,3,4,2,3,0,2,0,0,15,0,0,0,0,0
+charliecraneparis.com,product,baby,Charlie-crane,https://charliecraneparis.com/products/table-a-langer-pago-outlet,ok,2026-11-18T07:49:07+00:00,5,44,80,0,16,36,0,0,0,0,0,0,0,0,0,0,0
+charliecraneparis.com,home,baby,Charlie-crane,https://charliecraneparis.com/,ok,2026-11-18T07:49:12+00:00,5,32,62,0,12,24,0,0,1,0,0,0,0,0,0,0,0
+kongessloejd.com,product,baby,Broadcast,https://kongessloejd.com/products/thermo-food-jar-food-storage-lemon,ok,2026-11-18T07:49:17+00:00,4,118,54,17,7,0,3,0,0,0,0,0,0,0,0,0,0
+kongessloejd.com,home,baby,Broadcast,https://kongessloejd.com/,ok,2026-11-18T07:49:21+00:00,5,123,51,18,8,0,4,0,1,0,0,0,0,0,0,0,0
+lorenacanals.com,product,baby,Horizon,https://lorenacanals.com/products/wool-runner-rug-mist,ok,2026-11-18T07:49:25+00:00,4,8,27,0,12,1,0,0,0,0,0,0,1,0,0,0,0
+lorenacanals.com,home,baby,Horizon,https://lorenacanals.com/,ok,2026-11-18T07:49:30+00:00,5,13,26,3,10,0,3,0,7,0,0,0,1,0,0,0,0
+mushie.com,product,baby,Pipeline,https://mushie.com/products/training-knife-set,ok,2026-11-18T07:49:36+00:00,4,15,70,0,24,9,0,0,0,0,0,2,0,0,0,0,0
+mushie.com,home,baby,Pipeline,https://mushie.com/,ok,2026-11-18T07:49:40+00:00,2,20,95,0,28,18,0,0,0,0,0,2,0,0,0,0,0
+nanit.com,product,baby,Concept,https://nanit.com/products/cammies-4-pack,ok,2026-11-18T07:49:45+00:00,2,8,46,0,2,0,1,0,0,0,0,0,0,0,0,0,0
+nanit.com,home,baby,Concept,https://nanit.com/,ok,2026-11-18T07:49:50+00:00,3,3,35,0,21,0,1,0,0,0,0,0,0,0,0,0,0
+oeufnyc.com,product,baby,Prestige,https://oeufnyc.com/products/paint-pens,ok,2026-11-18T07:49:55+00:00,2,2,28,0,9,0,0,0,0,0,0,0,1,0,0,0,0
+oeufnyc.com,home,baby,Prestige,https://oeufnyc.com/,ok,2026-11-18T07:49:59+00:00,1,1,44,0,11,0,0,0,0,0,0,0,1,0,0,0,0
+snugglehunnykids.com.au,product,baby,Process Creative,https://snugglehunnykids.com.au/products/snuggle-special-palm-spring-organic-t-shirt,ok,2026-11-18T07:50:03+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+snugglehunnykids.com.au,home,baby,Process Creative,https://snugglehunnykids.com.au/,ok,2026-11-18T07:50:07+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+aersf.com,product,bags,Debut,https://aersf.com/products/travel-pack-4-remix,ok,2026-11-18T07:50:11+00:00,0,0,40,0,22,0,0,0,0,0,0,0,0,0,0,0,0
+aersf.com,home,bags,Debut,https://aersf.com/,ok,2026-11-18T07:50:16+00:00,0,0,29,0,29,0,0,0,0,0,0,0,0,0,0,0,0
+briggs-riley.com,product,bags,Impulse,https://briggs-riley.com/products/medium-expandable-upright,ok,2026-11-18T07:50:19+00:00,7,52,90,0,0,18,0,4,3,0,0,0,0,0,0,0,0
+briggs-riley.com,home,bags,Impulse,https://briggs-riley.com/,ok,2026-11-18T07:50:24+00:00,4,47,69,0,2,13,0,0,0,0,0,0,0,0,0,0,0
+dbjourney.com,product,bags,Frame,https://dbjourney.com/products/anywear-hoodie,ok,2026-11-18T07:50:28+00:00,2,2,114,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+dbjourney.com,home,bags,Frame,https://dbjourney.com/,ok,2026-11-18T07:50:33+00:00,1,1,123,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+hardgraft.com,product,bags,Broadcast,https://hardgraft.com/products/brothers-dopp-kit-duo-forest,ok,2026-11-18T07:50:38+00:00,3,9,30,7,20,1,6,0,2,0,0,0,0,0,0,0,0
+hardgraft.com,home,bags,Broadcast,https://hardgraft.com/,ok,2026-11-18T07:50:43+00:00,2,20,35,15,7,0,14,0,6,0,0,0,0,0,0,0,0
+horizn-studios.com,product,bags,Dawn,https://horizn-studios.com/products/luggage-tag-marine-green,ok,2026-11-18T07:50:46+00:00,3,37,38,0,11,28,0,0,0,0,0,0,0,0,0,0,0
+horizn-studios.com,home,bags,Dawn,https://horizn-studios.com/,ok,2026-11-18T07:50:51+00:00,4,42,56,0,18,27,1,0,2,0,0,0,0,0,0,0,0
+missionworkshop.com,product,bags,Prestige,https://missionworkshop.com/products/meridian-ls,ok,2026-11-18T07:50:55+00:00,0,0,43,0,6,0,0,0,0,0,0,0,0,0,0,0,0
+missionworkshop.com,home,bags,Prestige,https://missionworkshop.com/,ok,2026-11-18T07:51:00+00:00,3,10,67,0,17,0,3,0,2,0,0,0,0,0,0,0,0
+tombihn.com,product,bags,o/S Custom Theme,https://tombihn.com/products/double-clear-organizer-cube,ok,2026-11-18T07:51:04+00:00,5,15,27,0,9,0,4,2,4,0,0,0,1,0,0,0,0
+tombihn.com,home,bags,o/S Custom Theme,https://tombihn.com/,ok,2026-11-18T07:51:09+00:00,4,25,78,0,24,0,0,2,0,0,0,0,3,0,0,0,0
+dieuxskin.com,product,beauty,Dieux Theme 2.0,https://dieuxskin.com/products/firm-revival-hydroretinal-firming-serum,ok,2026-11-18T07:51:13+00:00,0,0,12,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+dieuxskin.com,home,beauty,Dieux Theme 2.0,https://dieuxskin.com/,ok,2026-11-18T07:51:18+00:00,1,4,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+fybellebeauty.com,product,beauty,Shrine PRO,https://fybellebeauty.com/products/neck-strap-fybelle-radiance-pro-led-neck-mask,ok,2026-11-18T07:51:22+00:00,0,0,7,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+fybellebeauty.com,home,beauty,Shrine PRO,https://fybellebeauty.com/,ok,2026-11-18T07:51:26+00:00,1,8,94,79,11,0,0,0,8,0,0,0,0,0,0,0,0
+hismileteeth.com,product,beauty,Hismile Vite,https://hismileteeth.com/products/best-seller-pack,ok,2026-11-18T07:51:29+00:00,5,21,18,0,3,15,0,1,2,1,0,0,0,0,2,0,0
+hismileteeth.com,home,beauty,Hismile Vite,https://hismileteeth.com/,ok,2026-11-18T07:51:33+00:00,5,21,18,0,3,15,0,1,2,1,0,0,0,0,2,0,0
+meridiangrooming.com,product,beauty,Pangaea Stores,https://meridiangrooming.com/products/the-zapper-ice-pro-insert,ok,2026-11-18T07:51:37+00:00,3,36,29,0,20,30,0,0,0,0,0,0,0,0,0,0,0
+meridiangrooming.com,home,beauty,Pangaea Stores,https://meridiangrooming.com/,ok,2026-11-18T07:51:43+00:00,3,36,51,0,20,30,0,0,0,0,0,0,0,0,0,0,0
+supergoop.com,product,beauty,Supergoop Theme,https://supergoop.com/products/every-single-face-watery-lotion-spf-50-gift,ok,2026-11-18T07:51:47+00:00,2,7,70,0,21,0,0,0,0,0,0,0,0,0,0,0,0
+supergoop.com,home,beauty,Supergoop Theme,https://supergoop.com/,ok,2026-11-18T07:51:52+00:00,4,9,118,1,69,0,1,0,3,0,0,0,0,0,0,0,0
+appointed.co,product,books,Horizon,https://appointed.co/products/2027-acrylic-desk-calendar,ok,2026-11-18T07:51:56+00:00,9,15,84,0,2,3,0,1,1,0,0,4,1,0,2,0,0
+appointed.co,home,books,Horizon,https://appointed.co/,ok,2026-11-18T07:52:02+00:00,5,8,83,3,4,0,4,1,1,0,0,0,1,0,0,0,0
+markandfold.com,product,books,Startup,https://markandfold.com/products/brass-paperweight,ok,2026-11-18T07:52:06+00:00,3,12,14,0,9,7,0,0,4,0,0,0,0,0,0,0,0
+markandfold.com,home,books,Startup,https://markandfold.com/,ok,2026-11-18T07:52:11+00:00,4,18,25,0,22,2,0,0,12,0,0,0,0,0,0,0,0
+mossery.co,product,books,,https://mossery.co/products/artist-series-sticker-tiny-hearts-reverie,ok,2026-11-18T07:52:14+00:00,4,20,9,4,0,7,4,0,8,0,0,0,0,0,1,0,0
+mossery.co,home,books,,https://mossery.co/,ok,2026-11-18T07:52:20+00:00,4,43,45,5,6,7,6,0,29,0,0,0,0,0,1,0,0
+standardsmanual.com,product,books,,https://standardsmanual.com/products/impact-1-1,ok,2026-11-18T07:52:24+00:00,3,20,26,0,0,1,0,0,15,0,0,0,0,0,0,0,0
+standardsmanual.com,home,books,,https://standardsmanual.com/,ok,2026-11-18T07:52:28+00:00,3,101,88,0,72,10,0,0,87,0,0,0,0,0,0,0,0
+aerangis.com,product,candles,Blockshop,https://aerangis.com/products/no-1910-filthy-dirty,ok,2026-11-18T07:52:32+00:00,8,23,17,4,0,3,4,1,4,1,1,0,0,0,0,0,0
+aerangis.com,home,candles,Blockshop,https://aerangis.com/,ok,2026-11-18T07:52:37+00:00,7,51,67,10,1,4,10,1,26,0,1,0,0,0,0,0,0
+dsanddurga.com,product,candles,Stretch,https://dsanddurga.com/products/once-upon-a-time-in-the-red-southwest,ok,2026-11-18T07:52:41+00:00,2,4,17,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+dsanddurga.com,home,candles,Stretch,https://dsanddurga.com/,ok,2026-11-18T07:52:45+00:00,1,1,20,0,9,0,0,0,1,0,0,0,0,0,0,0,0
+earlofeast.com,product,candles,Carbon Shopify Theme,https://earlofeast.com/products/alpaca-wool-throw-blanket-multi-stripe,ok,2026-11-18T07:52:49+00:00,3,20,22,6,1,0,6,0,0,0,0,0,0,0,0,0,0
+earlofeast.com,home,candles,Carbon Shopify Theme,https://earlofeast.com/,ok,2026-11-18T07:52:54+00:00,3,28,83,4,1,0,4,0,0,0,0,0,0,0,0,0,0
+harlemcandlecompany.com,product,candles,Stretch,https://harlemcandlecompany.com/products/bloom-reed-diffuser-tester,ok,2026-11-18T07:52:59+00:00,1,1,3,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+harlemcandlecompany.com,home,candles,Stretch,https://harlemcandlecompany.com/,ok,2026-11-18T07:53:04+00:00,2,5,80,0,11,0,0,4,0,0,0,0,1,0,0,0,0
+maisonlouismarie.com,product,candles,X,https://maisonlouismarie.com/products/diffmlm15,ok,2026-11-18T07:53:08+00:00,3,4,22,0,3,0,0,1,0,0,0,2,0,0,0,0,0
+maisonlouismarie.com,home,candles,X,https://maisonlouismarie.com/,ok,2026-11-18T07:53:13+00:00,3,4,48,0,13,0,0,1,0,0,0,2,0,0,0,0,0
+neomwellbeing.com,product,candles,Volt,https://neomwellbeing.com/products/squeeze-the-day-body-wash-250ml,ok,2026-11-18T07:53:18+00:00,5,10,25,0,13,3,0,0,0,0,0,0,0,0,0,0,0
+neomwellbeing.com,home,candles,Volt,https://neomwellbeing.com/,ok,2026-11-18T07:53:23+00:00,0,0,31,0,22,0,0,0,0,0,0,0,0,0,0,0,0
+nettenyc.com,product,candles,Broadcast,https://nettenyc.com/products/nette-fragrance-discovery-set-2026-sca_clone_freegift,ok,2026-11-18T07:53:27+00:00,4,24,25,8,16,0,6,0,7,0,0,0,0,0,0,0,0
+nettenyc.com,home,candles,Broadcast,https://nettenyc.com/,ok,2026-11-18T07:53:32+00:00,4,28,22,11,10,0,9,0,8,0,0,0,0,0,0,0,0
+overose.com,product,candles,Broadcast,https://overose.com/products/marshmallow-lavande,ok,2026-11-18T07:53:36+00:00,2,2,17,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+overose.com,home,candles,Broadcast,https://overose.com/,ok,2026-11-18T07:53:40+00:00,3,5,22,3,0,0,3,0,1,0,0,0,0,0,0,0,0
+snif.co,product,candles,,https://snif.co/products/sugar-coat-light-wash-scent-bundle,ok,2026-11-18T07:53:44+00:00,3,8,17,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+snif.co,home,candles,,https://snif.co/,ok,2026-11-18T07:53:49+00:00,4,21,64,0,35,12,0,0,3,0,0,0,0,0,0,0,0
+adanola.com,product,clothing,MAIN,https://adanola.com/products/knit-roll-hem-stripe-sweatshirt-coffee-bean,ok,2026-11-18T07:53:53+00:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+adanola.com,home,clothing,MAIN,https://adanola.com/,ok,2026-11-18T07:53:58+00:00,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ajeworld.com.au,product,clothing,Aje theme,https://ajeworld.com.au/products/alora-lace-maxi-skirt-avocado,ok,2026-11-18T07:54:02+00:00,6,17,57,1,25,9,1,1,1,0,0,0,0,0,0,0,0
+ajeworld.com.au,home,clothing,Aje theme,https://ajeworld.com.au/,ok,2026-11-18T07:54:07+00:00,6,33,43,0,11,16,0,4,3,0,0,0,0,0,0,0,0
+apc-us.com,product,clothing,Framework,https://apc-us.com/products/a-p-c-x-casio-watch-aq-240-meaef-m71016_raa,ok,2026-11-18T07:54:13+00:00,2,5,28,0,9,0,0,3,2,0,0,0,0,0,0,0,0
+apc-us.com,home,clothing,Framework,https://apc-us.com/,ok,2026-11-18T07:54:17+00:00,5,13,30,6,9,0,6,3,2,0,0,0,0,0,0,0,0
+banditrunning.com,product,clothing,,https://banditrunning.com/products/mens-run-pant-with-side-gusset-cocoa,ok,2026-11-18T07:54:21+00:00,2,17,38,0,15,0,0,0,0,0,0,0,0,0,0,0,0
+banditrunning.com,home,clothing,,https://banditrunning.com/,ok,2026-11-18T07:54:26+00:00,3,10,34,0,21,0,1,0,0,0,0,0,0,0,0,0,0
+boody.com.au,product,clothing,,https://boody.com.au/products/delicates-bag,ok,2026-11-18T07:54:31+00:00,4,47,20,9,0,28,9,0,1,0,0,0,0,0,0,0,0
+boody.com.au,home,clothing,,https://boody.com.au/,ok,2026-11-18T07:54:37+00:00,2,33,23,9,5,24,9,0,0,0,0,0,0,0,0,0,0
+derek-rose.com,product,clothing,Focal,https://derek-rose.com/products/eleanor-cashmere-cable-scarf-mist-grey,ok,2026-11-18T07:54:41+00:00,5,7,22,0,2,3,0,1,1,0,0,0,0,0,0,0,0
+derek-rose.com,home,clothing,Focal,https://derek-rose.com/,ok,2026-11-18T07:54:46+00:00,4,4,36,0,11,0,1,1,0,0,0,0,0,0,0,0,0
+desmondanddempsey.com,product,clothing,Desmond and Dempsey Theme,https://desmondanddempsey.com/products/unisex-towel-robe-sansindo-print-black-cream-1,ok,2026-11-18T07:54:50+00:00,4,14,97,0,0,3,0,0,1,0,0,0,0,0,0,0,0
+desmondanddempsey.com,home,clothing,Desmond and Dempsey Theme,https://desmondanddempsey.com/,ok,2026-11-18T07:54:56+00:00,2,6,185,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+eliteelevensporting.com,product,clothing,Impulse,https://eliteelevensporting.com/products/lightweight-funnel-neck-jacket-coffee-bean,ok,2026-11-18T07:55:00+00:00,5,61,98,0,3,13,0,8,0,0,0,1,0,0,0,0,0
+eliteelevensporting.com,home,clothing,Impulse,https://eliteelevensporting.com/,ok,2026-11-18T07:55:05+00:00,3,24,26,0,24,4,0,0,4,0,0,0,0,0,0,0,0
+fearofgod.com,product,clothing,Elevated,https://fearofgod.com/products/essentials-sports-fog-1920-37489-clebro-otc-61044862-brown-chrome-white,ok,2026-11-18T07:55:09+00:00,4,11,10,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+fearofgod.com,home,clothing,Elevated,https://fearofgod.com/,ok,2026-11-18T07:55:14+00:00,4,7,8,0,0,0,0,0,4,1,0,0,1,0,0,0,0
+honeybirdette.com,product,clothing,,https://honeybirdette.com/products/duke-mystic-blue,ok,2026-11-18T07:55:18+00:00,6,18,7,0,3,5,0,0,0,0,0,0,0,0,0,0,0
+honeybirdette.com,home,clothing,,https://honeybirdette.com/,ok,2026-11-18T07:55:25+00:00,5,39,17,0,16,32,0,0,2,0,0,0,0,0,0,0,0
+jadedldn.com,product,clothing,Jaded London,https://jadedldn.com/products/moth-bitten-straight-leg-jeans,ok,2026-11-18T07:55:39+00:00,6,52,26,20,0,0,20,1,22,0,0,0,1,0,0,0,0
+jadedldn.com,home,clothing,Jaded London,https://jadedldn.com/,ok,2026-11-18T07:55:44+00:00,6,12,2,1,0,0,1,1,5,0,0,0,1,0,0,0,0
+marineserre.com,product,clothing,Marine Serre,https://marineserre.com/products/wsn002arwov0053-rwov0053-pk20-flamingo-pink,ok,2026-11-18T07:55:48+00:00,1,13,23,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+marineserre.com,home,clothing,Marine Serre,https://marineserre.com/,ok,2026-11-18T07:55:52+00:00,2,15,45,0,11,0,0,0,0,0,0,0,0,0,0,0,0
+noahny.com,product,clothing,NOAH - ALPINE,https://noahny.com/products/wool-a-2-jacket-3,ok,2026-11-18T07:55:56+00:00,6,10,101,11,4,0,0,1,4,2,0,0,1,0,0,0,0
+noahny.com,home,clothing,NOAH - ALPINE,https://noahny.com/,ok,2026-11-18T07:56:01+00:00,5,22,142,11,29,0,0,1,11,2,0,0,1,0,0,0,0
+percivalclo.com,product,clothing,Made by Field,https://percivalclo.com/products/gibson-jacquard-cardigan-wool-navy,ok,2026-11-18T07:56:06+00:00,7,15,78,0,14,0,0,0,1,0,0,0,0,0,1,0,0
+percivalclo.com,home,clothing,Made by Field,https://percivalclo.com/,ok,2026-11-18T07:56:13+00:00,3,12,79,0,21,0,0,0,10,0,0,0,0,0,1,0,0
+runinrabbit.com,product,clothing,Horizon,https://runinrabbit.com/products/crusher-pocket-crop-womens-19,ok,2026-11-18T07:56:19+00:00,1,2,20,0,11,0,0,0,0,0,0,0,0,0,0,0,0
+runinrabbit.com,home,clothing,Horizon,https://runinrabbit.com/,ok,2026-11-18T07:56:24+00:00,2,2,30,1,15,0,1,0,0,0,0,0,0,0,0,0,0
+saysky.com,product,clothing,Prestige,https://saysky.com/products/bundle-saysky-clean-pace-flex-vest-combat-long-tights-bundle-bf0a9234d0bc,ok,2026-11-18T07:56:28+00:00,3,7,11,5,1,1,5,0,0,0,0,0,0,0,0,0,0
+saysky.com,home,clothing,Prestige,https://saysky.com/,ok,2026-11-18T07:56:34+00:00,3,4,394,1,4,0,1,0,2,0,0,0,0,0,0,0,0
+studionicholson.com,product,clothing,Dawn,https://studionicholson.com/products/yosha-twill-dress-in-porchini,ok,2026-11-18T07:56:39+00:00,6,8,39,1,4,0,1,1,2,0,0,0,0,0,0,0,0
+studionicholson.com,home,clothing,Dawn,https://studionicholson.com/,ok,2026-11-18T07:56:44+00:00,5,7,45,1,5,0,2,1,2,0,0,0,0,0,0,0,0
+stussy.com,product,clothing,SEED,https://stussy.com/products/11401990-tees-3-pack-black,ok,2026-11-18T07:56:48+00:00,3,25,5,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+stussy.com,home,clothing,SEED,https://stussy.com/,ok,2026-11-18T07:56:53+00:00,3,22,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+tenthousand.cc,product,clothing,Shiro,https://tenthousand.cc/products/rep-pant,ok,2026-11-18T07:56:57+00:00,5,35,11,1,0,16,0,0,0,0,0,0,0,0,0,2,0
+tenthousand.cc,home,clothing,Shiro,https://tenthousand.cc/,ok,2026-11-18T07:57:02+00:00,3,4,8,0,0,1,0,0,0,0,0,0,0,0,0,2,0
+us.2xu.com,product,clothing,Dawn,https://us.2xu.com/products/aero-tee-lbm-2026-wx7711a-fullcustomlime-swirl,ok,2026-11-18T07:57:06+00:00,3,4,34,0,3,2,0,1,0,0,0,0,0,0,0,0,0
+us.2xu.com,home,clothing,Dawn,https://us.2xu.com/,ok,2026-11-18T07:57:10+00:00,2,21,41,0,1,20,0,0,0,0,0,0,0,0,0,0,0
+wuxly.com,product,clothing,Palo Alto,https://wuxly.com/products/juneau-parka-lava-orange,ok,2026-11-18T07:57:14+00:00,2,4,271,4,0,0,3,0,1,0,0,0,0,0,0,0,0
+wuxly.com,home,clothing,Palo Alto,https://wuxly.com/,ok,2026-11-18T07:57:18+00:00,2,3,272,2,0,0,1,0,2,0,0,0,0,0,0,0,0
+ember.com,product,electronics,Dawn,https://ember.com/products/replacement-ember-tumbler-2,ok,2026-11-18T07:57:22+00:00,2,7,23,0,0,4,0,0,0,0,0,0,0,0,0,0,0
+ember.com,home,electronics,Dawn,https://ember.com/,ok,2026-11-18T07:57:26+00:00,2,45,20,0,0,38,0,0,0,0,0,0,0,0,0,0,0
+lofree.co,product,electronics,Impact,https://lofree.co/products/block-desk-mat-tofu,ok,2026-11-18T07:57:30+00:00,3,9,26,0,4,7,0,0,0,0,0,0,0,0,0,0,0
+lofree.co,home,electronics,Impact,https://lofree.co/,ok,2026-11-18T07:57:34+00:00,5,11,67,1,23,1,3,1,5,0,0,0,0,0,0,0,0
+moft.com,product,electronics,Kalles,https://moft.com/products/whypaper-creative-paper-set,ok,2026-11-18T07:57:38+00:00,4,8,23,0,0,0,0,4,0,2,0,0,0,0,0,0,0
+moft.com,home,electronics,Kalles,https://moft.com/,ok,2026-11-18T07:57:42+00:00,3,5,39,0,0,3,0,0,0,0,0,0,0,0,0,0,0
+nativeunion.com,product,electronics,Focal,https://nativeunion.com/products/apc-leather-case-for-iphone-18,ok,2026-11-18T07:57:47+00:00,5,11,38,0,9,4,0,0,0,0,0,4,0,0,0,0,0
+nativeunion.com,home,electronics,Focal,https://nativeunion.com/,ok,2026-11-18T07:57:52+00:00,6,36,102,0,13,4,0,2,0,0,0,26,0,0,0,0,0
+roccofridge.com,product,electronics,Rocco,https://roccofridge.com/products/the-mini-mini,ok,2026-11-18T07:57:57+00:00,3,10,34,0,10,0,4,0,0,0,0,0,0,0,0,0,0
+roccofridge.com,home,electronics,Rocco,https://roccofridge.com/,ok,2026-11-18T07:58:01+00:00,2,2,26,0,9,0,1,0,0,0,0,0,0,0,0,0,0
+soundboks.com,product,electronics,Concept,https://soundboks.com/products/soundboks-rider,ok,2026-11-18T07:58:05+00:00,3,12,53,0,19,0,0,1,4,0,0,0,0,0,0,0,0
+soundboks.com,home,electronics,Concept,https://soundboks.com/,ok,2026-11-18T07:58:09+00:00,3,5,30,0,10,2,1,0,2,0,0,0,0,0,0,0,0
+counterculturecoffee.com,product,food,o/S CCC Retail Theme,https://counterculturecoffee.com/products/finca-idania-pacamara-variety,ok,2026-11-18T07:58:13+00:00,3,7,35,1,23,1,0,0,0,0,0,0,1,0,0,0,0
+counterculturecoffee.com,home,food,o/S CCC Retail Theme,https://counterculturecoffee.com/,ok,2026-11-18T07:58:18+00:00,3,16,76,2,36,9,1,0,0,0,0,0,6,0,0,0,0
+dandelionchocolate.com,product,food,Dandelion Chocolate,https://dandelionchocolate.com/products/chocolate-cream-pie,ok,2026-11-18T07:58:22+00:00,2,3,24,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+dandelionchocolate.com,home,food,Dandelion Chocolate,https://dandelionchocolate.com/,ok,2026-11-18T07:58:26+00:00,1,1,32,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+darkmattercoffee.com,product,food,Symmetry,https://darkmattercoffee.com/products/chicago-beans-snapback-hat,ok,2026-11-18T07:58:30+00:00,1,3,27,0,26,0,0,0,3,0,0,0,0,0,0,0,0
+darkmattercoffee.com,home,food,Symmetry,https://darkmattercoffee.com/,ok,2026-11-18T07:58:35+00:00,1,9,54,0,47,0,0,0,9,0,0,0,0,0,0,0,0
+davidstea.com,product,food,Horizon,https://davidstea.com/products/clear-32-oz-tea-steeper,ok,2026-11-18T07:58:38+00:00,1,3,11,0,3,3,0,0,0,0,0,0,0,0,0,0,0
+davidstea.com,home,food,Horizon,https://davidstea.com/,ok,2026-11-18T07:58:43+00:00,1,3,52,0,5,3,0,0,0,0,0,0,0,0,0,0,0
+drinkghia.com,product,food,Dawn,https://drinkghia.com/products/le-fizz-copy,ok,2026-11-18T07:58:48+00:00,3,6,21,0,4,1,0,0,0,0,0,0,1,0,0,0,0
+drinkghia.com,home,food,Dawn,https://drinkghia.com/,ok,2026-11-18T07:58:52+00:00,3,12,66,0,41,10,0,0,0,0,0,0,1,0,0,0,0
+eatbanza.com,product,food,View Source Dev,https://eatbanza.com/products/wheat-rotini-protein-pasta-6-pack,ok,2026-11-18T07:58:56+00:00,3,26,9,0,0,24,0,0,0,0,0,0,0,0,0,0,0
+eatbanza.com,home,food,View Source Dev,https://eatbanza.com/,ok,2026-11-18T07:59:01+00:00,2,13,32,0,2,12,0,0,0,0,0,0,0,0,0,0,0
+eatfishwife.com,product,food,Blockshop,https://eatfishwife.com/products/albacore-tuna-in-spicy-spicyolive-oil-12-pack-wholesale,ok,2026-11-18T07:59:05+00:00,0,0,8,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+eatfishwife.com,home,food,Blockshop,https://eatfishwife.com/,ok,2026-11-18T07:59:10+00:00,3,13,37,0,19,5,0,0,0,0,0,0,0,0,0,0,0
+firebellytea.com,product,food,Horizon,https://firebellytea.com/products/loose-leaf-tea-filter-bags,ok,2026-11-18T07:59:15+00:00,5,45,7,0,1,1,0,0,1,0,0,0,1,0,0,0,0
+firebellytea.com,home,food,Horizon,https://firebellytea.com/,ok,2026-11-18T07:59:19+00:00,4,4,44,0,24,1,0,0,1,0,0,0,1,0,0,0,0
+harney.com,product,food,,https://harney.com/products/pumpkin-spice-20-sachet-tin,ok,2026-11-18T07:59:23+00:00,3,4,53,0,14,0,0,0,0,0,0,0,0,0,0,0,0
+harney.com,home,food,,https://harney.com/,ok,2026-11-18T07:59:28+00:00,2,3,52,0,12,0,0,0,0,0,0,0,0,0,0,0,0
+middaysquares.com,product,food,Debut,https://middaysquares.com/products/12-pack-pb-j-apple,ok,2026-11-18T07:59:31+00:00,1,8,37,0,4,8,0,0,0,0,0,0,0,0,0,0,0
+middaysquares.com,home,food,Debut,https://middaysquares.com/,ok,2026-11-18T07:59:37+00:00,2,4,29,0,21,1,0,3,0,0,0,0,0,0,0,0,0
+novascotiafisherman.com,product,food,Turbo,https://novascotiafisherman.com/products/crimson-berry-ginger-snapped-candle-set,ok,2026-11-18T07:59:42+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+novascotiafisherman.com,home,food,Turbo,https://novascotiafisherman.com/,ok,2026-11-18T07:59:46+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+sightglasscoffee.com,product,food,Broadcast,https://sightglasscoffee.com/products/fireside-flight,ok,2026-11-18T07:59:50+00:00,0,0,26,0,15,0,0,0,0,0,0,0,0,0,0,0,0
+sightglasscoffee.com,home,food,Broadcast,https://sightglasscoffee.com/,ok,2026-11-18T07:59:55+00:00,3,9,35,2,4,0,2,0,2,0,0,0,0,0,0,0,0
+unrealsnacks.com,product,food,Horizon,https://unrealsnacks.com/products/holiday-milk-chocolate-gems,ok,2026-11-18T07:59:58+00:00,2,27,24,0,0,26,0,0,0,0,0,0,0,0,0,0,0
+unrealsnacks.com,home,food,Horizon,https://unrealsnacks.com/,ok,2026-11-18T08:00:04+00:00,2,22,26,0,1,21,0,0,0,0,0,0,0,0,0,0,0
+vervecoffee.com,product,food,Verve Coffee,https://vervecoffee.com/products/lamastus-lomo-arriba-natural-green-tip-gesha-farmlevel-reserve,ok,2026-11-18T08:00:08+00:00,2,2,24,0,2,1,0,0,0,0,0,0,0,0,0,0,0
+vervecoffee.com,home,food,Verve Coffee,https://vervecoffee.com/,ok,2026-11-18T08:00:12+00:00,2,3,76,0,1,2,0,0,0,0,0,0,0,0,0,0,0
+yearsbeer.com,product,food,Horizon,https://yearsbeer.com/products/years-beer-club,ok,2026-11-18T08:00:16+00:00,5,16,42,0,34,12,0,0,1,0,0,0,1,0,0,0,0
+yearsbeer.com,home,food,Horizon,https://yearsbeer.com/,ok,2026-11-18T08:00:20+00:00,4,14,46,0,40,10,0,0,2,0,0,0,1,0,0,0,0
+arhoj.com,product,handmade,Prestige,https://arhoj.com/products/national-museum-cup,ok,2026-11-18T08:00:24+00:00,2,2,18,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+arhoj.com,home,handmade,Prestige,https://arhoj.com/,ok,2026-11-18T08:00:28+00:00,5,50,165,0,49,1,3,0,38,0,0,0,0,0,0,0,0
+blockshoptextiles.com,product,handmade,Prestige,https://blockshoptextiles.com/products/onsen-saru-hot-spring-bath-soak,ok,2026-11-18T08:00:33+00:00,1,5,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+blockshoptextiles.com,home,handmade,Prestige,https://blockshoptextiles.com/,ok,2026-11-18T08:00:37+00:00,2,9,23,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+goodeeworld.com,product,handmade,Symmetry,https://goodeeworld.com/products/tapestry-blanket-v08,ok,2026-11-18T08:00:41+00:00,2,4,49,0,38,3,0,0,1,0,0,0,0,0,0,0,0
+goodeeworld.com,home,handmade,Symmetry,https://goodeeworld.com/,ok,2026-11-18T08:00:46+00:00,2,7,103,0,88,0,0,0,0,0,0,0,0,0,0,0,0
+mociun.com,product,handmade,Mociun,https://mociun.com/products/expression-ring,ok,2026-11-18T08:00:50+00:00,6,23,18,1,0,6,1,1,0,0,0,0,0,0,0,0,0
+mociun.com,home,handmade,Mociun,https://mociun.com/,ok,2026-11-18T08:00:54+00:00,4,15,7,1,0,6,1,0,0,0,0,0,0,0,0,0,0
+mquan.com,product,handmade,Simple,https://mquan.com/products/custom-astrological-thrown-bell-tall-rainbow,ok,2026-11-18T08:00:58+00:00,3,16,11,0,1,12,0,0,0,0,0,0,0,0,0,0,0
+mquan.com,home,handmade,Simple,https://mquan.com/,ok,2026-11-18T08:01:04+00:00,2,20,52,0,22,19,0,0,0,0,0,0,0,0,0,0,0
+notaryceramics.com,product,handmade,Impulse,https://notaryceramics.com/products/baby-hugo-cat-lavender-ornament,ok,2026-11-18T08:01:08+00:00,9,23,10,1,0,2,0,1,2,0,0,4,0,0,0,0,0
+notaryceramics.com,home,handmade,Impulse,https://notaryceramics.com/,ok,2026-11-18T08:01:13+00:00,10,37,11,0,1,0,0,1,7,0,0,9,0,0,0,0,0
+shopyowie.com,product,handmade,Minimalista,https://shopyowie.com/products/sunroom-matches-sardines,ok,2026-11-18T08:01:17+00:00,2,13,12,0,2,11,0,0,0,0,0,0,0,0,0,0,0
+shopyowie.com,home,handmade,Minimalista,https://shopyowie.com/,ok,2026-11-18T08:01:21+00:00,2,5,35,0,28,3,0,0,0,0,0,0,0,0,0,0,0
+thefuturekept.com,product,handmade,Lorenza,https://thefuturekept.com/products/slate-chunky-recycled-wool-silk-socks,ok,2026-11-18T08:01:25+00:00,4,26,17,0,14,21,0,0,2,0,0,0,0,0,0,0,0
+thefuturekept.com,home,handmade,Lorenza,https://thefuturekept.com/,ok,2026-11-18T08:01:29+00:00,3,23,13,0,12,20,0,0,1,0,0,0,0,0,0,0,0
+theprimaryessentials.com,product,handmade,Prestige,https://theprimaryessentials.com/products/pool-vase-5,ok,2026-11-18T08:01:33+00:00,2,13,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theprimaryessentials.com,home,handmade,Prestige,https://theprimaryessentials.com/,ok,2026-11-18T08:01:37+00:00,3,10,10,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+trnk-nyc.com,product,handmade,Dawn,https://trnk-nyc.com/products/custom-semicircle-area-rug-large,ok,2026-11-18T08:01:40+00:00,5,13,33,0,4,0,0,0,1,2,0,0,1,0,0,0,0
+trnk-nyc.com,home,handmade,Dawn,https://trnk-nyc.com/,ok,2026-11-18T08:01:45+00:00,2,3,29,0,4,0,0,0,1,0,0,0,0,0,0,0,0
+weareknitters.com,product,handmade,Dawn,https://weareknitters.com/products/new-years-resolution-7-days-of-knitting-challenge-mystery-project,ok,2026-11-18T08:01:50+00:00,4,29,24,0,8,16,0,0,0,0,0,0,0,0,0,0,0
+weareknitters.com,home,handmade,Dawn,https://weareknitters.com/,ok,2026-11-18T08:01:54+00:00,5,68,42,0,9,42,0,0,1,0,0,0,0,0,0,0,0
+audocph.com,product,home,Dawn,https://audocph.com/products/plinth-tall-nero-marquina-marble,ok,2026-11-18T08:01:59+00:00,2,3,63,0,25,2,0,0,0,1,0,0,0,0,0,0,0
+audocph.com,home,home,Dawn,https://audocph.com/,ok,2026-11-18T08:02:04+00:00,1,2,13,0,5,2,0,0,0,0,0,0,0,0,0,0,0
+bludot.com,product,home,Bludot Theme,https://bludot.com/products/strut-wood-dining-table,ok,2026-11-18T08:02:08+00:00,2,19,214,0,10,0,0,0,0,0,0,0,0,0,0,0,0
+bludot.com,home,home,Bludot Theme,https://bludot.com/,ok,2026-11-18T08:02:14+00:00,4,42,178,0,10,26,0,0,0,0,0,6,0,0,0,0,0
+coldpicnic.com,product,home,Cold Picnic,https://coldpicnic.com/products/crocodile,ok,2026-11-18T08:02:18+00:00,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+coldpicnic.com,home,home,Cold Picnic,https://coldpicnic.com/,ok,2026-11-18T08:02:22+00:00,0,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+eastfork.com,product,home,on/Sight Base Theme,https://eastfork.com/products/cake-plate-set-la-sirene-sb,ok,2026-11-18T08:02:26+00:00,2,2,30,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+eastfork.com,home,home,on/Sight Base Theme,https://eastfork.com/,ok,2026-11-18T08:02:31+00:00,1,1,42,0,5,0,0,1,0,0,0,0,0,0,0,0,0
+ergonofis.com,product,home,Broadcast,https://ergonofis.com/products/office-rug,ok,2026-11-18T08:02:35+00:00,8,31,27,6,8,1,6,5,4,0,0,0,0,0,0,0,0
+ergonofis.com,home,home,Broadcast,https://ergonofis.com/,ok,2026-11-18T08:02:40+00:00,5,44,78,18,10,0,18,0,4,0,0,0,0,0,0,0,0
+fable.com,product,home,Cascade,https://fable.com/products/fable-mini-no-2,ok,2026-11-18T08:02:44+00:00,3,8,26,0,1,4,0,0,0,0,0,0,0,0,0,0,0
+fable.com,home,home,Cascade,https://fable.com/,ok,2026-11-18T08:02:50+00:00,4,6,36,1,5,3,1,0,0,0,0,0,0,0,0,0,0
+fieldcompany.com,product,home,Field Company,https://fieldcompany.com/products/the-field-kitchen-set,ok,2026-11-18T08:02:54+00:00,2,5,25,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+fieldcompany.com,home,home,Field Company,https://fieldcompany.com/,ok,2026-11-18T08:02:59+00:00,1,1,46,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+finexusa.com,product,home,Dawn,https://finexusa.com/products/8-flat-press,ok,2026-11-18T08:03:03+00:00,2,34,73,0,1,32,0,0,0,0,0,0,0,0,0,0,0
+finexusa.com,home,home,Dawn,https://finexusa.com/,ok,2026-11-18T08:03:07+00:00,1,23,37,0,16,23,0,0,0,0,0,0,0,0,0,0,0
+gethommey.com,product,home,Hommey,https://gethommey.com/products/mug-pistachio-1,ok,2026-11-18T08:03:11+00:00,3,15,48,0,13,2,0,0,12,0,0,0,0,0,0,0,0
+gethommey.com,home,home,Hommey,https://gethommey.com/,ok,2026-11-18T08:03:17+00:00,5,18,125,0,14,5,0,0,10,0,0,0,0,0,1,0,0
+hawkinsnewyork.com,product,home,HNY,https://hawkinsnewyork.com/products/dot-linen-placemat-set-of-4-navy-white,ok,2026-11-18T08:03:23+00:00,2,4,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hawkinsnewyork.com,home,home,HNY,https://hawkinsnewyork.com/,ok,2026-11-18T08:03:27+00:00,0,0,59,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+hedleyandbennett.com,product,home,,https://hedleyandbennett.com/products/marvels-spider-man-kids-apron,ok,2026-11-18T08:03:31+00:00,0,0,27,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+hedleyandbennett.com,home,home,,https://hedleyandbennett.com/,ok,2026-11-18T08:03:37+00:00,0,0,162,0,36,0,0,0,0,0,0,0,0,0,0,0,0
+hestanculinary.com,product,home,Expanse,https://hestanculinary.com/products/titanium-limited-edition-holiday-10-piece-set-1,ok,2026-11-18T08:03:41+00:00,5,35,67,6,10,15,7,0,0,0,0,0,0,0,0,0,0
+hestanculinary.com,home,home,Expanse,https://hestanculinary.com/,ok,2026-11-18T08:03:46+00:00,5,30,102,0,0,17,1,0,0,0,0,0,0,0,0,0,0
+houseofhackney.com,product,home,Origin,https://houseofhackney.com/products/flora-delanica-velvet-clay,ok,2026-11-18T08:03:50+00:00,2,5,116,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+houseofhackney.com,home,home,Origin,https://houseofhackney.com/,ok,2026-11-18T08:03:57+00:00,2,5,113,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+insideweather.com,product,home,Symmetry,https://insideweather.com/products/kael-plush-accent-chair-frost,ok,2026-11-18T08:04:02+00:00,5,81,72,0,33,14,2,0,63,0,0,1,0,0,0,0,0
+insideweather.com,home,home,Symmetry,https://insideweather.com/,ok,2026-11-18T08:04:08+00:00,3,60,77,0,38,0,1,0,58,0,0,1,0,0,0,0,0
+jonathanadler.com,product,home,Dawn,https://jonathanadler.com/products/fruit-stripe-reversible-outdoor-pillow,ok,2026-11-18T08:04:12+00:00,8,20,40,0,1,4,0,0,1,1,0,0,0,0,2,0,0
+jonathanadler.com,home,home,Dawn,https://jonathanadler.com/,ok,2026-11-18T08:04:17+00:00,8,15,98,0,11,3,1,0,2,0,0,0,0,0,2,0,0
+mcgeeandco.com,product,home,Prestige,https://mcgeeandco.com/products/9-grandis-fir-pre-lit-faux-tree,ok,2026-11-18T08:04:22+00:00,4,20,54,0,40,6,0,0,4,0,0,0,0,0,0,0,0
+mcgeeandco.com,home,home,Prestige,https://mcgeeandco.com/,ok,2026-11-18T08:04:27+00:00,1,2,48,0,40,0,0,0,2,0,0,0,0,0,0,0,0
+neptune.com,product,home,Lorenza,https://neptune.com/products/renewed-olivia-2-seater-sofa-heavyweight-linen-pale-oat,ok,2026-11-18T08:04:32+00:00,3,8,59,0,20,3,0,0,4,0,0,0,0,0,0,0,0
+neptune.com,home,home,Lorenza,https://neptune.com/,ok,2026-11-18T08:04:37+00:00,2,19,85,0,25,0,0,0,18,0,0,0,0,0,0,0,0
+ooni.com,product,home,UWP FW4 Theme,https://ooni.com/products/volt-2-culinary-bundle,ok,2026-11-18T08:04:41+00:00,6,39,105,7,11,20,7,2,0,0,0,2,0,0,0,0,0
+ooni.com,home,home,UWP FW4 Theme,https://ooni.com/,ok,2026-11-18T08:04:46+00:00,5,20,78,0,27,13,1,0,0,0,0,2,0,0,0,0,0
+revivalrugs.com,product,home,,https://revivalrugs.com/products/vintage-persian-rug-fornel,ok,2026-11-18T08:04:51+00:00,3,3,12,0,4,0,0,1,0,0,0,0,0,0,0,0,0
+revivalrugs.com,home,home,,https://revivalrugs.com/,ok,2026-11-18T08:04:57+00:00,2,7,37,0,15,6,0,0,0,0,0,0,0,0,0,0,0
+sabai.design,product,home,Sabai Redesign 2026,https://sabai.design/products/the-lumbar-pillow-in-cactus-leather,ok,2026-11-18T08:05:01+00:00,7,29,24,7,10,2,7,2,4,0,0,0,0,0,0,0,0
+sabai.design,home,home,Sabai Redesign 2026,https://sabai.design/,ok,2026-11-18T08:05:06+00:00,6,35,46,1,42,23,1,2,3,0,0,0,0,0,0,0,0
+sabre-paris.com,product,home,@theoz/theme_sabre_v2,https://sabre-paris.com/products/bistrot-pearly-orange-petit-couteau,ok,2026-11-18T08:05:10+00:00,3,8,28,0,23,6,0,0,1,0,0,0,0,0,0,0,0
+sabre-paris.com,home,home,@theoz/theme_sabre_v2,https://sabre-paris.com/,ok,2026-11-18T08:05:15+00:00,3,5,47,0,35,2,0,0,2,0,0,0,0,0,0,0,0
+schoolhouse.com,product,home,Dawn,https://schoolhouse.com/products/mainsail-throw-pillow-cover,ok,2026-11-18T08:05:19+00:00,2,32,36,0,1,27,0,0,0,0,0,0,0,0,0,0,0
+schoolhouse.com,home,home,Dawn,https://schoolhouse.com/,ok,2026-11-18T08:05:23+00:00,3,19,17,1,7,15,1,0,0,0,0,0,0,0,0,0,0
+scp.co.uk,product,home,,https://scp.co.uk/products/composite-artwork,ok,2026-11-18T08:05:27+00:00,7,42,12,0,0,1,0,1,12,2,0,0,0,0,0,0,0
+scp.co.uk,home,home,,https://scp.co.uk/,ok,2026-11-18T08:05:31+00:00,5,182,154,5,0,0,2,0,146,1,0,0,0,0,0,0,0
+sixpenny.com,product,home,Wondersauce,https://sixpenny.com/products/rain-drop-copy,ok,2026-11-18T08:05:35+00:00,3,19,83,0,0,0,0,16,0,0,0,0,0,0,0,0,0
+sixpenny.com,home,home,Wondersauce,https://sixpenny.com/,ok,2026-11-18T08:05:40+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+smithey.com,product,home,Smithey,https://smithey.com/products/seasoned-the-art-and-craft-of-cast-iron-cooking,ok,2026-11-18T08:05:43+00:00,4,12,26,0,3,6,0,2,1,0,0,0,0,0,0,0,0
+smithey.com,home,home,Smithey,https://smithey.com/,ok,2026-11-18T08:05:48+00:00,6,30,22,1,12,9,2,2,1,0,0,0,0,0,0,0,0
+souschef.co.uk,product,home,Sous Chef Theme,https://souschef.co.uk/products/bea-floral-cereal-bowl,ok,2026-11-18T08:05:53+00:00,10,32,42,2,0,11,2,0,1,0,0,4,1,0,0,0,0
+souschef.co.uk,home,home,Sous Chef Theme,https://souschef.co.uk/,ok,2026-11-18T08:05:58+00:00,7,15,71,1,30,4,1,6,1,0,0,1,0,0,0,0,0
+sundays-company.com,product,home,Sundays,https://sundays-company.com/products/align-set-of-two-coffee-tables-walnut,ok,2026-11-18T08:06:03+00:00,3,4,24,0,1,1,0,0,0,0,0,0,2,0,0,0,0
+sundays-company.com,home,home,Sundays,https://sundays-company.com/,ok,2026-11-18T08:06:08+00:00,0,0,186,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+the-citizenry.com,product,home,K&P Birch,https://the-citizenry.com/products/deniz-kilim-pillow,ok,2026-11-18T08:06:13+00:00,2,2,6,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+the-citizenry.com,home,home,K&P Birch,https://the-citizenry.com/,ok,2026-11-18T08:06:18+00:00,1,1,9,0,2,1,0,0,0,0,0,0,0,0,0,0,0
+theconranshop.com,product,home,Origin,https://theconranshop.com/products/square-1-usb-c-1-8m-stockholm-black,ok,2026-11-18T08:06:22+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+theconranshop.com,home,home,Origin,https://theconranshop.com/,ok,2026-11-18T08:06:26+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+yearandday.com,product,home,Combine,https://yearandday.com/products/home-for-the-holidays-set,ok,2026-11-18T08:06:30+00:00,3,8,46,1,29,0,0,0,0,0,0,0,0,0,0,0,0
+yearandday.com,home,home,Combine,https://yearandday.com/,ok,2026-11-18T08:06:34+00:00,0,0,95,1,55,0,0,0,0,0,0,0,0,0,0,0,0
+alighieri.com,product,jewelry,Alighieri by Dash,https://alighieri.com/products/the-tramonto-opal-necklace,ok,2026-11-18T08:06:38+00:00,4,7,8,0,7,3,0,1,2,0,0,0,0,0,1,0,0
+alighieri.com,home,jewelry,Alighieri by Dash,https://alighieri.com/,ok,2026-11-18T08:06:42+00:00,4,9,18,0,12,4,0,1,3,0,0,0,0,0,1,0,0
+completedworks.com,product,jewelry,Completed Works,https://completedworks.com/products/white-armchair,ok,2026-11-18T08:06:46+00:00,6,14,27,0,0,2,0,1,0,0,0,0,0,0,0,0,0
+completedworks.com,home,jewelry,Completed Works,https://completedworks.com/,ok,2026-11-18T08:06:50+00:00,6,10,28,0,3,0,0,1,2,0,0,0,0,0,0,0,0
+dinosaurdesigns.com.au,product,jewelry,Broadcast,https://dinosaurdesigns.com.au/products/medium-rock-bangle,ok,2026-11-18T08:06:55+00:00,4,26,166,6,3,0,2,0,1,0,0,0,0,0,0,0,0
+dinosaurdesigns.com.au,home,jewelry,Broadcast,https://dinosaurdesigns.com.au/,ok,2026-11-18T08:07:00+00:00,4,40,334,14,15,0,11,0,6,0,0,0,0,0,0,0,0
+girlswithgems.com,product,jewelry,Wonder,https://girlswithgems.com/products/reh-studios-valentina-bag-beige,ok,2026-11-18T08:07:08+00:00,5,57,227,0,13,0,15,0,12,0,0,0,0,0,0,0,0
+girlswithgems.com,home,jewelry,Wonder,https://girlswithgems.com/,ok,2026-11-18T08:07:12+00:00,5,118,273,0,42,0,15,0,36,0,0,0,0,0,0,0,0
+jenny-bird.com,product,jewelry,Prestige,https://jenny-bird.com/products/glazed-tissue-ring-silver,ok,2026-11-18T08:07:17+00:00,8,36,37,1,10,0,1,2,2,0,0,0,3,0,0,0,0
+jenny-bird.com,home,jewelry,Prestige,https://jenny-bird.com/,ok,2026-11-18T08:07:21+00:00,9,37,29,1,20,2,1,2,10,0,0,0,1,0,0,0,0
+lorenstewart.com,product,jewelry,Broadcast,https://lorenstewart.com/products/diamond-pave-barbell-huggies-3,ok,2026-11-18T08:07:25+00:00,3,15,405,0,1,0,0,4,0,0,0,0,0,0,0,0,0
+lorenstewart.com,home,jewelry,Broadcast,https://lorenstewart.com/,ok,2026-11-18T08:07:30+00:00,5,53,448,0,1,0,1,20,0,0,0,0,0,0,0,0,0
+marrowfine.com,product,jewelry,Broadcast,https://marrowfine.com/products/2-04ct-lab-created-diamond-abstract-bezel-ring,ok,2026-11-18T08:07:35+00:00,3,22,65,0,0,0,0,0,0,0,0,5,0,0,0,0,0
+marrowfine.com,home,jewelry,Broadcast,https://marrowfine.com/,ok,2026-11-18T08:07:39+00:00,3,22,103,0,0,0,0,0,0,0,0,5,1,0,0,0,0
+miansai.com,product,jewelry,,https://miansai.com/products/4mm-id-chain-bracelet-gold-vermeil,ok,2026-11-18T08:07:43+00:00,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,0
+miansai.com,home,jewelry,,https://miansai.com/,ok,2026-11-18T08:07:48+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+otiumberg.com,product,jewelry,Slate,https://otiumberg.com/products/double-ear-cuff-1,ok,2026-11-18T08:07:51+00:00,1,3,9,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+otiumberg.com,home,jewelry,Slate,https://otiumberg.com/,ok,2026-11-18T08:07:56+00:00,2,2,16,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+tomwoodproject.com,product,jewelry,Panagora,https://tomwoodproject.com/products/satin-cord-black,ok,2026-11-18T08:07:59+00:00,4,10,5,0,2,4,0,0,1,0,0,0,0,0,0,0,0
+tomwoodproject.com,home,jewelry,Panagora,https://tomwoodproject.com/,ok,2026-11-18T08:08:03+00:00,4,21,32,7,0,4,9,0,7,0,0,0,0,0,0,0,0
+wwake.com,product,jewelry,Symediane Starter Theme,https://wwake.com/products/sapphire-cove-tennis-bracelet,ok,2026-11-18T08:08:08+00:00,10,42,41,1,5,6,7,2,1,0,0,5,0,0,0,0,0
+wwake.com,home,jewelry,Symediane Starter Theme,https://wwake.com/,ok,2026-11-18T08:08:13+00:00,9,40,46,0,17,6,6,2,4,0,0,0,0,0,0,0,0
+aerflo.co,product,other,Aerflo-2024,https://aerflo.co/products/aerflo-hydro-flask,ok,2026-11-18T08:08:17+00:00,4,4,20,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+aerflo.co,home,other,Aerflo-2024,https://aerflo.co/,ok,2026-11-18T08:08:21+00:00,3,3,5,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+freshjuiceblender.com,product,other,Minimog - OS 2.0,https://freshjuiceblender.com/products/fresh-juice-tumblerblend-portable-blender,ok,2026-11-18T08:08:25+00:00,9,59,25,8,13,0,8,12,9,0,0,0,3,0,1,0,0
+freshjuiceblender.com,home,other,Minimog - OS 2.0,https://freshjuiceblender.com/,ok,2026-11-18T08:08:29+00:00,10,70,40,5,18,7,5,12,13,0,0,0,3,0,0,0,0
+getbrick.app,product,other,Horizon,https://getbrick.app/products/brick-brick-night-brick-mount,ok,2026-11-18T08:08:34+00:00,3,8,17,0,11,6,0,0,1,0,0,0,1,0,0,0,0
+getbrick.app,home,other,Horizon,https://getbrick.app/,ok,2026-11-18T08:08:39+00:00,5,27,43,0,32,5,18,0,2,0,0,0,1,0,0,0,0
+thesomewhereco.com,product,other,Reformation,https://thesomewhereco.com/products/keepsakes-large-wet-bag,ok,2026-11-18T08:08:43+00:00,7,41,70,6,4,18,6,0,6,0,0,0,0,0,2,0,0
+thesomewhereco.com,home,other,Reformation,https://thesomewhereco.com/,ok,2026-11-18T08:08:48+00:00,8,42,74,3,16,16,3,0,8,0,0,0,1,0,2,0,0
+vitalydesign.com,product,other,Dawn,https://vitalydesign.com/products/vt1347-c-ntmr-nightmare-max,ok,2026-11-18T08:08:53+00:00,1,1,59,0,22,1,0,0,0,0,0,0,0,0,0,0,0
+vitalydesign.com,home,other,Dawn,https://vitalydesign.com/,ok,2026-11-18T08:08:58+00:00,0,0,74,0,30,0,0,0,0,0,0,0,0,0,0,0,0
+againfaster.com,product,outdoors,,https://againfaster.com/products/prx-weight-plate-barbell-storage,ok,2026-11-18T08:09:02+00:00,4,23,21,4,2,16,3,0,3,0,0,0,0,0,0,0,0
+againfaster.com,home,outdoors,,https://againfaster.com/,ok,2026-11-18T08:09:07+00:00,3,46,46,15,21,22,14,0,10,0,0,0,0,0,0,0,0
+alpkit.com,product,outdoors,Wiro Agency Theme,https://alpkit.com/products/alpkit-re-energise-trucker,ok,2026-11-18T08:09:11+00:00,4,11,25,0,10,1,0,1,2,0,0,0,0,0,0,0,0
+alpkit.com,home,outdoors,Wiro Agency Theme,https://alpkit.com/,ok,2026-11-18T08:09:15+00:00,4,17,44,2,21,0,4,2,4,0,0,0,0,0,0,0,0
+blackdiamondequipment.com,product,outdoors,Conflagaration,https://blackdiamondequipment.com/products/hydra-ice-tool-will-gadd-edition,ok,2026-11-18T08:09:20+00:00,4,34,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+blackdiamondequipment.com,home,outdoors,Conflagaration,https://blackdiamondequipment.com/,ok,2026-11-18T08:09:24+00:00,4,35,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gsioutdoors.com,product,outdoors,Dawn,https://gsioutdoors.com/products/mesa-10-enamelware-plate,ok,2026-11-18T08:09:28+00:00,2,2,28,0,15,0,0,0,0,1,0,0,0,0,0,0,0
+gsioutdoors.com,home,outdoors,Dawn,https://gsioutdoors.com/,ok,2026-11-18T08:09:32+00:00,1,1,16,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+ikamper.com,product,outdoors,Dawn,https://ikamper.com/products/rtt-comfort-air-mattress-quad-bundle,ok,2026-11-18T08:09:36+00:00,1,3,59,0,27,3,0,0,0,0,0,0,0,0,0,0,0
+ikamper.com,home,outdoors,Dawn,https://ikamper.com/,ok,2026-11-18T08:09:41+00:00,1,19,79,0,62,19,0,0,0,0,0,0,0,0,0,0,0
+kammok.com,product,outdoors,Sling,https://kammok.com/products/talon-mount-clamp-bracket,ok,2026-11-18T08:09:45+00:00,4,17,7,0,1,7,0,4,5,0,0,0,0,0,0,0,0
+kammok.com,home,outdoors,Sling,https://kammok.com/,ok,2026-11-18T08:09:50+00:00,4,45,28,0,5,24,0,9,6,0,0,0,0,0,0,0,0
+kelty.com,product,outdoors,Paper,https://ca.kelty.com/products/worry-free-purchase,ok,2026-11-18T08:09:54+00:00,3,9,22,4,0,3,4,0,2,0,0,0,0,0,0,0,0
+kelty.com,home,outdoors,Paper,https://ca.kelty.com/,ok,2026-11-18T08:09:59+00:00,7,51,62,11,7,1,11,4,19,0,0,0,0,0,0,0,0
+nikestrength.com,product,outdoors,Conflagaration,https://nikestrength.com/products/venom-2-back,ok,2026-11-18T08:10:04+00:00,1,13,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+nikestrength.com,home,outdoors,Conflagaration,https://nikestrength.com/,ok,2026-11-18T08:10:09+00:00,4,45,41,0,0,0,0,4,0,0,0,0,0,0,0,0,0
+primalstrength.com,product,outdoors,Dawn,https://primalstrength.com/products/leg-package-deal-1,ok,2026-11-18T08:10:14+00:00,3,3,27,0,4,1,0,1,0,0,0,0,0,0,0,0,0
+primalstrength.com,home,outdoors,Dawn,https://primalstrength.com/,ok,2026-11-18T08:10:21+00:00,1,1,95,0,4,0,0,0,0,0,0,0,0,0,0,0,0
+prxperformance.com,product,outdoors,Concept,https://prxperformance.com/products/garage-sale-weight-plate-storage,ok,2026-11-18T08:10:26+00:00,2,2,23,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+prxperformance.com,home,outdoors,Concept,https://prxperformance.com/,ok,2026-11-18T08:10:30+00:00,1,1,104,0,15,0,0,0,0,0,0,0,0,0,0,0,0
+pvolve.com,product,outdoors,Shopify Theme V3,https://pvolve.com/products/pvolve-lululemon-stronger-together-daily-multi-pocket-tote-bag,ok,2026-11-18T08:10:35+00:00,4,9,28,0,11,0,0,2,5,0,0,0,0,0,0,0,0
+pvolve.com,home,outdoors,Shopify Theme V3,https://pvolve.com/,ok,2026-11-18T08:10:39+00:00,5,31,101,1,43,0,1,12,16,0,0,0,0,0,0,0,0
+repfitness.com,product,outdoors,Hydrogen theme,https://repfitness.com/products/phantom-adjustable-bench,ok,2026-11-18T08:10:44+00:00,7,36,76,8,8,18,1,0,0,1,0,1,0,0,0,0,0
+repfitness.com,home,outdoors,Hydrogen theme,https://repfitness.com/,ok,2026-11-18T08:10:50+00:00,4,29,100,9,13,15,3,0,0,0,0,0,0,0,0,0,0
+shop.centr.com,product,outdoors,on/Sight Base Theme,https://shop.centr.com/products/centr-x-hyrox-training-series-non-motorized-treadmill,ok,2026-11-18T08:10:56+00:00,0,0,26,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+shop.centr.com,home,outdoors,on/Sight Base Theme,https://shop.centr.com/,ok,2026-11-18T08:11:01+00:00,0,0,29,0,18,0,0,0,0,0,0,0,0,0,0,0,0
+shopbala.com,product,outdoors,Bala Theme,https://shopbala.com/products/personalized-the-deco-mat,ok,2026-11-18T08:11:06+00:00,2,3,26,0,5,2,0,0,0,0,0,0,0,0,0,0,0
+shopbala.com,home,outdoors,Bala Theme,https://shopbala.com/,ok,2026-11-18T08:11:10+00:00,2,2,37,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+snowpeak.com,product,outdoors,,https://snowpeak.com/products/winter-stacking-mug-set,ok,2026-11-18T08:11:14+00:00,6,15,25,0,0,3,0,0,0,0,0,4,0,0,1,0,0
+snowpeak.com,home,outdoors,,https://snowpeak.com/,ok,2026-11-18T08:11:19+00:00,4,9,26,0,0,1,0,0,0,0,0,4,0,0,0,0,0
+tonal.com,product,outdoors,TONAL,https://tonal.com/products/tonal-2-glacier,ok,2026-11-18T08:11:23+00:00,0,0,33,0,13,0,0,0,0,0,0,0,0,0,0,0,0
+tonal.com,home,outdoors,TONAL,https://tonal.com/,ok,2026-11-18T08:11:28+00:00,0,0,31,1,21,0,0,0,0,0,0,0,0,0,0,0,0
+becopets.com,product,pets,Dawn,https://becopets.com/products/cat-clean-up-kit-medium,ok,2026-11-18T08:11:32+00:00,3,17,54,0,17,0,0,0,6,0,0,0,0,0,0,0,0
+becopets.com,home,pets,Dawn,https://becopets.com/,ok,2026-11-18T08:11:37+00:00,1,6,44,0,18,0,0,0,6,0,0,0,0,0,0,0,0
+lambwolf.co,product,pets,Broadcast,https://lambwolf.co/products/noir-scarf-set,ok,2026-11-18T08:11:41+00:00,3,9,72,4,25,0,0,0,7,0,0,0,0,0,0,0,0
+lambwolf.co,home,pets,Broadcast,https://lambwolf.co/,ok,2026-11-18T08:11:46+00:00,4,13,95,6,15,9,2,0,0,1,0,0,0,0,0,0,0
+miacara.com,product,pets,MiaCara,https://miacara.com/products/viaggio,ok,2026-11-18T08:11:51+00:00,3,14,37,0,0,5,0,0,0,0,0,0,0,0,0,0,0
+miacara.com,home,pets,MiaCara,https://miacara.com/,ok,2026-11-18T08:11:56+00:00,2,4,93,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+modernbeast.com,product,pets,Symmetry,https://modernbeast.com/products/cherry-pop-enrichment-dog-toy,ok,2026-11-18T08:12:00+00:00,5,10,11,0,9,4,0,0,3,0,0,0,0,0,0,0,0
+modernbeast.com,home,pets,Symmetry,https://modernbeast.com/,ok,2026-11-18T08:12:05+00:00,3,6,53,0,27,3,0,0,2,0,0,0,0,0,0,0,0
+petfinn.com,product,pets,Impulse,https://petfinn.com/products/plaque-patrol-dental-chews-small-2-pack,ok,2026-11-18T08:12:09+00:00,6,12,67,0,34,4,0,0,3,0,0,0,0,0,0,0,0
+petfinn.com,home,pets,Impulse,https://petfinn.com/,ok,2026-11-18T08:12:13+00:00,4,41,63,0,34,36,0,1,3,0,0,0,0,0,0,0,0
+thefoggydog.com,product,pets,Dawn,https://thefoggydog.com/products/blue-frost-plaid-dog-blanket,ok,2026-11-18T08:12:17+00:00,3,6,64,1,6,0,0,0,1,0,0,1,0,0,0,0,0
+thefoggydog.com,home,pets,Dawn,https://thefoggydog.com/,ok,2026-11-18T08:12:23+00:00,5,10,64,0,4,0,0,0,2,0,0,0,1,0,0,0,0
+tuftandpaw.com,product,pets,Tuft & Paw 3.0,https://tuftandpaw.com/products/gift-card-2,ok,2026-11-18T08:12:27+00:00,1,1,16,1,9,1,0,0,0,0,0,0,0,0,0,0,0
+tuftandpaw.com,home,pets,Tuft & Paw 3.0,https://tuftandpaw.com/,ok,2026-11-18T08:12:36+00:00,2,5,28,2,7,1,4,0,0,0,0,0,0,0,0,0,0
+zeedog.com,product,pets,Essence,https://zeedog.com/products/tres-long-leash-2-0,ok,2026-11-18T08:12:40+00:00,2,5,18,0,7,1,0,0,0,0,0,0,0,0,0,0,0
+zeedog.com,home,pets,Essence,https://zeedog.com/,ok,2026-11-18T08:12:45+00:00,1,4,30,0,7,0,0,0,0,0,0,0,0,0,0,0,0
+beardsanddaisies.co.uk,product,plants,Unified Shopify Theme,https://beardsanddaisies.co.uk/products/watermelon-gummies,ok,2026-11-18T08:12:49+00:00,5,13,22,0,4,5,0,0,0,0,0,0,0,0,0,0,0
+beardsanddaisies.co.uk,home,plants,Unified Shopify Theme,https://beardsanddaisies.co.uk/,ok,2026-11-18T08:12:54+00:00,4,10,33,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+botanicalinterests.com,product,plants,Fhoke Template,https://botanicalinterests.com/products/cover-crop-crimson-clover-seed-shaker,ok,2026-11-18T08:12:59+00:00,5,20,17,0,0,1,0,1,0,0,0,2,0,0,0,0,0
+botanicalinterests.com,home,plants,Fhoke Template,https://botanicalinterests.com/,ok,2026-11-18T08:13:03+00:00,2,52,31,0,14,0,0,0,3,0,0,0,0,0,0,0,0
+conservatoryarchives.co.uk,product,plants,Debut,https://conservatoryarchives.co.uk/products/ipomoea-bolusiana,ok,2026-11-18T08:13:07+00:00,6,27,44,5,24,6,5,10,0,0,0,0,0,0,1,0,0
+conservatoryarchives.co.uk,home,plants,Debut,https://conservatoryarchives.co.uk/,ok,2026-11-18T08:13:11+00:00,4,9,17,0,14,1,0,0,2,0,0,2,0,0,0,0,0
+hortology.co.uk,product,plants,Turbo,https://hortology.co.uk/products/lotus-speckle-plant-pot-matt-cream,ok,2026-11-18T08:13:15+00:00,5,17,17,3,2,0,3,0,0,0,0,6,0,0,0,0,0
+hortology.co.uk,home,plants,Turbo,https://hortology.co.uk/,ok,2026-11-18T08:13:20+00:00,4,19,26,0,2,2,0,0,0,0,0,4,0,0,0,0,0
+hudsonvalleyseed.com,product,plants,Be Yours,https://hudsonvalleyseed.com/products/aromatto-basil,ok,2026-11-18T08:13:24+00:00,5,15,17,0,0,1,0,1,9,0,0,0,0,0,1,0,0
+hudsonvalleyseed.com,home,plants,Be Yours,https://hudsonvalleyseed.com/,ok,2026-11-18T08:13:29+00:00,5,24,79,0,1,2,0,0,9,0,0,0,0,0,5,6,0
+lvly.com.au,product,plants,Turbo,https://lvly.com.au/products/endota-lip-duo,ok,2026-11-18T08:13:33+00:00,6,38,45,32,0,2,32,0,0,0,0,1,0,0,0,0,1
+lvly.com.au,home,plants,Turbo,https://lvly.com.au/,ok,2026-11-18T08:13:37+00:00,3,49,35,0,5,43,0,0,5,0,0,0,0,0,0,0,1
+modernsprout.com,product,plants,Focal,https://modernsprout.com/products/winter-bulb-kits,ok,2026-11-18T08:13:41+00:00,5,15,36,1,8,11,1,0,0,0,0,0,0,0,0,0,0
+modernsprout.com,home,plants,Focal,https://modernsprout.com/,ok,2026-11-18T08:13:45+00:00,8,39,105,4,46,1,4,0,7,0,0,0,0,0,0,0,0
+pistilsnursery.com,product,plants,Symmetry,,no_products,2026-11-18T08:13:50+00:00,,,,,,,,,,,,,,,,,
+pistilsnursery.com,home,plants,Symmetry,https://pistilsnursery.com/,ok,2026-11-18T08:13:50+00:00,2,29,21,0,8,21,0,0,8,0,0,0,0,0,0,0,0
+thesill.com,product,plants,Horizon,https://thesill.com/products/plant-of-the-month-club-pet-friendly,ok,2026-11-18T08:13:54+00:00,8,76,61,12,9,57,5,0,1,0,0,9,1,0,0,0,0
+thesill.com,home,plants,Horizon,https://thesill.com/,ok,2026-11-18T08:13:59+00:00,7,92,96,7,31,81,0,0,1,0,0,0,1,0,0,0,0
+alohas.com,product,shoes,Dawn,https://alohas.com/products/muse-vintage-effect-brown-leather-pumps,ok,2026-11-18T08:14:05+00:00,4,18,50,0,1,15,0,0,1,0,0,0,0,0,0,0,0
+alohas.com,home,shoes,Dawn,https://alohas.com/,ok,2026-11-18T08:14:09+00:00,6,55,61,5,19,12,5,2,33,0,0,0,0,0,0,0,0
+ancient-greek-sandals.com,product,shoes,Quickfire,https://ancient-greek-sandals.com/products/calisto-1,ok,2026-11-18T08:14:14+00:00,3,8,54,0,21,0,0,1,0,0,0,0,0,0,0,0,0
+ancient-greek-sandals.com,home,shoes,Quickfire,https://ancient-greek-sandals.com/,ok,2026-11-18T08:14:19+00:00,5,10,78,0,37,0,1,1,1,0,0,0,0,0,0,0,0
+dearfrances.com,product,shoes,Lorenza,https://dearfrances.com/products/balla-lace-black,ok,2026-11-18T08:14:23+00:00,5,11,33,0,4,2,0,0,6,0,0,0,1,0,0,0,0
+dearfrances.com,home,shoes,Lorenza,https://dearfrances.com/,ok,2026-11-18T08:14:27+00:00,5,12,13,0,12,0,0,0,7,0,0,0,1,0,0,1,0
+diemme.com,product,shoes,Moon,https://diemme.com/products/diemme-x-clarks-desert-trek-black-m,ok,2026-11-18T08:14:32+00:00,5,17,102,0,53,7,0,0,0,0,0,0,1,0,0,0,0
+diemme.com,home,shoes,Moon,https://diemme.com/,ok,2026-11-18T08:14:36+00:00,1,1,80,0,43,0,0,0,0,0,0,0,0,0,0,0,0
+fillingpieces.com,product,shoes,Filling Pieces,https://fillingpieces.com/products/longsleeve-striped-paloma,ok,2026-11-18T08:14:39+00:00,7,25,42,0,14,2,0,0,0,0,0,0,0,0,0,0,0
+fillingpieces.com,home,shoes,Filling Pieces,https://fillingpieces.com/,ok,2026-11-18T08:14:47+00:00,6,25,249,0,10,6,0,0,0,0,0,0,0,0,1,0,0
+hyloathletics.com,product,shoes,Stretch,https://hyloathletics.com/products/womens-hylo-axis-coffee,ok,2026-11-18T08:14:51+00:00,1,11,34,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+hyloathletics.com,home,shoes,Stretch,https://hyloathletics.com/,ok,2026-11-18T08:14:57+00:00,1,27,48,27,4,0,27,0,0,0,0,0,0,0,0,0,0
+karhu.com,product,shoes,Karhu,https://karhu.com/products/karhu-fusion-2-0-douglas-fir-navy-peony,ok,2026-11-18T08:15:01+00:00,6,48,73,20,6,9,25,1,4,0,0,0,0,0,0,0,0
+karhu.com,home,shoes,Karhu,https://karhu.com/,ok,2026-11-18T08:15:05+00:00,4,23,35,5,6,10,8,0,4,0,0,0,0,0,0,0,0
+thesusoutdoors.com,product,shoes,Dawn,https://thesusoutdoors.com/products/anyday-rain-boot-in-sage,ok,2026-11-18T08:15:09+00:00,1,5,14,0,8,5,0,0,0,0,0,0,0,0,0,0,0
+thesusoutdoors.com,home,shoes,Dawn,https://thesusoutdoors.com/,ok,2026-11-18T08:15:13+00:00,0,0,24,0,16,0,0,0,0,0,0,0,0,0,0,0,0
+thousandfell.com,product,shoes,Showcase,https://thousandfell.com/products/mens-slip-on-white-acid,ok,2026-11-18T08:15:17+00:00,5,22,85,0,13,5,0,7,1,0,0,0,0,0,0,0,0
+thousandfell.com,home,shoes,Showcase,https://thousandfell.com/,ok,2026-11-18T08:15:22+00:00,4,15,67,0,0,0,0,8,2,0,0,0,0,0,0,0,0
+beneathyourmask.com,product,small-stores,Parallax,https://beneathyourmask.com/products/heal-whipped-skin-souffle-aluminum-tube,ok,2026-11-18T08:15:26+00:00,2,16,9,3,0,0,3,0,0,0,0,0,0,0,0,0,0
+beneathyourmask.com,home,small-stores,Parallax,https://beneathyourmask.com/,ok,2026-11-18T08:15:31+00:00,2,11,13,0,12,0,0,0,6,0,0,0,0,0,0,0,0
+en.junglueck.de,product,small-stores,Clever,https://en.junglueck.de/products/mix-match-test,ok,2026-11-18T08:15:35+00:00,5,38,25,0,5,0,0,0,1,0,0,0,0,0,0,0,0
+en.junglueck.de,home,small-stores,Clever,https://en.junglueck.de/,ok,2026-11-18T08:15:41+00:00,3,45,44,0,8,4,0,0,1,0,0,0,0,0,0,0,0
+havefungrowyoung.com,product,small-stores,Horizon,https://havefungrowyoung.com/products/hfgy-womens-luca-boardshorts,ok,2026-11-18T08:15:47+00:00,2,5,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+havefungrowyoung.com,home,small-stores,Horizon,https://havefungrowyoung.com/,ok,2026-11-18T08:15:51+00:00,1,1,11,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+heatonist.com,product,small-stores,Dawn,https://heatonist.com/products/hot-ones-hot-sauce-los-calientes-rojo-c,ok,2026-11-18T08:15:55+00:00,1,5,74,0,66,5,0,0,0,0,0,0,0,0,0,0,0
+heatonist.com,home,small-stores,Dawn,https://heatonist.com/,ok,2026-11-18T08:16:00+00:00,2,6,92,0,74,5,0,0,0,0,0,0,0,0,0,0,0
+hellbabes.co,product,small-stores,Broadcast,https://hellbabes.co/products/sweet-venom-wide-leg-pant,ok,2026-11-18T08:16:05+00:00,2,5,352,0,0,3,0,0,0,0,0,0,0,0,0,0,0
+hellbabes.co,home,small-stores,Broadcast,https://hellbabes.co/,ok,2026-11-18T08:16:10+00:00,1,2,355,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+katemcleod.com,product,small-stores,Debut,https://katemcleod.com/products/body-ritual-gift-set,ok,2026-11-18T08:16:14+00:00,2,6,42,0,29,3,0,0,0,0,0,0,0,0,0,0,0
+katemcleod.com,home,small-stores,Debut,https://katemcleod.com/,ok,2026-11-18T08:16:19+00:00,2,9,40,0,27,6,0,0,0,0,0,0,0,0,0,0,0
+lolaandtheboys.com,product,small-stores,Turbo,https://lolaandtheboys.com/products/new-york-yankees-crystal-t-shirt-teen-women,ok,2026-11-18T08:16:23+00:00,3,8,104,0,20,3,0,0,0,0,0,0,0,0,0,0,0
+lolaandtheboys.com,home,small-stores,Turbo,https://lolaandtheboys.com/,ok,2026-11-18T08:16:28+00:00,1,1,145,0,20,1,0,0,0,0,0,0,0,0,0,0,0
+madebymary.com,product,small-stores,Base,https://madebymary.com/products/ily-morse-code-hoop-earrings,ok,2026-11-18T08:16:32+00:00,1,1,13,0,3,1,0,0,0,0,0,0,0,0,0,0,0
+madebymary.com,home,small-stores,Base,https://madebymary.com/,ok,2026-11-18T08:16:37+00:00,1,7,216,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+satyaorganics.com,product,small-stores,Pipeline,,no_products,2026-11-18T08:16:41+00:00,,,,,,,,,,,,,,,,,
+satyaorganics.com,home,small-stores,Pipeline,https://satyaorganics.com/,ok,2026-11-18T08:16:41+00:00,3,21,30,1,3,7,0,0,0,0,0,0,0,0,0,0,0
+suta.in,product,small-stores,Prestige,https://suta.in/products/son-rabri-cotton-tissue-peach-orange-saree,ok,2026-11-18T08:16:45+00:00,6,13,20,0,1,6,1,3,0,0,0,0,1,0,0,0,0
+suta.in,home,small-stores,Prestige,https://suta.in/,ok,2026-11-18T08:16:50+00:00,6,30,14,0,13,0,11,4,11,0,0,0,1,0,0,0,0
+thenimetyou.com,product,small-stores,Purity,https://thenimetyou.com/products/umbrella-gwp,ok,2026-11-18T08:16:54+00:00,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+thenimetyou.com,home,small-stores,Purity,https://thenimetyou.com/,ok,2026-11-18T08:16:58+00:00,2,4,39,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+arrae.com,product,supplements,Shiro,https://arrae.com/products/4ct-tone-sw-gummies-hold,ok,2026-11-18T08:17:03+00:00,2,2,7,0,6,0,1,0,0,0,0,0,0,0,0,1,0
+arrae.com,home,supplements,Shiro,https://arrae.com/,ok,2026-11-18T08:17:08+00:00,2,2,25,0,6,0,1,0,0,0,0,0,0,0,0,1,0
+beamorganics.com,product,supplements,Dusk,https://beamorganics.com/products/the-ultimate-beam-bundle,ok,2026-11-18T08:17:12+00:00,0,0,113,0,98,0,0,0,0,0,0,0,0,0,0,0,0
+beamorganics.com,home,supplements,Dusk,https://beamorganics.com/,ok,2026-11-18T08:17:18+00:00,1,2,313,0,273,0,0,0,0,0,0,0,0,0,0,0,0
+hilma.co,product,supplements,Vanilla,https://hilma.co/products/limited-time-travel-essentials,ok,2026-11-18T08:17:27+00:00,2,3,35,0,9,2,0,0,0,0,0,0,0,0,0,0,0
+hilma.co,home,supplements,Vanilla,https://hilma.co/,ok,2026-11-18T08:17:31+00:00,2,3,41,0,18,2,0,0,0,0,0,0,0,0,0,0,0
+perelelhealth.com,product,supplements,Perelel,https://perelelhealth.com/products/strength-and-skin-support-duo,ok,2026-11-18T08:17:35+00:00,1,12,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0
+perelelhealth.com,home,supplements,Perelel,https://perelelhealth.com/,ok,2026-11-18T08:17:39+00:00,1,8,76,0,2,8,0,0,0,0,0,0,0,0,0,0,0
+us.foursigmatic.com,product,supplements,Four Sigmatic,https://us.foursigmatic.com/products/focus-ground-coffee-5-lb-bulk-bag,ok,2026-11-18T08:17:44+00:00,2,11,39,0,25,10,1,0,0,0,0,0,0,0,0,0,0
+us.foursigmatic.com,home,supplements,Four Sigmatic,https://us.foursigmatic.com/,ok,2026-11-18T08:17:49+00:00,3,101,91,0,78,69,2,0,30,0,0,0,0,0,0,0,0
+yourheights.com,product,supplements,Your Heights,https://yourheights.com/products/ultimate-sleep-energy-starter-kit-copy,ok,2026-11-18T08:17:55+00:00,2,3,44,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+yourheights.com,home,supplements,Your Heights,https://yourheights.com/,ok,2026-11-18T08:17:59+00:00,0,0,147,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bigpotato.com,product,toys,MFTR x Big Potato,https://bigpotato.com/products/big-screen-games-party-bundle,ok,2026-11-18T08:18:03+00:00,1,1,19,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+bigpotato.com,home,toys,MFTR x Big Potato,https://bigpotato.com/,ok,2026-11-18T08:18:08+00:00,1,4,47,0,19,0,0,0,0,0,0,0,0,0,0,0,0
+magnatiles.com,product,toys,Concept,https://magnatiles.com/products/magna-tiles-metropolis,ok,2026-11-18T08:18:13+00:00,5,7,10,1,3,0,1,1,0,0,0,0,0,0,0,0,0
+magnatiles.com,home,toys,Concept,https://magnatiles.com/,ok,2026-11-18T08:18:17+00:00,5,15,49,0,13,0,0,1,0,0,0,0,0,0,0,0,0
+maileg.com,product,toys,Dawn,https://maileg.com/products/cradle-my-blue-mint,ok,2026-11-18T08:18:22+00:00,4,66,44,12,14,49,10,5,2,0,0,0,0,0,0,0,0
+maileg.com,home,toys,Dawn,https://maileg.com/,ok,2026-11-18T08:18:26+00:00,4,77,72,15,12,54,13,8,2,0,0,0,0,0,0,0,0
+make.do,product,toys,Shapes,https://make.do/products/makedo-tool-pouch,ok,2026-11-18T08:18:30+00:00,4,61,50,14,21,43,14,2,0,0,0,0,0,0,0,0,0
+make.do,home,toys,Shapes,https://make.do/,ok,2026-11-18T08:18:36+00:00,4,64,72,9,40,43,9,0,10,0,0,0,0,0,0,0,0
+olliella.com,product,toys,,https://olliella.com/products/mini-chari-mint,ok,2026-11-18T08:18:40+00:00,6,18,26,0,1,6,0,0,0,0,0,0,1,0,0,0,0
+olliella.com,home,toys,,https://olliella.com/,ok,2026-11-18T08:18:45+00:00,6,29,106,0,18,10,0,6,0,0,0,0,1,0,0,0,0
+omy-maison.com,product,toys,Bento,https://omy-maison.com/products/pen-buddies-yuki,ok,2026-11-18T08:18:50+00:00,6,25,41,0,1,2,0,13,2,0,0,0,0,0,0,0,0
+omy-maison.com,home,toys,Bento,https://omy-maison.com/,ok,2026-11-18T08:18:53+00:00,7,61,31,0,2,16,0,8,2,0,0,0,0,0,0,0,0
+pieceworkpuzzles.com,product,toys,Piecework Puzzles 2023,https://pieceworkpuzzles.com/products/make-it-yummy-mini-bead-kit-copy,ok,2026-11-18T08:18:58+00:00,4,46,13,0,8,37,0,0,0,0,0,0,0,0,0,0,0
+pieceworkpuzzles.com,home,toys,Piecework Puzzles 2023,https://pieceworkpuzzles.com/,ok,2026-11-18T08:19:03+00:00,2,5,27,2,6,3,2,0,0,0,0,0,0,0,0,0,0
+thewoobles.com,product,toys,Woobles,https://thewoobles.com/products/mystery-woobles-bundle,ok,2026-11-18T08:19:07+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+thewoobles.com,home,toys,Woobles,https://thewoobles.com/,ok,2026-11-18T08:19:11+00:00,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+avi-8.com,product,watches,Impulse,https://avi-8.com/products/hawker-hunter-duke-chronograph-75th-anniversary-limited-edition-wiltshire-av-4080-07,ok,2026-11-18T08:19:16+00:00,6,29,19,0,7,11,0,1,0,0,0,0,0,0,0,0,0
+avi-8.com,home,watches,Impulse,https://avi-8.com/,ok,2026-11-18T08:19:20+00:00,6,36,30,0,13,16,0,0,4,0,0,0,0,0,0,0,0
+bremont.com,product,watches,Bremont 2.0,https://bremont.com/products/nato-strap-grey-canvas,ok,2026-11-18T08:19:24+00:00,2,27,32,0,19,0,0,0,0,0,0,0,0,0,0,0,0
+bremont.com,home,watches,Bremont 2.0,https://bremont.com/,ok,2026-11-18T08:19:29+00:00,4,153,238,2,19,0,8,0,99,0,0,0,0,0,0,0,0
+danhenrywatches.com,product,watches,Dawn,https://danhenrywatches.com/products/1964-metal-bracelet,ok,2026-11-18T08:19:33+00:00,3,7,10,1,1,5,1,0,0,0,0,0,0,0,0,0,0
+danhenrywatches.com,home,watches,Dawn,https://danhenrywatches.com/,ok,2026-11-18T08:19:38+00:00,3,51,82,0,4,44,0,0,0,0,0,0,0,0,0,0,0
+farer.com,product,watches,Greenboxdesigns,https://farer.com/products/halley,ok,2026-11-18T08:19:42+00:00,5,16,33,3,22,7,3,0,4,0,0,0,0,0,1,0,0
+farer.com,home,watches,Greenboxdesigns,https://farer.com/,ok,2026-11-18T08:19:47+00:00,2,13,32,0,21,7,0,0,6,0,0,0,0,0,0,0,0
+mrjoneswatches.com,product,watches,Fetch,https://mrjoneswatches.com/products/engraving-copy,ok,2026-11-18T08:19:51+00:00,3,3,4,0,2,0,0,0,1,0,0,0,0,0,0,0,0
+mrjoneswatches.com,home,watches,Fetch,https://mrjoneswatches.com/,ok,2026-11-18T08:19:56+00:00,2,10,33,0,32,0,0,0,9,0,0,0,0,0,0,0,0
+nixon.com,product,watches,Dawn,https://nixon.com/products/51-30-chrono-friday-the-13th-edition-matte-chrome-white,ok,2026-11-18T08:20:00+00:00,3,10,66,0,10,0,0,0,1,0,0,0,0,0,0,0,0
+nixon.com,home,watches,Dawn,https://nixon.com/,ok,2026-11-18T08:20:05+00:00,3,7,116,0,34,0,1,0,1,0,0,0,0,0,0,0,0
+spinnaker-watches.com,product,watches,Vision,https://spinnaker-watches.com/products/spence-automatic-help-for-heroes-limited-edition-blue-sp-5093-01,ok,2026-11-18T08:20:09+00:00,2,4,174,0,35,1,0,0,0,0,0,0,0,0,0,0,0
+spinnaker-watches.com,home,watches,Vision,https://spinnaker-watches.com/,ok,2026-11-18T08:20:13+00:00,3,43,286,0,103,10,1,0,32,0,0,0,0,0,0,0,0

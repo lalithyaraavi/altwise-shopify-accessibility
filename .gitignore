@@ -1,0 +1,9 @@
+# secrets - never commit
+.env
+# large raw scrape files (rebuild with the scripts)
+data/raw/
+data/alt/
+data/axe/
+logs/
+__pycache__/
+.ipynb_checkpoints/

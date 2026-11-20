@@ -1,0 +1,10 @@
+sample_id,accurate,useful,concise,error_type,notes
+S005,no,yes,yes,,
+S017,yes,no,yes,,Doesn't describe the colours or the flavours that you can see visually
+S028,yes,yes,yes,wrong colour,
+S031,yes,yes,yes,missing key detail,
+S034,yes,yes,yes,,drop proof?
+S038,yes,no,yes,,What about the case in the middle
+S040,yes,yes,yes,,missing the text
+S064,yes,yes,yes,text/brand misread,missed the text
+S093,yes,yes,yes,missing key detail,

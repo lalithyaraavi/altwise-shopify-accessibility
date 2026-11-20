@@ -1,0 +1,501 @@
+domain,category,sample_group,status,final_domain,n_products,theme_name,theme_schema_name,theme_store_id,theme_type,base_theme,theme_family
+gymshark.com,clothing,big_brand,error_timeout,,,,,,,,
+fashionnova.com,clothing,big_brand,ok,fashionnova.com,250,,,,unknown,,unknown
+aloyoga.com,clothing,big_brand,ok,aloyoga.com,249,MSB - Espresso Theme Updates Prod vR20.3,Production (refs/tags/re),,custom,,bespoke
+endclothing.com,clothing,big_brand,ok,endclothing.com,250,DT Site Refresh 16/11,By Association Only,,custom,,bespoke
+comfrt.com,clothing,big_brand,ok,comfrt.com,249,,,,unknown,,unknown
+boden.com,clothing,big_brand,ok,www.boden.com,250,DEPLOY MID D11 WK46 REFRESH 12.11 (Boden Main),fuse2.0,,custom,,bespoke
+us.princesspolly.com,clothing,big_brand,ok,us.princesspolly.com,250,Princess Polly 2025,Princess Polly by Pivot,,custom,,bespoke
+windsorstore.com,clothing,big_brand,ok,windsorstore.com,250,WK 43 11/17 - Wishlist + INTL MDs - FINAL,Windsor,,custom,,bespoke
+libas.in,clothing,big_brand,ok,libas.in,250,Libas X DI,Impulse,,custom,Impulse,off_the_shelf_customised
+neweracap.com,clothing,big_brand,ok,neweracap.com,250,[NEW ERA] LEGACY NOV 16 2026 V3,Dawn,,custom,Dawn,off_the_shelf_customised
+kith.com,clothing,big_brand,error_timeout,,,,,,,,
+chubbies.com,clothing,big_brand,ok,chubbies.com,250,,,,unknown,,unknown
+taylorstitch.com,clothing,big_brand,ok,taylorstitch.com,250,Master,Taylor Stitch Retail Web,,custom,,bespoke
+outdoorvoices.com,clothing,big_brand,ok,outdoorvoices.com,250,Black Friday November_Kindred,Outdoor Voices Theme,,custom,,bespoke
+everlane.com,clothing,big_brand,ok,everlane.com,250,everlane/MAIN (11/17/26) 2,Dawn,,custom,Dawn,off_the_shelf_customised
+skims.com,clothing,big_brand,http_404,,,,,,,,
+meundies.com,clothing,big_brand,http_429,,,,,,,,
+tentree.com,clothing,big_brand,ok,tentree.com,250,(hotfix-nav) Production US - Acessibility Fixes,Shopify Theme Lab,,custom,,bespoke
+kotn.com,clothing,big_brand,ok,kotn.com,250,commerce-ui/kotn,Skeleton,,custom,,bespoke
+frankandoak.com,clothing,big_brand,ok,frankandoak.com,127,FW26,Symmetry,,custom,Symmetry,off_the_shelf_customised
+pangaia.com,clothing,big_brand,ok,pangaia.com,250,Pangaia New Theme (Commerce-UI),Adastra,,custom,,bespoke
+girlfriend.com,clothing,big_brand,ok,girlfriend.com,163,[PROD] 05.5.26_HP Update,Palo Alto,,custom,Palo Alto,off_the_shelf_customised
+tradlands.com,clothing,big_brand,ok,tradlands.com,51,Tradlands/main,Turbo,,custom,Turbo,off_the_shelf_customised
+outerknown.com,clothing,big_brand,ok,outerknown.com,250,,,,unknown,,unknown
+rhone.com,clothing,big_brand,http_403,,,,,,,,
+publicrec.com,clothing,big_brand,not_shopify,,,,,,,,
+buckmason.com,clothing,big_brand,http_308,,,,,,,,
+marinelayer.com,clothing,big_brand,ok,marinelayer.com,250,[HOTFIX][RC 1.4.2],Marine Layer Theme,,custom,,bespoke
+birddogs.com,clothing,big_brand,ok,birddogs.com,241,,,,unknown,,unknown
+tommyjohn.com,clothing,big_brand,ok,tommyjohn.com,250,,,,unknown,,unknown
+cotopaxi.com,clothing,big_brand,ok,cotopaxi.com,250,Cotopaxi (Production),Cotopaxi,887,standard,store theme (renamed),off_the_shelf
+hiutdenim.co.uk,clothing,big_brand,http_404,,,,,,,,
+velasca.com,clothing,big_brand,ok,velasca.com,250,2025 - Production - US,,,custom,,bespoke
+gymreapers.com,clothing,big_brand,ok,gymreapers.com,250,,,,unknown,,unknown
+youngla.com,clothing,big_brand,ok,youngla.com,250,youngla/live,Prestige,,custom,Prestige,off_the_shelf_customised
+representclo.com,clothing,big_brand,ok,representclo.com,250,represent-us/main,Blank Shopify Theme,,custom,,bespoke
+lskd.co,clothing,big_brand,ok,lskd.co,250,LSKD Theme - 2025,Impulse,,custom,Impulse,off_the_shelf_customised
+culturekings.com,clothing,big_brand,ok,culturekings.com,250,Culture Kings 2026 - New Megamenu,Pivotmade theme,,custom,,bespoke
+peppermayo.com,clothing,big_brand,ok,peppermayo.com,250,Wed 18.11.26 - 50% Off Seasonal,Peppermayo Fresh,,custom,,bespoke
+whitefoxboutique.com,clothing,big_brand,ok,whitefoxboutique.com,250,Party Launch | Week 47,Astro,,custom,,bespoke
+beginningboutique.com.au,clothing,big_brand,ok,beginningboutique.com.au,250,bb-dawn-theme/store/au-live,Beginning Boutique,,custom,,bespoke
+hellomolly.com,clothing,big_brand,http_308,,,,,,,,
+showpo.com,clothing,big_brand,ok,showpo.com,250,,,,unknown,,unknown
+edikted.com,clothing,big_brand,ok,edikted.com,250,edikted/main,AvexTheme,,custom,,bespoke
+knix.com,clothing,big_brand,ok,knix.com,250,BFCM - (US|2026.11.11) Release 5.7.0,Knix (v5.7.0),887,standard,store theme (renamed),off_the_shelf
+provinceofcanada.com,clothing,big_brand,ok,provinceofcanada.com,250,,,,unknown,,unknown
+peace-collective.com,clothing,big_brand,http_401,,,,,,,,
+cuyana.com,clothing,big_brand,ok,cuyana.com,250,shopify/main,Prestige,,custom,Prestige,off_the_shelf_customised
+bombas.com,clothing,big_brand,error_URLError,,,,,,,,
+vuoriclothing.com,clothing,big_brand,error_URLError,,,,,,,,
+nobullproject.com,clothing,big_brand,error_URLError,,,,,,,,
+littlesleepies.com,baby,big_brand,error_URLError,,,,,,,,
+kytebaby.com,baby,big_brand,error_URLError,,,,,,,,
+poshpeanut.com,baby,big_brand,error_URLError,,,,,,,,
+lovevery.com,baby,big_brand,error_URLError,,,,,,,,
+nuggetcomfort.com,baby,big_brand,error_URLError,,,,,,,,
+hatch.co,baby,big_brand,error_URLError,,,,,,,,
+frida.com,baby,big_brand,error_URLError,,,,,,,,
+sollybaby.com,baby,big_brand,ok,sollybaby.com,139,Toki Reviews,Pipeline,739,standard,Pipeline,off_the_shelf
+montikids.com,baby,big_brand,skipped_robots,,,,,,,,
+tegu.com,baby,big_brand,ok,tegu.com,45,Ella – swatch fix (Oct 2026),Ella,,custom,Ella,off_the_shelf_customised
+stevemadden.com,shoes,big_brand,ok,stevemadden.com,250,monorepo-ecom/SM - Production,Dawn,,custom,Dawn,off_the_shelf_customised
+allbirds.com,shoes,big_brand,ok,allbirds.com,250,[DNAM Theme July 2026],allbirds-theme,,custom,,bespoke
+rothys.com,shoes,big_brand,ok,rothys.com,250,rothys/production,DNA,,custom,,bespoke
+koio.co,shoes,big_brand,ok,koio.co,117,Checkout+,Rebase,,custom,,bespoke
+atoms.com,shoes,big_brand,http_404,,,,,,,,
+vessi.com,shoes,big_brand,ok,vessi.com,248,vessi-storefront/main-us,Vessi,,custom,,bespoke
+birdies.com,shoes,big_brand,ok,birdies.com,176,Crystal Flat 17.11,Prestige,,custom,Prestige,off_the_shelf_customised
+nisolo.com,shoes,big_brand,ok,nisolo.com,142,Hamburger Menu,Edge,3486,standard,Edge,off_the_shelf
+thursdayboots.com,shoes,big_brand,ok,thursdayboots.com,250,Production Trois-Github,Atlantic,,custom,Atlantic,off_the_shelf_customised
+olivercabell.com,shoes,big_brand,ok,olivercabell.com,249,Copy of MAIN [Don't unpublish] - ORBE,Baseline,,custom,Baseline,off_the_shelf_customised
+cariuma.com,shoes,big_brand,http_401,,,,,,,,
+heydude.com,shoes,big_brand,error_URLError,,,,,,,,
+colourpop.com,beauty,big_brand,ok,colourpop.com,250,Colourpop/Main,Colourpop,,custom,,bespoke
+kyliecosmetics.com,beauty,big_brand,ok,kyliecosmetics.com,250,SYNC | NOV REFRESH + LOOK | DO NOT DELETE,KYLIE,,custom,,bespoke
+glossier.com,beauty,big_brand,ok,glossier.com,119,11/17 | Balms Sale Take-Down,Glossier,,custom,,bespoke
+olaplex.com,beauty,big_brand,ok,olaplex.com,140,Release 1.18.0,Olaplex Theme,,custom,,bespoke
+discoverpilgrim.com,beauty,big_brand,ok,discoverpilgrim.com,228,Pilgrim - BAU - 2.0 - Saurabh,Focal,,custom,Focal,off_the_shelf_customised
+jeffreestarcosmetics.com,beauty,big_brand,ok,jeffreestarcosmetics.com,250,jsc-shopify-theme/main,Jeffrey Star Custom Theme,,custom,,bespoke
+fentybeauty.com,beauty,big_brand,ok,fentybeauty.com,250,11/16 - 11/20 Value Messaging Bundles,Fenty Theme,,custom,,bespoke
+rarebeauty.com,beauty,big_brand,ok,rarebeauty.com,155,RareBeauty/SDG: Production 2,SDG Shopify Skeleton,,custom,,bespoke
+milkmakeup.com,beauty,big_brand,ok,milkmakeup.com,75,[RC] 4.6.0 - 11/09/2026,Milk Makeup,,custom,,bespoke
+summerfridays.com,beauty,big_brand,ok,summerfridays.com,170,SummerFridays LIVE Theme,Summer Fridays by AW,,custom,,bespoke
+alephbeauty.com,beauty,big_brand,ok,alephbeauty.com,74,[Dev] BLACK FRIDAY + Progress Bar,Aleph Beauty,,custom,,bespoke
+herbivorebotanicals.com,beauty,big_brand,ok,herbivorebotanicals.com,50,Nick Bond Main Theme Edit,Horizon,,custom,Horizon,off_the_shelf_customised
+kosas.com,beauty,big_brand,ok,kosas.com,78,kosas/live/bfcm-2026,Kosas,,custom,,bespoke
+iliabeauty.com,beauty,big_brand,ok,iliabeauty.com,77,[Production] BFCM VIP: 11.10.26,ILIA,,custom,,bespoke
+meritbeauty.com,beauty,big_brand,ok,meritbeauty.com,176,theme-v2/main,Starter theme,,custom,,bespoke
+saiehello.com,beauty,big_brand,ok,saiehello.com,72,Nov 14 — Form submit,Saie,,custom,,bespoke
+glowrecipe.com,beauty,big_brand,ok,glowrecipe.com,125,BFCM First Week 15/11 - 21-11,Simplistic,,custom,,bespoke
+tower28beauty.com,beauty,big_brand,ok,tower28beauty.com,71,tower28beauty/main,Tower,,custom,,bespoke
+bubbleskincare.com,beauty,big_brand,ok,bubbleskincare.com,48,,,,unknown,,unknown
+mytopicals.com,beauty,big_brand,http_404,,,,,,,,
+cocokind.com,beauty,big_brand,ok,cocokind.com,84,cocokind-vbt/main,shopify-vite,,custom,,bespoke
+necessaire.com,beauty,big_brand,ok,necessaire.com,125,[NECS-1.64.0] P2-P3 Performance Improvements,Nécessaire,796,standard,store theme (renamed),off_the_shelf
+oseamalibu.com,beauty,big_brand,ok,oseamalibu.com,97,ocean-theme/main,Ocean,,custom,,bespoke
+briogeohair.com,beauty,big_brand,http_404,,,,,,,,
+theouai.com,beauty,big_brand,ok,theouai.com,138,Staging | Email Signup Adjustments | 11.16,OUAI,,custom,,bespoke
+mykitsch.com,beauty,big_brand,ok,mykitsch.com,250,Kitsch Live Theme,Unick,,custom,,bespoke
+beautyblender.com,beauty,big_brand,ok,beautyblender.com,57,Resetter OOS 20260831,Prestige,855,standard,Prestige,off_the_shelf
+versedskin.com,beauty,big_brand,ok,versedskin.com,75,BFCM 2026,DNA,,custom,,bespoke
+florencebymills.com,beauty,big_brand,ok,florencebymills.com,0,PROD | GFNC x Florency by Mills,dAgency,,custom,,bespoke
+soldejaneiro.com,beauty,big_brand,ok,soldejaneiro.com,154,Production A: Holiday,Iakoe,,custom,,bespoke
+herocosmetics.com,beauty,big_brand,ok,herocosmetics.us,47,Giftxtravaganza + BV - 111326 M,Hero Cosmetics,,custom,,bespoke
+bondisands.com,beauty,big_brand,ok,bondisands.com,52,KAO Production,Process Creative,,custom,,bespoke
+frankbody.com,beauty,big_brand,ok,frankbody.com,105,Root,Wonder,2684,standard,Wonder,off_the_shelf
+jonesroadbeauty.com,beauty,big_brand,ok,jonesroadbeauty.com,100,JonesRoad/Main,Base,,custom,,bespoke
+dedcool.com,beauty,big_brand,ok,dedcool.com,181,PRODUCTION 🚀,Dusk,,custom,,bespoke
+huel.com,supplements,big_brand,http_404,,,,,,,,
+resilia.shop,supplements,big_brand,ok,resilia.shop,3,resilia/production,Dawn,,custom,Dawn,off_the_shelf_customised
+drinkag1.com,supplements,big_brand,http_429,,,,,,,,
+ritual.com,supplements,big_brand,ok,ritual.com,38,11/10- BFCM P1 Launch,Ritual Foundation,,custom,,bespoke
+gruns.co,supplements,big_brand,ok,gruns.co,24,Live Theme (May 18 2026),Gruns,,custom,,bespoke
+goli.com,supplements,big_brand,ok,goli.com,248,LangShop | Goli Theme 1 [LIVE],LangShop Theme,,custom,,bespoke
+ghostlifestyle.com,supplements,big_brand,ok,ghostlifestyle.com,250,Ghost - Redesign - Production,Ghost x Sparky Redesign,,custom,,bespoke
+transparentlabs.com,supplements,big_brand,ok,transparentlabs.com,73,Intelligems - [POST MEMORIAL] - Copied 07/28/26,TL x SB,,custom,,bespoke
+rysesupps.com,supplements,big_brand,ok,rysesupps.com,29,RYSE v3.92,,,custom,,bespoke
+bloomnu.com,supplements,big_brand,ok,bloomnu.com,61,shopify/main,Themekit template theme,,custom,,bespoke
+cymbiotika.com,supplements,big_brand,http_404,,,,,,,,
+seed.com,supplements,big_brand,http_403,,,,,,,,
+livemomentous.com,supplements,big_brand,ok,livemomentous.com,91,Production Live - DONOT MAKE CODE CHANGES,Themekit template theme,,custom,,bespoke
+legionathletics.com,supplements,big_brand,http_404,,,,,,,,
+liquid-iv.com,supplements,big_brand,ok,liquid-iv.com,72,,,,unknown,,unknown
+gorillamind.com,supplements,big_brand,ok,gorillamind.com,53,unified-theme/gm-main,Unified Theme,,custom,,bespoke
+petlabco.com,pets,big_brand,http_404,,,,,,,,
+deathwishcoffee.com,food,big_brand,ok,deathwishcoffee.com,169,VD Sale+Retainer | deathwish-shopify-20/production,Dawn,,custom,Dawn,off_the_shelf_customised
+theloadedteashop.com,food,big_brand,ok,theloadedteashop.com,79,tlts-shopify-theme/main,Elixir,,custom,,bespoke
+flybyjing.com,food,big_brand,ok,flybyjing.com,35,Holiday Shop 10.20 w/Advent-BFCM,Shapes,1535,standard,Shapes,off_the_shelf
+partakefoods.com,food,big_brand,ok,partakefoods.com,15,partakefoods-new/main,Partake (hasmerit.co),,custom,,bespoke
+omsom.com,food,big_brand,http_404,,,,,,,,
+graza.co,food,big_brand,ok,graza.co,81,baggy – production,Graza,,custom,,bespoke
+brightland.co,food,big_brand,ok,brightland.co,34,brightland/holiday2026-mck,Impact,,custom,Impact,off_the_shelf_customised
+magicspoon.com,food,big_brand,ok,magicspoon.com,138,magicspoon-shopify/MAIN,,,custom,,bespoke
+drinkolipop.com,food,big_brand,ok,drinkolipop.com,45,Production | ehouse,Olipop,,custom,,bespoke
+drinkpoppi.com,food,big_brand,error_URLError,,,,,,,,
+liquiddeath.com,food,big_brand,ok,liquiddeath.com,199,,,,unknown,,unknown
+athleticbrewing.com,food,big_brand,ok,athleticbrewing.com,250,abc2024/main,Athletic Brewing Co.,,custom,,bespoke
+onyxcoffeelab.com,food,big_brand,ok,onyxcoffeelab.com,249,shopify/main,Onyx,,custom,,bespoke
+lairdsuperfood.com,food,big_brand,ok,lairdsuperfood.com,88,laird-superfood/main,Horizon,,custom,Horizon,off_the_shelf_customised
+cometeer.com,food,big_brand,ok,cometeer.com,249,slate-theme/main,Shiro,,custom,,bespoke
+drinktrade.com,food,big_brand,ok,drinktrade.com,250,Production | 11-17-26 | v3.128.1,Shopify Shell theme,,custom,,bespoke
+chamberlaincoffee.com,food,big_brand,not_shopify,,,,,,,,
+sietefoods.com,food,big_brand,http_404,,,,,,,,
+mudwtr.com,food,big_brand,ok,mudwtr.com,137,mud-wtr-shopify-theme/shopify,mudwtr,,custom,,bespoke
+lesserevil.com,food,big_brand,ok,lesserevil.com,27,lesserevil-shopify-theme/main,Dawn,,custom,Dawn,off_the_shelf_customised
+hukitchen.com,food,big_brand,ok,hukitchen.com,28,[1c55ba73] Production - Green,,,custom,,bespoke
+tonyschocolonely.com,food,big_brand,ok,tonyschocolonely.com,16,tonys-chocolonely-storefront/prod-www,Tony's Theme,,custom,,bespoke
+sugarfina.com,food,big_brand,http_403,,,,,,,,
+shop.momofuku.com,food,big_brand,ok,shop.momofuku.com,31,[S31] BYOB 11/16,Ignition,,custom,,bespoke
+diasporaco.com,food,big_brand,ok,diasporaco.com,126,[Master] Production | Pebble - Wellina,Pebble,,custom,,bespoke
+brooklinen.com,home,big_brand,ok,brooklinen.com,250,Site Ops Release: BFCM,Dawn,,custom,Dawn,off_the_shelf_customised
+carawayhome.com,home,big_brand,http_404,,,,,,,,
+stanley1913.com,home,big_brand,ok,stanley1913.com,249,2026.11.16 | BF Sale #1 (Production/1),Dawn,,custom,Dawn,off_the_shelf_customised
+ollies.com,home,big_brand,ok,ollies.com,250,11/16 Post Early Black Friday Deals,Ollies,,custom,,bespoke
+thefleececompany.com,home,big_brand,ok,thefleececompany.com,45,the-fleece-company/live,Be Yours,,custom,Be Yours,off_the_shelf_customised
+clalena.com,home,big_brand,ok,clalena.com,216,theme-shrine-pro-1-6-1-de-klarna-version3,Shrine PRO,,custom,,bespoke
+ruggable.com,home,big_brand,http_404,,,,,,,,
+burrow.com,home,big_brand,http_404,,,,,,,,
+parachutehome.com,home,big_brand,ok,parachutehome.com,250,coverlet/2026-bfcm,Dawn,,custom,Dawn,off_the_shelf_customised
+fromourplace.com,home,big_brand,ok,fromourplace.com,134,[a339a6a] OP Production,Our Place,,custom,,bespoke
+greatjonesgoods.com,home,big_brand,ok,greatjonesgoods.com,60,November 2026 Cookie Clean Up,Great Jones,,custom,,bespoke
+madeincookware.com,home,big_brand,http_403,,,,,,,,
+hexclad.com,home,big_brand,ok,hexclad.com,203,Vaan UAT - 11-10-2026,Shiro,,custom,,bespoke
+bollandbranch.com,home,big_brand,ok,bollandbranch.com,250,,,,unknown,,unknown
+buffy.co,home,big_brand,ok,buffy.co,50,buffy-Shopify-Jun26/main,Dawn,,custom,Dawn,off_the_shelf_customised
+bearaby.com,home,big_brand,ok,bearaby.com,90,bearaby-new-theme/velvet,Dawn,,custom,Dawn,off_the_shelf_customised
+floydhome.com,home,big_brand,ok,floydhome.com,162,Production,HH Floyd,,custom,,bespoke
+blueland.com,home,big_brand,ok,blueland.com,80,,,,unknown,,unknown
+publicgoods.com,home,big_brand,ok,publicgoods.com,158,PC Staging | Membership Extensions | 10.22,Carbon,,custom,,bespoke
+branchfurniture.com,home,big_brand,ok,branchfurniture.com,226,live-theme/main,,,custom,,bespoke
+otherland.com,candles,big_brand,ok,otherland.com,59,Holiday Gift Guide,Otherland,,custom,,bespoke
+boysmells.com,candles,big_brand,ok,boysmells.com,142,Charms Launch,Revyrie Commerce Volt,,custom,,bespoke
+brooklyncandlestudio.com,candles,big_brand,ok,brooklyncandlestudio.com,192,[Updated] PDP Redesign,Prestige,,custom,Prestige,off_the_shelf_customised
+homesick.com,candles,big_brand,ok,homesick.com,250,Sleek,Sleek,2821,standard,Sleek,off_the_shelf
+voluspa.com,candles,big_brand,ok,voluspa.com,250,Voluspa-2.0/Main,Turbo,,custom,Turbo,off_the_shelf_customised
+pfcandleco.com,candles,big_brand,ok,pfcandleco.com,87,Ecom QA Fixes Don’t Delete – 10/15/26,Baseline,,custom,Baseline,off_the_shelf_customised
+mejuri.com,jewelry,big_brand,http_404,,,,,,,,
+puravidabracelets.com,jewelry,big_brand,ok,puravidabracelets.com,250,Production,Pura Vida,,custom,,bespoke
+gorjana.com,jewelry,big_brand,ok,gorjana.com,249,11.16 Holiday Party FINAL,Gorjana,,custom,,bespoke
+catbirdnyc.com,jewelry,big_brand,not_shopify,,,,,,,,
+analuisa.com,jewelry,big_brand,http_404,,,,,,,,
+monicavinader.com,jewelry,big_brand,http_403,,,,,,,,
+missoma.com,jewelry,big_brand,ok,missoma.com,250,MISSOMA 3.0,MISSOMA,,custom,,bespoke
+astridandmiyu.com,jewelry,big_brand,ok,astridandmiyu.com,250,Astrid & Miyu - Black Friday Launch,Astrid & Miyu by BAO,,custom,,bespoke
+camillebrinch.com,jewelry,big_brand,ok,camillebrinch.com,250,[COM] GWP EUR + SEK - draft 16 Nov,CBJ,,custom,,bespoke
+auratenewyork.com,jewelry,big_brand,ok,auratenewyork.com,250,Main (7.20.2026),Aurate New York,,custom,,bespoke
+ringconcierge.com,jewelry,big_brand,ok,ringconcierge.com,250,RC PRODUCTION THEME- [BFCM GA 11/15 7:30 PM],Ascent,,custom,,bespoke
+localeclectic.com,jewelry,big_brand,http_525,,,,,,,,
+linjer.co,jewelry,big_brand,ok,linjer.co,250,,,,unknown,,unknown
+vincerocollective.com,watches,big_brand,ok,vincerocollective.com,250,vincero/main,,,custom,,bespoke
+nordgreen.com,watches,big_brand,ok,nordgreen.com,250,Black Month DK fix 3 (menu-links),Atelier,,custom,Atelier,off_the_shelf_customised
+danielwellington.com,watches,big_brand,ok,danielwellington.com,250,P1- Origin before bf,Taiga,,custom,,bespoke
+originalgrain.com,watches,big_brand,ok,originalgrain.com,250,originalgrain-2.0/main,Dawn,,custom,Dawn,off_the_shelf_customised
+mvmt.com,watches,big_brand,ok,mvmt.com,250,MOVADO - MVMT PROD [11-16-26],Prestige,,custom,Prestige,off_the_shelf_customised
+dagnedover.com,bags,big_brand,ok,dagnedover.com,250,shopify/shopify,,,custom,,bespoke
+bellroy.com,bags,big_brand,http_404,,,,,,,,
+peakdesign.com,bags,big_brand,ok,peakdesign.com,190,,,,unknown,,unknown
+nomatic.com,bags,big_brand,ok,nomatic.com,120,Stiletto,Stiletto,1621,standard,Stiletto,off_the_shelf
+herschel.com,bags,big_brand,ok,herschel.com,246,Herschel - BTS Launch,iamota Theme Foundation,,custom,,bespoke
+baggu.com,bags,big_brand,http_404,,,,,,,,
+loandsons.com,bags,big_brand,ok,loandsons.com,159,Summer Kickoff Sale 2026 - Pitch 4.1.1,Pitch,3620,standard,Pitch,off_the_shelf
+july.com,bags,big_brand,http_404,,,,,,,,
+monos.com,bags,big_brand,ok,monos.com,93,[161126] Monos v5 - Bundles price updated,Monos,,custom,,bespoke
+calpaktravel.com,bags,big_brand,ok,calpaktravel.com,184,[Nov 17] PDP Performance Updates + 25% Off Luggage,Vanilla,,custom,,bespoke
+beistravel.com,bags,big_brand,ok,beistravel.com,250,Beis/production,BEIS,,custom,,bespoke
+tourparavel.com,bags,big_brand,ok,tourparavel.com,59,Paravel - Production,Underscore,,custom,,bespoke
+boat-lifestyle.com,electronics,big_brand,ok,boat-lifestyle.com,250,DO NOT DELETE - Production Theme,Focal,,custom,Focal,off_the_shelf_customised
+gonoise.com,electronics,big_brand,ok,gonoise.com,250,Noise Live Website,Section plus,,custom,,bespoke
+plaud.ai,electronics,big_brand,ok,plaud.ai,41,PLAUD.US.V2(Online),TL,,custom,,bespoke
+jbhifi.com.au,electronics,big_brand,ok,jbhifi.com.au,250,v2026.10.27.2,JB Hi-Fi,,custom,,bespoke
+nomadgoods.com,electronics,big_brand,not_shopify,,,,,,,,
+anker.com,electronics,big_brand,http_404,,,,,,,,
+mous.co,electronics,big_brand,ok,mous.co,250,Black Friday,Quickfire,,custom,,bespoke
+dbrand.com,electronics,big_brand,http_404,,,,,,,,
+pelacase.com,electronics,big_brand,ok,pelacase.com,250,7.2 - Personalization button updates,Pela Case rebuild,,custom,,bespoke
+satechi.net,electronics,big_brand,ok,satechi.net,146,findall wallet,DYODE,,custom,,bespoke
+twelvesouth.com,electronics,big_brand,ok,twelvesouth.com,144,twelve-south/main,Twelve South,,custom,,bespoke
+nothing.tech,electronics,big_brand,http_404,,,,,,,,
+keychron.com,electronics,big_brand,ok,keychron.com,250,dev-enterprise230_keychron,Enterprise,,custom,Enterprise,off_the_shelf_customised
+wildone.com,pets,big_brand,ok,wildone.com,56,wild-one-dawn/main,Dawn,,custom,Dawn,off_the_shelf_customised
+fablepets.com,pets,big_brand,ok,fablepets.com,67,Fable-Pets/main,Shopify Theme Lab,,custom,,bespoke
+myollie.com,pets,big_brand,http_404,,,,,,,,
+pupford.com,pets,big_brand,ok,pupford.com,250,pupford-shop/main,Dawn,,custom,Dawn,off_the_shelf_customised
+maxbone.com,pets,big_brand,ok,maxbone.com,105,maxbone-shopify/master,Maxbone,,custom,,bespoke
+earthrated.com,pets,big_brand,ok,earthrated.com,16,BFCM live + Wipes PDP (Nov 17),iamota Theme Foundation,,custom,,bespoke
+decathlon.com,outdoors,big_brand,ok,decathlon.com,250,decathlon-us-shopify/shopify,Horizon,,custom,Horizon,off_the_shelf_customised
+radpowerbikes.com,outdoors,big_brand,ok,radpowerbikes.com,150,Shopify-2.0-Prod,Fluid Framework,,custom,,bespoke
+rumpl.com,outdoors,big_brand,ok,rumpl.com,142,Rumpl/Campaign-11.13.2026,Base,,custom,,bespoke
+solostove.com,outdoors,big_brand,http_403,,,,,,,,
+orukayak.com,outdoors,big_brand,ok,orukayak.com,229,,,,unknown,,unknown
+bioliteenergy.com,outdoors,big_brand,ok,bioliteenergy.com,92,Holiday & Gift Guide 2026,Stiletto,,custom,Stiletto,off_the_shelf_customised
+goodr.com,outdoors,big_brand,ok,goodr.com,250,goodr-shopify-theme/holidays,goodr,,custom,,bespoke
+manduka.com,outdoors,big_brand,ok,manduka.com,98,Manduka/release/na - Oct 2026,Manduka,,custom,,bespoke
+therabody.com,outdoors,big_brand,ok,therabody.com,138,shopify-theme-us/main,Therabody Theme,,custom,,bespoke
+worldofbooks.com,books,big_brand,ok,worldofbooks.com,250,d2c-website/main,Dawn,,custom,Dawn,off_the_shelf_customised
+indigo.ca,books,big_brand,ok,indigo.ca,250,release/2026-11-17-7:24am,Dawn,,custom,Dawn,off_the_shelf_customised
+myfonts.com,digital,big_brand,ok,www.myfonts.com,250,Release8.7.0,myfonts,,custom,,bespoke
+tattly.com,art,big_brand,ok,tattly.com,0,Horizon,Horizon,2481,standard,Horizon,off_the_shelf
+papier.com,art,big_brand,http_404,,,,,,,,
+tecovas.com,shoes,big_brand,ok,tecovas.com,250,,,,unknown,,unknown
+negativeunderwear.com,clothing,big_brand,ok,negativeunderwear.com,250,GG Holiday 2026 (2026-11-10),Dawn,,custom,Dawn,off_the_shelf_customised
+mackweldon.com,clothing,big_brand,ok,mackweldon.com,250,storefront/live,Anatta,,custom,,bespoke
+lunya.co,clothing,big_brand,ok,lunya.co,250,Lunya Production,Symmetry,,custom,Symmetry,off_the_shelf_customised
+ministryofsupply.com,clothing,big_brand,ok,ministryofsupply.com,90,,,,unknown,,unknown
+ridge.com,bags,big_brand,http_403,,,,,,,,
+fellowproducts.com,home,big_brand,ok,fellowproducts.com,250,3.4.0 | Holiday + Onyx Advent | 11.10,Fellow Foundation,,custom,,bespoke
+misen.com,home,big_brand,ok,misen.com,250,Misen v1.6.5 - Pre-BFCM Homepage Hero,Misen Custom Theme,,custom,,bespoke
+riflepaperco.com,art,big_brand,ok,riflepaperco.com,250,11.11 Post-HWS | Production,Pact,,custom,,bespoke
+ugmonk.com,art,big_brand,ok,ugmonk.com,178,Tinker - Drawer Cart Upsell Fix,Tinker,3627,standard,Tinker,off_the_shelf
+kinfield.com,beauty,big_brand,http_404,,,,,,,,
+artstar.com,art,smaller,ok,artstar.com,250,Wholesale integration - WPD_BDR,Canopy,,custom,Canopy,off_the_shelf_customised
+drool-art.com,art,smaller,ok,drool-art.com,250,shopify_theme/main,Horizon,,custom,Horizon,off_the_shelf_customised
+exhibitiona.com,art,smaller,ok,exhibitiona.com,250,Dev Copy of USF | Laura 1 Jun 21 - BU,Superstore,,custom,,bespoke
+juniperprintshop.com,art,smaller,ok,juniperprintshop.com,250,Route Test | January- Vintage,Dawn,,custom,Dawn,off_the_shelf_customised
+newbloodart.com,art,smaller,ok,newbloodart.com,250,FINAL,Studio,,custom,Studio,off_the_shelf_customised
+papercollective.com,art,smaller,http_404,,,,,,,,
+pstrstudio.com,art,smaller,ok,pstrstudio.com,246,PSTR | 1.8.0 | CBT,PSTR studio,,custom,,bespoke
+shrigshop.com,art,smaller,ok,shrigshop.com,250,Debut,Debut,796,standard,Debut,off_the_shelf
+soniceditions.com,art,smaller,ok,soniceditions.com,250,sonic-editions-theme/release/0.1.5,sonic-edtions Theme,,custom,,bespoke
+tappancollective.com,art,smaller,ok,tappancollective.com,250,V5.3.2,Prestige,,custom,Prestige,off_the_shelf_customised
+wallofart.com,art,smaller,ok,wallofart.com,250,woa/MAIN,Revolution,,custom,,bespoke
+adamspolishes.com,automotive,smaller,ok,adamspolishes.com,250,ADAMS2024 | LIVE | 06/19/2026,Focal,714,standard,Focal,off_the_shelf
+autofinesse.com,automotive,smaller,ok,autofinesse.com,181,AF 2027 — V4,Palo Alto,,custom,Palo Alto,off_the_shelf_customised
+boostautoparts.com,automotive,smaller,ok,boostautoparts.com,250,boost-theme/production,Focal,,custom,Focal,off_the_shelf_customised
+chassisunlimited.com,automotive,smaller,ok,chassisunlimited.com,0,Shopify-Chassis-Unlimited/master,Icon,,custom,,bespoke
+chemicalguys.com,automotive,smaller,ok,chemicalguys.com,250,MAIN THEME - Published - Do not replace or remove,Dawn,,custom,Dawn,off_the_shelf_customised
+ctek.com,automotive,smaller,ok,ctek.com,188,Temp. of CTEK x coi main theme 17.11.'26.,coi,,custom,,bespoke
+darche.com.au,automotive,smaller,ok,darche.com.au,250,[Darche 1.0] Main Theme,Pursuit,,custom,,bespoke
+dipyourcar.com,automotive,smaller,ok,dipyourcar.com,250,Memorial V2,Ascent,,custom,,bespoke
+magnaflow.com,automotive,smaller,ok,magnaflow.com,0,Shopify-Theme-MagnaFlow-2.0/main - Buddy Deploy,Pivotmade theme,,custom,,bespoke
+mudstuff.co.uk,automotive,smaller,ok,mudstuff.co.uk,250,MUD-UK,Warehouse,871,standard,Warehouse,off_the_shelf
+obsessedgarage.com,automotive,smaller,ok,obsessedgarage.com,250,Updated Ignite Theme 11/11/26,Ignite,3027,standard,Ignite,off_the_shelf
+theragcompany.com,automotive,smaller,ok,theragcompany.com,250,Copy of Evergreen - BFCM - NOV 2026,Venue,836,standard,Venue,off_the_shelf
+torquedetail.com,automotive,smaller,ok,torquedetail.com,66,Torque - Focal,Focal,,custom,Focal,off_the_shelf_customised
+urotuning.com,automotive,smaller,ok,urotuning.com,250,LIVE - 2026-09-16,,,custom,,bespoke
+bobochoses.com,baby,smaller,ok,bobochoses.com,250,theme-bobo-choses/main,Dawn,,custom,Dawn,off_the_shelf_customised
+charliecraneparis.com,baby,smaller,ok,charliecraneparis.com,155,Charlie Crane,Charlie-crane,,custom,,bespoke
+kongessloejd.com,baby,smaller,ok,kongessloejd.com,245,[Mercive] Tivoli - Depict search,Broadcast,,custom,Broadcast,off_the_shelf_customised
+lorenacanals.com,baby,smaller,ok,lorenacanals.com,226,[PRO] Horizon,Horizon,,custom,Horizon,off_the_shelf_customised
+mushie.com,baby,smaller,ok,mushie.com,216,MUSHIE - ADA | FINAL SITE | 4.21,Pipeline,,custom,Pipeline,off_the_shelf_customised
+nanit.com,baby,smaller,ok,nanit.com,37,[Production],Concept,,custom,Concept,off_the_shelf_customised
+oeufnyc.com,baby,smaller,ok,oeufnyc.com,204,04-14-26 Current Theme (v11.1.0),Prestige,855,standard,Prestige,off_the_shelf
+snugglehunnykids.com.au,baby,smaller,ok,snugglehunnykids.com.au,250,snuggle-hunny/shopify-production,Process Creative,,custom,,bespoke
+aersf.com,bags,smaller,ok,aersf.com,122,Aer x Gryffin | 11.09,Debut,796,standard,Debut,off_the_shelf
+briggs-riley.com,bags,smaller,ok,briggs-riley.com,195,briggs-and-riley-retheme/master,Impulse,,custom,Impulse,off_the_shelf_customised
+dbjourney.com,bags,smaller,ok,dbjourney.com,250,Black Friday Early Access,Frame,,custom,,bespoke
+hardgraft.com,bags,smaller,ok,hardgraft.com,135,Version 8.0.0 MO,Broadcast,868,standard,Broadcast,off_the_shelf
+horizn-studios.com,bags,smaller,ok,horizn-studios.com,250,Dawn,Dawn,887,standard,Dawn,off_the_shelf
+missionworkshop.com,bags,smaller,ok,missionworkshop.com,158,Claude Workspace 10 - Quick-buy gallery fix,Prestige,855,standard,Prestige,off_the_shelf
+tombihn.com,bags,smaller,ok,tombihn.com,157,HOLIDAY 2026,o/S Custom Theme,,custom,,bespoke
+troubadourgoods.com,bags,smaller,http_308,,,,,,,,
+dieuxskin.com,beauty,smaller,ok,dieuxskin.com,27,Dieux Theme 2.0,Dieux Theme 2.0,,custom,,bespoke
+fybellebeauty.com,beauty,smaller,ok,fybellebeauty.com,11,fybelle-pro,Shrine PRO,,custom,,bespoke
+hismileteeth.com,beauty,smaller,ok,hismileteeth.com,84,chore/vault-updates-upsells-previous-geo 18/11,Hismile Vite,,custom,,bespoke
+meridiangrooming.com,beauty,smaller,ok,meridiangrooming.com,56,fix-new-banners,Pangaea Stores,,custom,,bespoke
+supergoop.com,beauty,smaller,ok,supergoop.com,95,RS: release/SUPER-v2026.46 - hotfix/SUPER-327,Supergoop Theme,,custom,,bespoke
+appointed.co,books,smaller,ok,appointed.co,138,2027 Calendar Launch,Horizon,2481,standard,Horizon,off_the_shelf
+counter-print.co.uk,books,smaller,not_shopify,,,,,,,,
+markandfold.com,books,smaller,ok,markandfold.com,114,mark-fold-shopify-theme/main,Startup,,custom,,bespoke
+mossery.co,books,smaller,ok,mossery.co,250,bootstrap-shopify-theme/mossery.co-production,,,custom,,bespoke
+standardsmanual.com,books,smaller,ok,standardsmanual.com,104,June 26 Unit Editions (live),,,custom,,bespoke
+aerangis.com,candles,smaller,ok,aerangis.com,28,New Design Aerangis Blogs [Okendo Referrals],Blockshop,606,standard,Blockshop,off_the_shelf
+dsanddurga.com,candles,smaller,ok,dsanddurga.com,103,[Bear] Production,Stretch,,custom,,bespoke
+earlofeast.com,candles,smaller,ok,earlofeast.com,250,EoE 2.0 - Production,Carbon Shopify Theme,855,standard,store theme (renamed),off_the_shelf
+harlemcandlecompany.com,candles,smaller,ok,harlemcandlecompany.com,250,11/15/26 - Temp change homepage to Holiday page,Stretch,1765,standard,store theme (renamed),off_the_shelf
+keapbk.com,candles,smaller,error_URLError,,,,,,,,
+maisonlouismarie.com,candles,smaller,ok,maisonlouismarie.com,146,11.10.26 In-grid Promos + VIP,X,,custom,,bespoke
+neomwellbeing.com,candles,smaller,ok,neomwellbeing.com,249,neom-wellbeing/production/uk,Volt,,custom,,bespoke
+nettenyc.com,candles,smaller,ok,nettenyc.com,49,nette-shopify/main,Broadcast,,custom,Broadcast,off_the_shelf_customised
+overose.com,candles,smaller,ok,overose.com,34,Updated copy of Copy of Overose New 2025,Broadcast,868,standard,Broadcast,off_the_shelf
+snif.co,candles,smaller,ok,snif.co,244,snif/production,,,custom,,bespoke
+adanola.com,clothing,smaller,ok,adanola.com,247,adanola/main,MAIN,,custom,,bespoke
+ajeworld.com.au,clothing,smaller,ok,ajeworld.com.au,250,v.1.9.1 | 2026/13/11 BLACK FRIDAY THEME,Aje theme,,custom,,bespoke
+apc-us.com,clothing,smaller,ok,apc-us.com,250,Casio launch - 11_17_26,Framework,,custom,,bespoke
+banditrunning.com,clothing,smaller,ok,banditrunning.com,250,bandit-ecomm/main,,,custom,,bespoke
+boody.com.au,clothing,smaller,ok,boody.com.au,250,ANZ | BFCM 2026 LIVE THEME,,,custom,,bespoke
+derek-rose.com,clothing,smaller,ok,derek-rose.com,250,derek-rose/main 1,Focal,,custom,Focal,off_the_shelf_customised
+desmondanddempsey.com,clothing,smaller,ok,desmondanddempsey.com,250,desmond-n-dempsey/BFCM-gifting,Desmond and Dempsey Theme,,custom,,bespoke
+eliteelevensporting.com,clothing,smaller,ok,eliteelevensporting.com,250,Blackout 2026,Impulse,,custom,Impulse,off_the_shelf_customised
+fearofgod.com,clothing,smaller,ok,fearofgod.com,250,[ED] Production | DO NOT DELETE,Elevated,,custom,,bespoke
+honeybirdette.com,clothing,smaller,ok,honeybirdette.com,250,v1.7.3 | 13 Nov | Dasha 🩵,,,custom,,bespoke
+jadedldn.com,clothing,smaller,ok,jadedldn.com,250,ILEKTRA Swim,Jaded London,,custom,,bespoke
+maap.cc,clothing,smaller,http_404,,,,,,,,
+marineserre.com,clothing,smaller,ok,marineserre.com,250,ELX - Prod,Marine Serre,887,standard,store theme (renamed),off_the_shelf
+noahny.com,clothing,smaller,ok,noahny.com,250,October Launch: Part II | Main theme,NOAH - ALPINE,,custom,,bespoke
+pasnormalstudios.com,clothing,smaller,not_shopify,,,,,,,,
+percivalclo.com,clothing,smaller,ok,percivalclo.com,250,Made by Field — Production,Made by Field,,custom,,bespoke
+runinrabbit.com,clothing,smaller,ok,runinrabbit.com,250,runnin-rabbit/homepage-redesign,Horizon,,custom,Horizon,off_the_shelf_customised
+saysky.com,clothing,smaller,ok,saysky.com,250,[Mercive] Production V2 - NEW,Prestige,,custom,Prestige,off_the_shelf_customised
+studionicholson.com,clothing,smaller,ok,studionicholson.com,250,studio-nicholson/main,Dawn,,custom,Dawn,off_the_shelf_customised
+stussy.com,clothing,smaller,ok,stussy.com,250,A - W45 HO26-D2,SEED,,custom,,bespoke
+tenthousand.cc,clothing,smaller,ok,tenthousand.cc,88,RC theme 11/17/2026 17:16PM EST | RK,Shiro,,custom,,bespoke
+us.2xu.com,clothing,smaller,ok,us.2xu.com,250,BLACK FRIDAY THEME,Dawn,,custom,Dawn,off_the_shelf_customised
+wuxly.com,clothing,smaller,ok,wuxly.com,212,Wuxly - Oct 26 - New pop Up,Palo Alto,,custom,Palo Alto,off_the_shelf_customised
+eightsleep.com,electronics,smaller,http_308,,,,,,,,
+ember.com,electronics,smaller,ok,ember.com,88,Mug 3 16oz | Oct 20 launch draft,Dawn,,custom,Dawn,off_the_shelf_customised
+grovemade.com,electronics,smaller,http_403,,,,,,,,
+lofree.co,electronics,smaller,ok,lofree.co,124,Lofree,Impact,1190,standard,Impact,off_the_shelf
+moft.com,electronics,smaller,ok,moft.com,94,itsimple/moft_full,Kalles,,custom,Kalles,off_the_shelf_customised
+nativeunion.com,electronics,smaller,ok,nativeunion.com,178,native-union/live,Focal,,custom,Focal,off_the_shelf_customised
+roccofridge.com,electronics,smaller,ok,roccofridge.com,16,rocco-theme/main,Rocco,,custom,,bespoke
+sennheiser-hearing.com,electronics,smaller,http_500,,,,,,,,
+soundboks.com,electronics,smaller,ok,soundboks.com,19,Black Friday US New,Concept,,custom,Concept,off_the_shelf_customised
+aprilcoffeeroasters.com,food,smaller,http_308,,,,,,,,
+canyoncoffee.co,food,smaller,http_404,,,,,,,,
+counterculturecoffee.com,food,smaller,ok,counterculturecoffee.com,180,cc-coffee-retail/A/B-Test-Homepage-New-MN,o/S CCC Retail Theme,,custom,,bespoke
+dandelionchocolate.com,food,smaller,ok,dandelionchocolate.com,220,dandelion-chocolate/main,Dandelion Chocolate,,custom,,bespoke
+darkmattercoffee.com,food,smaller,ok,darkmattercoffee.com,94,USE THIS ONE--Current Theme (Staging for RECHARGE),Symmetry,568,standard,Symmetry,off_the_shelf
+davidstea.com,food,smaller,ok,davidstea.com,225,ADA fixes – 10 Nov (live copy + ADA),Horizon,,custom,Horizon,off_the_shelf_customised
+drinkghia.com,food,smaller,ok,drinkghia.com,57,drink-ghia/main,Dawn,,custom,Dawn,off_the_shelf_customised
+eatbanza.com,food,smaller,ok,eatbanza.com,60,banza-v3/main,View Source Dev,,custom,,bespoke
+eatfishwife.com,food,smaller,ok,eatfishwife.com,84,[o/S]: Main [10/22/26 rc],Blockshop,,custom,Blockshop,off_the_shelf_customised
+firebellytea.com,food,smaller,ok,firebellytea.com,46,Black Friday FINAL,Horizon,,custom,Horizon,off_the_shelf_customised
+harney.com,food,smaller,ok,harney.com,250,,,,unknown,,unknown
+middaysquares.com,food,smaller,ok,middaysquares.com,8,Mid Day Squares,Debut,796,standard,Debut,off_the_shelf
+novascotiafisherman.com,food,smaller,ok,novascotiafisherman.com,119,NS Fisherman - Nov 17 2026,Turbo,,custom,Turbo,off_the_shelf_customised
+sightglasscoffee.com,food,smaller,ok,sightglasscoffee.com,72,"Autumnal Equinox Launch | August 5th, 2026",Broadcast,,custom,Broadcast,off_the_shelf_customised
+unrealsnacks.com,food,smaller,ok,unrealsnacks.com,53,[DEV] Theory 100526 - Halloween + Popup Release,Horizon,,custom,Horizon,off_the_shelf_customised
+vervecoffee.com,food,smaller,ok,vervecoffee.com,180,vervecoffeeroasters/main,Verve Coffee,,custom,,bespoke
+yearsbeer.com,food,smaller,ok,yearsbeer.com,11,Production - New Homepage Jan 6th,Horizon,,custom,Horizon,off_the_shelf_customised
+arhoj.com,handmade,smaller,ok,arhoj.com,250,arhoj-com/main,Prestige,,custom,Prestige,off_the_shelf_customised
+blockshoptextiles.com,handmade,smaller,ok,blockshoptextiles.com,250,Rebuy Live - Fall 2026,Prestige,855,standard,Prestige,off_the_shelf
+goodeeworld.com,handmade,smaller,ok,goodeeworld.com,250,Symmetry LATEST,Symmetry,568,standard,Symmetry,off_the_shelf
+mociun.com,handmade,smaller,ok,mociun.com,250,Mociun - 06.26.2025 PostEditImg,Mociun,,custom,,bespoke
+mquan.com,handmade,smaller,ok,mquan.com,250,MQuan,Simple,578,standard,Simple,off_the_shelf
+notaryceramics.com,handmade,smaller,ok,notaryceramics.com,250,Impulse - ACo (Updated 8/13/2026),Impulse,857,standard,Impulse,off_the_shelf
+shopyowie.com,handmade,smaller,ok,shopyowie.com,250,Minimalista 2.0 (color swatch update),Minimalista,2316,standard,Minimalista,off_the_shelf
+thefuturekept.com,handmade,smaller,ok,thefuturekept.com,250,Updated copy of Lorenza,Lorenza,798,standard,Lorenza,off_the_shelf
+theprimaryessentials.com,handmade,smaller,ok,theprimaryessentials.com,250,Primary-Essentials-Theme/main,Prestige,,custom,Prestige,off_the_shelf_customised
+trnk-nyc.com,handmade,smaller,ok,trnk-nyc.com,250,Nivara | Trnk V6 | 19/11/2025,Dawn,,custom,Dawn,off_the_shelf_customised
+weareknitters.com,handmade,smaller,ok,weareknitters.com,250,wak-theme/store/wakusa,Dawn,,custom,Dawn,off_the_shelf_customised
+audocph.com,home,smaller,ok,audocph.com,250,[BL] production-int,Dawn,,custom,Dawn,off_the_shelf_customised
+bludot.com,home,smaller,ok,bludot.com,250,bludot/release/1.4.0,Bludot Theme,,custom,,bespoke
+coldpicnic.com,home,smaller,ok,coldpicnic.com,250,BACKUP PRE-CANVAS 11.3,Cold Picnic,796,standard,store theme (renamed),off_the_shelf
+eastfork.com,home,smaller,ok,eastfork.com,250,shopify/main,on/Sight Base Theme,,custom,,bespoke
+ergonofis.com,home,smaller,ok,ergonofis.com,76,theme-export-ergonofis-com-regular-theme-25-pr,Broadcast,,custom,Broadcast,off_the_shelf_customised
+fable.com,home,smaller,ok,fable.com,166,Fable/main,Cascade,,custom,Cascade,off_the_shelf_customised
+fieldcompany.com,home,smaller,ok,fieldcompany.com,93,FC 11.06.26 PDP + Side cart,Field Company,,custom,,bespoke
+finexusa.com,home,smaller,ok,finexusa.com,24,GitHub main branch (production),Dawn,,custom,Dawn,off_the_shelf_customised
+gethommey.com,home,smaller,ok,gethommey.com,242,Copy of BL Deploy #RE-57967 - 12/11/26,Hommey,,custom,,bespoke
+hawkinsnewyork.com,home,smaller,ok,hawkinsnewyork.com,250,11/17 Powermapper,HNY,,custom,,bespoke
+hedleyandbennett.com,home,smaller,ok,hedleyandbennett.com,250,,,,unknown,,unknown
+hestanculinary.com,home,smaller,ok,hestanculinary.com,167,Reviews Experiment Rollout,Expanse,,custom,Expanse,off_the_shelf_customised
+houseofhackney.com,home,smaller,ok,houseofhackney.com,250,houseofhackney/GLOBAL/master,Origin,,custom,Origin,off_the_shelf_customised
+insideweather.com,home,smaller,ok,insideweather.com,250,[Sept 2026] Dropship Product Launch,Symmetry,,custom,Symmetry,off_the_shelf_customised
+jonathanadler.com,home,smaller,ok,jonathanadler.com,250,11/16-11/25 BF Public Offer,Dawn,,custom,Dawn,off_the_shelf_customised
+mcgeeandco.com,home,smaller,ok,mcgeeandco.com,250,prestige/master,Prestige,,custom,Prestige,off_the_shelf_customised
+neptune.com,home,smaller,ok,neptune.com,250,neptunecom/main,Lorenza,,custom,Lorenza,off_the_shelf_customised
+ooni.com,home,smaller,ok,ooni.com,123,PRODUCTION,UWP FW4 Theme,,custom,,bespoke
+revivalrugs.com,home,smaller,ok,revivalrugs.com,250,,,,unknown,,unknown
+sabai.design,home,smaller,ok,sabai.design,250,release/SABAI-v2026.43,Sabai Redesign 2026,,custom,,bespoke
+sabre-paris.com,home,smaller,ok,sabre-paris.com,250,Prod Thème The OZ B2C,@theoz/theme_sabre_v2,,custom,,bespoke
+schoolhouse.com,home,smaller,ok,schoolhouse.com,250,schoolhouse-shopify/development,Dawn,,custom,Dawn,off_the_shelf_customised
+scp.co.uk,home,smaller,ok,scp.co.uk,250,SCP v3.1.7.3 ( made to order / roundels ),,,custom,,bespoke
+sixpenny.com,home,smaller,ok,sixpenny.com,250,SP-3.0/MASTER,Wondersauce,,custom,,bespoke
+smithey.com,home,smaller,ok,smithey.com,61,[BF] Live,Smithey,,custom,,bespoke
+souschef.co.uk,home,smaller,ok,souschef.co.uk,250,Sous Chef by BAO - Live,Sous Chef Theme,796,standard,store theme (renamed),off_the_shelf
+sundays-company.com,home,smaller,ok,sundays-company.com,250,sunhetta-theme/sundays/us/sale--black-friday-2026,Sundays,,custom,,bespoke
+the-citizenry.com,home,smaller,ok,the-citizenry.com,250,Production,K&P Birch,,custom,,bespoke
+theconranshop.com,home,smaller,ok,theconranshop.com,250,shopify-the-conran-shop/main,Origin,,custom,Origin,off_the_shelf_customised
+usm.com,home,smaller,http_404,,,,,,,,
+yearandday.com,home,smaller,ok,yearandday.com,115,11.13.26 20% Off BF Phase 1,Combine,,custom,Combine,off_the_shelf_customised
+alighieri.com,jewelry,smaller,ok,alighieri.com,233,Alighieri by Dash,Alighieri by Dash,,custom,,bespoke
+completedworks.com,jewelry,smaller,ok,completedworks.com,250,completedworks-git/live,Completed Works,,custom,,bespoke
+dinosaurdesigns.com.au,jewelry,smaller,ok,dinosaurdesigns.com.au,250,BOTANICA TWO,Broadcast,,custom,Broadcast,off_the_shelf_customised
+girlswithgems.com,jewelry,smaller,ok,girlswithgems.com,250,CART LINE - Aria 3+,Wonder,2684,standard,Wonder,off_the_shelf
+jenny-bird.com,jewelry,smaller,ok,jenny-bird.com,250,jenny-bird-us-prestige/main,Prestige,,custom,Prestige,off_the_shelf_customised
+lorenstewart.com,jewelry,smaller,ok,lorenstewart.com,250,Broadcast,Broadcast,868,standard,Broadcast,off_the_shelf
+marrowfine.com,jewelry,smaller,ok,marrowfine.com,250,Marrow-Fine-Broadcast-6.2.0-Custom-Theme/main,Broadcast,,custom,Broadcast,off_the_shelf_customised
+miansai.com,jewelry,smaller,ok,miansai.com,250,,,,unknown,,unknown
+otiumberg.com,jewelry,smaller,ok,otiumberg.com,250,Live,Slate,,custom,,bespoke
+tomwoodproject.com,jewelry,smaller,ok,tomwoodproject.com,250,Tom Wood x Panagora,Panagora,,custom,,bespoke
+vrai.com,jewelry,smaller,http_404,,,,,,,,
+wwake.com,jewelry,smaller,ok,wwake.com,250,wwake/main,Symediane Starter Theme,,custom,,bespoke
+aerflo.co,other,smaller,ok,aerflo.co,3,Aerflo-2024/main,Aerflo-2024,,custom,,bespoke
+freshjuiceblender.com,other,smaller,ok,freshjuiceblender.com,13,FRESHJUICE v3.6.5 | BFTB,Minimog - OS 2.0,,custom,,bespoke
+getbrick.app,other,smaller,ok,getbrick.app,11,getbrick-1h/sprint-6/bfcm-bf,Horizon,,custom,Horizon,off_the_shelf_customised
+thesomewhereco.com,other,smaller,ok,thesomewhereco.com,250,BLACK FRIDAY SALE 2026,Reformation,1762,standard,Reformation,off_the_shelf
+vitalydesign.com,other,smaller,ok,vitalydesign.com,227,SR | Nightmare Max Launch,Dawn,,custom,Dawn,off_the_shelf_customised
+againfaster.com,outdoors,smaller,ok,againfaster.com,250,2025 v3,,,custom,,bespoke
+alpkit.com,outdoors,smaller,ok,alpkit.com,250,alpkit/store-uk,Wiro Agency Theme,,custom,,bespoke
+blackdiamondequipment.com,outdoors,smaller,ok,blackdiamondequipment.com,250,Black-Diamond/NA-Prod-Site-Speed,Conflagaration,,custom,,bespoke
+gsioutdoors.com,outdoors,smaller,ok,gsioutdoors.com,250,GSI Dawn (CLI),Dawn,,custom,Dawn,off_the_shelf_customised
+ikamper.com,outdoors,smaller,ok,ikamper.com,221,ikamper-theme/store/us,Dawn,,custom,Dawn,off_the_shelf_customised
+kammok.com,outdoors,smaller,ok,kammok.com,90,Homepage | Crosswing PDP Updates,Sling,,custom,,bespoke
+kelty.com,outdoors,smaller,ok,ca.kelty.com,69,kelty-canada-shopify/main,Paper,,custom,Paper,off_the_shelf_customised
+nikestrength.com,outdoors,smaller,ok,nikestrength.com,176,Copy of NA-Jordan-Cade - bundle fix + Cade Home...,Conflagaration,,custom,,bespoke
+omorpho.com,outdoors,smaller,http_404,,,,,,,,
+primalstrength.com,outdoors,smaller,ok,primalstrength.com,250,primal-strength-uk/main,Dawn,,custom,Dawn,off_the_shelf_customised
+prxperformance.com,outdoors,smaller,ok,prxperformance.com,250,Concept - 6.0.3 ADA Updates,Concept,2412,standard,Concept,off_the_shelf
+pvolve.com,outdoors,smaller,ok,pvolve.com,112,MAIN,Shopify Theme V3,,custom,,bespoke
+repfitness.com,outdoors,smaller,ok,repfitness.com,250,Rep-Shopify-Theme/main,Hydrogen theme,,custom,,bespoke
+shop.centr.com,outdoors,smaller,ok,shop.centr.com,97,centr-shopify/main,on/Sight Base Theme,,custom,,bespoke
+shopbala.com,outdoors,smaller,ok,shopbala.com,132,bala-2025/main,Bala Theme,,custom,,bespoke
+snowpeak.com,outdoors,smaller,ok,snowpeak.com,250,,,,unknown,,unknown
+tonal.com,outdoors,smaller,ok,tonal.com,45,[Live] (Must always be published),TONAL,,custom,,bespoke
+becopets.com,pets,smaller,ok,becopets.com,60,Shopify/main,Dawn,,custom,Dawn,off_the_shelf_customised
+lambwolf.co,pets,smaller,ok,lambwolf.co,249,theme optimization/8/20/REBUY FIXED,Broadcast,868,standard,Broadcast,off_the_shelf
+meetmaev.com,pets,smaller,http_308,,,,,,,,
+miacara.com,pets,smaller,ok,miacara.com,189,MiaCara/master,MiaCara,,custom,,bespoke
+modernbeast.com,pets,smaller,ok,modernbeast.com,250,modernbeast-symmetry-stamp-fix-2026-10-07,Symmetry,,custom,Symmetry,off_the_shelf_customised
+nomnomnow.com,pets,smaller,http_404,,,,,,,,
+petfinn.com,pets,smaller,ok,petfinn.com,39,petfinn-theme/main,Impulse,,custom,Impulse,off_the_shelf_customised
+prettylitter.com,pets,smaller,http_404,,,,,,,,
+thefoggydog.com,pets,smaller,ok,thefoggydog.com,250,"11.10.26 Flip - LIVE v2.18.0 - 11.09.26, 21:39",Dawn,,custom,Dawn,off_the_shelf_customised
+tuftandpaw.com,pets,smaller,ok,tuftandpaw.com,17,FM 3.0 Rebuild | 2.1 - Promo bar slider - BFCM,Tuft & Paw 3.0,,custom,,bespoke
+zeedog.com,pets,smaller,ok,zeedog.com,250,2026-11-05-Free Leash/Harness,Essence,2366,standard,Essence,off_the_shelf
+beardsanddaisies.co.uk,plants,smaller,ok,beardsanddaisies.co.uk,250,Beards-and-Daisies-Git/theme-revamp,Unified Shopify Theme,,custom,,bespoke
+bloomscape.com,plants,smaller,http_404,,,,,,,,
+botanicalinterests.com,plants,smaller,ok,botanicalinterests.com,250,bio/master,Fhoke Template,,custom,,bespoke
+conservatoryarchives.co.uk,plants,smaller,ok,conservatoryarchives.co.uk,250,Copy of Conservatory-Archives/master/site-cards,Debut,,custom,Debut,off_the_shelf_customised
+hortology.co.uk,plants,smaller,ok,hortology.co.uk,250,Shopify Support Test,Turbo,,custom,Turbo,off_the_shelf_customised
+hudsonvalleyseed.com,plants,smaller,ok,hudsonvalleyseed.com,250,ADA [MAIN] Be Yours 8.0 - GLaRosa,Be Yours,1399,standard,Be Yours,off_the_shelf
+lvly.com.au,plants,smaller,ok,lvly.com.au,148,lvly/master(Delivery Rule 1.0),Turbo,,custom,Turbo,off_the_shelf_customised
+modernsprout.com,plants,smaller,ok,modernsprout.com,173,Nutrients & NPD Fall Launch 8-3-26,Focal,,custom,Focal,off_the_shelf_customised
+pistilsnursery.com,plants,smaller,ok,pistilsnursery.com,0,Catalog Update - Jun '24,Symmetry,568,standard,Symmetry,off_the_shelf
+plantcircle.co,plants,smaller,error_URLError,,,,,,,,
+thesill.com,plants,smaller,ok,thesill.com,250,The Sill v5.0.0,Horizon,,custom,Horizon,off_the_shelf_customised
+alohas.com,shoes,smaller,ok,alohas.com,241,dawn-theme-alohas/main,Dawn,,custom,Dawn,off_the_shelf_customised
+ancient-greek-sandals.com,shoes,smaller,ok,ancient-greek-sandals.com,250,ancient-greek-sandals-theme/main,Quickfire,,custom,,bespoke
+dearfrances.com,shoes,smaller,ok,dearfrances.com,113,Dear Frances | Lorenza,Lorenza,,custom,Lorenza,off_the_shelf_customised
+diemme.com,shoes,smaller,ok,diemme.com,190,diemme_com/main,Moon,,custom,,bespoke
+fillingpieces.com,shoes,smaller,ok,fillingpieces.com,250,filling-pieces/main,Filling Pieces,,custom,,bespoke
+hyloathletics.com,shoes,smaller,ok,hyloathletics.com,26,IMPACT 2 Andrew quote – UK – ready to publish,Stretch,1765,standard,store theme (renamed),off_the_shelf
+karhu.com,shoes,smaller,ok,karhu.com,250,karhu/store/karhu-eu,Karhu,,custom,,bespoke
+thesusoutdoors.com,shoes,smaller,ok,thesusoutdoors.com,28,Copy of WinterSale,Dawn,,custom,Dawn,off_the_shelf_customised
+thousandfell.com,shoes,smaller,ok,thousandfell.com,138,thousandfell-nk-v3,Showcase,,custom,Showcase,off_the_shelf_customised
+beneathyourmask.com,small-stores,smaller,ok,beneathyourmask.com,7,Mote [AfterPay edits 7/15/19],Parallax,,custom,Parallax,off_the_shelf_customised
+en.junglueck.de,small-stores,smaller,ok,en.junglueck.de,250,junglueck/main,Clever,,custom,,bespoke
+havefungrowyoung.com,small-stores,smaller,ok,havefungrowyoung.com,43,Morsel Munk - Holiday banner (Dec 10),Horizon,2481,standard,Horizon,off_the_shelf
+heatonist.com,small-stores,smaller,ok,heatonist.com,198,2022-theme/main,Dawn,,custom,Dawn,off_the_shelf_customised
+hellbabes.co,small-stores,smaller,ok,hellbabes.co,106,11.6 PYP 2,Broadcast,868,standard,Broadcast,off_the_shelf
+katemcleod.com,small-stores,smaller,ok,katemcleod.com,48,Post Holiday GWP Site Flip LIVE - 11.9.26,Debut,,custom,Debut,off_the_shelf_customised
+lolaandtheboys.com,small-stores,smaller,ok,lolaandtheboys.com,206,Live theme,Turbo,,custom,Turbo,off_the_shelf_customised
+madebymary.com,small-stores,smaller,ok,madebymary.com,250,Made-By-Mary/Main,Base,,custom,,bespoke
+satyaorganics.com,small-stores,smaller,ok,satyaorganics.com,0,Updated copy of Satya Theme Nov 2023,Pipeline,739,standard,Pipeline,off_the_shelf
+suta.in,small-stores,smaller,ok,suta.in,250,Suta-171126--AM,Prestige,,custom,Prestige,off_the_shelf_customised
+thenimetyou.com,small-stores,smaller,ok,thenimetyou.com,25,2026 BFCM Public Sale Main,Purity,,custom,,bespoke
+arrae.com,supplements,smaller,ok,arrae.com,70,Arrae Main Theme,Shiro,,custom,,bespoke
+beamorganics.com,supplements,smaller,ok,beamorganics.com,75,🚀 PRODUCTION,Dusk,,custom,,bespoke
+hilma.co,supplements,smaller,ok,hilma.co,19,Baggy – Production 2.0,Vanilla,,custom,,bespoke
+perelelhealth.com,supplements,smaller,ok,perelelhealth.com,45,perelelhealthv2/main,Perelel,,custom,,bespoke
+us.foursigmatic.com,supplements,smaller,ok,us.foursigmatic.com,90,FSG-Shopify-Theme/production-ci,Four Sigmatic,,custom,,bespoke
+yourheights.com,supplements,smaller,ok,yourheights.com,33,[PROD] Heights - Binaery - New Theme,Your Heights,,custom,,bespoke
+bigpotato.com,toys,smaller,ok,bigpotato.com,43,big-potato-games,MFTR x Big Potato,,custom,,bespoke
+magnatiles.com,toys,smaller,ok,magnatiles.com,87,Main Production 2026,Concept,2412,standard,Concept,off_the_shelf
+maileg.com,toys,smaller,ok,maileg.com,250,shopify-maileg-eu/master,Dawn,,custom,Dawn,off_the_shelf_customised
+make.do,toys,smaller,ok,make.do,30,PDP thumbnail changes 17/11 [OFFICIAL] BFCM 2026,Shapes,,custom,Shapes,off_the_shelf_customised
+merimeri.com,toys,smaller,http_403,,,,,,,,
+olliella.com,toys,smaller,ok,olliella.com,250,DD UK - HH Christmas Launch Oct '26,,,custom,,bespoke
+omy-maison.com,toys,smaller,ok,omy-maison.com,230,IKKO B2C - 17.11,Bento,,custom,,bespoke
+pieceworkpuzzles.com,toys,smaller,ok,pieceworkpuzzles.com,250,STAGE - Piecework 2023 v1.0.6.4.5.3 - BFCM,Piecework Puzzles 2023,,custom,,bespoke
+thewoobles.com,toys,smaller,ok,thewoobles.com,250,Copy of [ LIVE - GH SYNC] - Main [NOV Launches],Woobles,,custom,,bespoke
+avi-8.com,watches,smaller,ok,avi-8.com,250,[DEV] WJ + Show full price when oos,Impulse,,custom,Impulse,off_the_shelf_customised
+bremont.com,watches,smaller,ok,bremont.com,146,Bremont by BAO - Live (06/10/26),Bremont 2.0,,custom,,bespoke
+danhenrywatches.com,watches,smaller,ok,danhenrywatches.com,28,LIVE-ITG_Work_Font_Update,Dawn,887,standard,Dawn,off_the_shelf
+farer.com,watches,smaller,ok,farer.com,85,UK/main,Greenboxdesigns,,custom,,bespoke
+mrjoneswatches.com,watches,smaller,ok,mrjoneswatches.com,249,Time Warp | New theme...,Fetch,1949,standard,store theme (renamed),off_the_shelf
+nixon.com,watches,smaller,ok,nixon.com,250,[PROD: US] Nixon | ehouse,Dawn,,custom,Dawn,off_the_shelf_customised
+spinnaker-watches.com,watches,smaller,ok,spinnaker-watches.com,250,[1.5.0] Spinnaker + enhance nav menu,Vision,,custom,Vision,off_the_shelf_customised
