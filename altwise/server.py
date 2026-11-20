@@ -301,6 +301,9 @@ def set_alt(media_id, alt):
         raise RuntimeError(d["userErrors"])
 
 
+HOOK_PRODUCT = "The Complete Snowboard"
+
+
 def make_demo():
     """Make the demo store look like a typical store from the research (~half of images with no
     description, a couple with junk text). Saves the original alt text first so it can be restored."""
@@ -308,14 +311,20 @@ def make_demo():
     if not os.path.exists(DEMO_BACKUP):
         json.dump({i["media_id"]: i["alt"] for i in imgs}, open(DEMO_BACKUP, "w"), indent=1)
         print(f"Backed up original alt text for {len(imgs)} images -> altwise/demo_backup.json")
-    n_missing = round(len(imgs) * 0.47)
-    junk = ["IMG_4821.jpg", "PDP2 Option[Main] LIFESTYLE"]
+    # The video opens on this product, so its main image always gets the file-name junk text
+    hook = next((i for i in imgs if i["product_title"] == HOOK_PRODUCT), None)
+    if hook:
+        set_alt(hook["media_id"], "IMG_4821.jpg")
+        imgs = [i for i in imgs if i is not hook]
+    n_missing = round((len(imgs) + 1) * 0.47)
+    junk = ["PDP2 Option[Main] LIFESTYLE"]
     for k, i in enumerate(imgs):
         if k < n_missing:
             set_alt(i["media_id"], "")
         elif k < n_missing + len(junk):
             set_alt(i["media_id"], junk[k - n_missing])
-    print(f"Demo store ready: {n_missing} images with no description, {len(junk)} with junk text.")
+    print(f"Demo store ready: {n_missing} images with no description, {len(junk) + bool(hook)} with junk text"
+          f"{f' (incl. {HOOK_PRODUCT} = IMG_4821.jpg)' if hook else ''}.")
 
 
 def restore_demo():
