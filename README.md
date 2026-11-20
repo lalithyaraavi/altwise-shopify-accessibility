@@ -173,7 +173,7 @@ Then run `analysis/step3_measure.sql` in BigQuery, or open the notebooks in `ana
 
 ---
 
-Built by **Lalithya Raavi** · [lalithya-website.vercel.app](https://lalithya-website.vercel.app)
+🛍️ **Made for Shopify by Lali** ❤️ · [lalithya-website.vercel.app](https://lalithya-website.vercel.app)
 
 [^1]: [KEYT / Stacker: Accessibility lawsuits rose 37% in 2025](https://keyt.com/news/money-and-business/stacker-money/2026/01/14/accessibility-lawsuits-rose-by-37-in-2025-why-small-businesses-can-no-longer-ignore-their-websites/)
 [^2]: [TestParty: Shopify digital accessibility guide](https://testparty.ai/blog/the-complete-guide-to-shopify-digital-accessibility-what-every-e-commerce-store-o)
