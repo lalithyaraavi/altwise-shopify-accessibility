@@ -34,8 +34,11 @@ I built a working prototype (Ramp) that runs this flow on a real Shopify dev sto
 | **Primary metric** | Share of a merchant's product images with a descriptive alt text after 30 days |
 | **Secondary metrics** | Suggestion acceptance rate, edit rate before accepting |
 | **Guardrails** | Time to publish a product, rate of merchants dismissing or turning off Magic, reported incorrect descriptions |
-| **Sample size** | Store-level standard deviation is about 42 points. To detect a 5-point improvement (80% power, alpha 0.05): about 1,100 merchants per group. A 10-point improvement needs about 275. |
+| **Analysis** | Difference in means, adjusted for each merchant's coverage before the test (CUPED) |
+| **Sample size** | Baseline: 39% of a typical store's images are descriptive, with a very large spread between stores (SD 40 points). The standard formula says about 1,000 merchants per group to detect a 5-point lift. |
 | **Duration** | At least 4 weeks, so results aren't driven by first-week novelty |
+
+**I checked the design by simulation** (1,000 simulated experiments, built from the real store data; notebook `analysis/step5_ab_test.ipynb`). With a plain comparison of means, 1,000 merchants per group only detected a real 5-point lift **62%** of the time, not the planned 80%, because 31% of stores sit at 0% and 11% at 100%. Adjusting for each merchant's pre-test coverage (CUPED) raised power to **100%** with the same sample, while false alarms stayed near the expected 5% (6%). So the test should use CUPED.
 
 **Decision rule, set in advance:** ship if the primary metric improves significantly and no guardrail worsens meaningfully (for example, time to publish rising more than 10%).
 

@@ -86,9 +86,25 @@ Errors clustered on **busy images**: printed text the AI skipped, several produc
 
 *Limitations: one rater; descriptions from one model family.*
 
+### Testing it (A/B test design + simulation)
+
+Only Shopify can randomise real merchants, so I designed the test and checked it by simulation using the real store data (`analysis/step5_ab_test.ipynb`):
+
+- **Design:** randomise by merchant; primary metric = share of a store's images with descriptive alt text after 30 days; guardrail = time to publish a product.
+- **Sample size:** the standard formula says about 1,000 merchants per group to detect a 5-point lift.
+- **The simulation showed that's not enough with a plain t-test:** power was only **62%**, because stores are extremely spread out (31% at 0%, 11% at 100%).
+- **Adjusting for each merchant's pre-test coverage (CUPED)** raised power to **100%** with the same sample, with false alarms at 6% (expected about 5%).
+
+| 1,000 simulated experiments | Plain t-test | CUPED |
+|---|---|---|
+| Detects a real 5-point lift | 62% | 100% |
+| False alarms when there's no effect | 6% | 6% |
+
+![A/B power simulation](analysis/charts/5_ab_power_simulation.png)
+
 ## Recommendation
 
-Add AI image descriptions to **Shopify Magic**, offered at the moment a merchant uploads a product image, with an approval step and an extra prompt to review images that contain text or several items. Validate it with an A/B test (details in the [memo](MEMO.md)).
+Add AI image descriptions to **Shopify Magic**, offered at the moment a merchant uploads a product image, with an approval step and an extra prompt to review images that contain text or several items. Validate it with an A/B test analysed with CUPED (details in the [memo](MEMO.md)).
 
 ## Limitations
 
@@ -106,6 +122,7 @@ build_tables.py      Step 2: clean tables for BigQuery
 analysis/
   step3_measure.sql  Step 3: BigQuery SQL (classification view, CIs, window functions)
   step4_compare.ipynb Step 4: group comparisons, regression, charts
+  step5_ab_test.ipynb Step 5: A/B test sizing + simulation (CUPED)
 ramp/
   server.py          The MCP server (audit, find images, save fixes, evaluation tools)
   benchmark.json     Store-level benchmark from the research
