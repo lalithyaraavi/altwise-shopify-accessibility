@@ -135,8 +135,8 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/lalithyaraavi/ramp-shopify-accessibility.git
-   cd ramp-shopify-accessibility
+   git clone https://github.com/lalithyaraavi/altwise-shopify-accessibility.git
+   cd altwise-shopify-accessibility
    ```
 2. In the [Shopify Dev Dashboard](https://dev.shopify.com/dashboard), create a free dev store and an app with the scopes `read_products,write_products,read_files,write_files`, then install it on your store.
 3. Copy `.env.example` to `.env` and add your store address, Client ID and Client secret.
