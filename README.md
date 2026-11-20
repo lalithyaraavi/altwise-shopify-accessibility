@@ -1,6 +1,6 @@
 # 🛍️♿ How Accessible Are Shopify Stores?
 
-### A study of 422 Shopify stores, and AltWise: a prototype that extends Shopify Magic to accessibility
+### Measuring accessibility across 422 Shopify stores, and extending Shopify Magic to close the gap
 
 I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **AltWise**, a prototype that extends what Shopify Magic does today (writing product content) to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
 
