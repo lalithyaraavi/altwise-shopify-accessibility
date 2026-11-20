@@ -40,7 +40,8 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 
 | Stage | Skills | Where to look |
 |---|---|---|
-| Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py`, `page_check.py` |
+| Collect | Web scraping, APIs, ethical scraping (robots.txt, rate limits) | `scrape_products.py`, `fetch_alt.py` |
+| Check | Automated accessibility testing with axe-core (WCAG rules) in a headless browser (Playwright) | `page_check.py` |
 | Validate | Checking a data source against a second one | `scrape_products.py` |
 | Clean | Data modelling, handling NULLs, filtering placeholders | `build_tables.py` |
 | Measure | SQL: joins, CTEs, window functions, views | `analysis/step3_measure.sql` |
@@ -49,7 +50,7 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 | Evaluate | Metric design, measuring AI quality | `ramp/ai_descriptions.csv` |
 | Experiment | A/B test design, power analysis, simulation, CUPED | `analysis/step5_ab_test.ipynb` |
 
-**The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages checked with axe-core. Every excluded store has a logged reason.
+**The data:** 500 candidate stores (250 well-known brands, 250 smaller merchants). 422 returned data, giving 75,110 products, 30,661 sampled images (10 random products per store) and 838 pages (a homepage and a product page per store) tested with **axe-core**, the industry-standard accessibility checker, which flags WCAG problems like low-contrast text, unlabeled buttons and small tap targets. Every excluded store has a logged reason.
 
 **A check that changed the project:** I first assumed a missing alt field in Shopify's bulk product feed meant "no description." Checking a second source showed the bulk feed *never* includes alt text: 2,106 of 3,662 images I would have counted as missing actually had descriptions. I switched sources before analysing anything.
 
@@ -69,7 +70,7 @@ Averaged per store, the typical store is missing descriptions on **46.6%** of im
 ![Alt text breakdown](analysis/charts/1_alt_text_breakdown.png)
 
 #### 👥 2. Barriers affect many groups of shoppers
-Share of stores with at least one automatically detected barrier:
+Share of stores where axe-core detected at least one barrier:
 - 🦯 **85%** for screen-reader users
 - 👓 **67%** for low-vision and older shoppers (text too faint)
 - ✋ **56%** for shoppers with tremors (buttons too small)
