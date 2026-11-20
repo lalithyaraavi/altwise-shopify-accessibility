@@ -305,26 +305,39 @@ HOOK_PRODUCT = "The Collection Snowboard: Liquid"
 
 
 def make_demo():
-    """Make the demo store look like a typical store from the research (~half of images with no
-    description, a couple with junk text). Saves the original alt text first so it can be restored."""
+    """Make the demo store look like a typical store from the research: about half the images with
+    no description, plus junk and minimal ones like those found in real stores. The rest keep their
+    descriptions. Saves the original alt text first so it can be restored."""
+    import random
     imgs = sorted(images_of(fetch_products()), key=lambda i: i["media_id"])
     if not os.path.exists(DEMO_BACKUP):
         json.dump({i["media_id"]: i["alt"] for i in imgs}, open(DEMO_BACKUP, "w"), indent=1)
         print(f"Backed up original alt text for {len(imgs)} images -> altwise/demo_backup.json")
+    backup = json.load(open(DEMO_BACKUP))
+    n = len(imgs)
     # The video opens on this product, so its main image always gets the file-name junk text
     hook = next((i for i in imgs if i["product_title"] == HOOK_PRODUCT), None)
+    rest = [i for i in imgs if i is not hook]
+    random.Random(7).shuffle(rest)
+    # Mix based on the research: typical store ~47% missing; junk and minimal text are common too
+    n_missing = round(n * 0.47)
+    n_junk = max(0, round(n * 0.17) - (1 if hook else 0))
+    n_minimal = round(n * 0.17)
+    junk_examples = ["PDP2 Option[Main] LIFESTYLE", "Color:Ice;", "snowboard-main-01", "DSC_0193", "product 2"]
+    counts = {"missing": 0, "junk": 0, "minimal": 0, "descriptive": 0}
     if hook:
-        set_alt(hook["media_id"], "IMG_4821.jpg")
-        imgs = [i for i in imgs if i is not hook]
-    n_missing = round((len(imgs) + 1) * 0.47)
-    junk = ["PDP2 Option[Main] LIFESTYLE"]
-    for k, i in enumerate(imgs):
+        set_alt(hook["media_id"], "IMG_4821.jpg"); counts["junk"] += 1
+    for k, i in enumerate(rest):
         if k < n_missing:
-            set_alt(i["media_id"], "")
-        elif k < n_missing + len(junk):
-            set_alt(i["media_id"], junk[k - n_missing])
-    print(f"Demo store ready: {n_missing} images with no description, {len(junk) + bool(hook)} with junk text"
-          f"{f' (incl. {HOOK_PRODUCT} = IMG_4821.jpg)' if hook else ''}.")
+            set_alt(i["media_id"], ""); counts["missing"] += 1
+        elif k < n_missing + n_junk:
+            set_alt(i["media_id"], junk_examples[(k - n_missing) % len(junk_examples)]); counts["junk"] += 1
+        elif k < n_missing + n_junk + n_minimal:
+            set_alt(i["media_id"], i["product_title"]); counts["minimal"] += 1   # just the product name
+        else:
+            set_alt(i["media_id"], backup.get(i["media_id"], i["alt"])); counts["descriptive"] += 1
+    print("Demo store ready: " + ", ".join(f"{v} {k}" for k, v in counts.items())
+          + (f" (incl. {HOOK_PRODUCT} = IMG_4821.jpg)" if hook else "") + ".")
 
 
 def restore_demo():
