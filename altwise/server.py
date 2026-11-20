@@ -159,8 +159,10 @@ def audit_store() -> str:
     counts = {c: sum(i["class"] == c for i in imgs) for c in ["descriptive", "minimal", "junk", "missing"]}
     pct_missing = 100 * counts["missing"] / n
     pct_unusable = 100 * (counts["missing"] + counts["junk"]) / n
-    b = BENCH["pct_missing_by_store"]
-    worse_than = 100 * sum(x < pct_missing for x in b) / len(b)
+    # Compare on images a screen reader can't use (missing or junk), so junk text isn't counted as fine
+    b = BENCH["pct_unusable_by_store"]
+    worse_than = 100 * sum(x < pct_unusable for x in b) / len(b)
+    avg_unusable = sum(b) / len(b)
     scores = [s for s in (flesch(p["description"]) for p in products) if s is not None]
     hard = sum(s < 30 for s in scores)
     junk_examples = [f'"{i["alt"]}" ({i["product_title"]})' for i in imgs if i["class"] == "junk"][:3]
@@ -173,8 +175,8 @@ def audit_store() -> str:
         f"  descriptive {counts['descriptive']} | minimal {counts['minimal']} | junk {counts['junk']} | missing {counts['missing']}",
         f"  {pct_missing:.0f}% of images have NO description; {pct_unusable:.0f}% are missing or junk.",
         "",
-        f"Benchmark ({BENCH['n_stores']} Shopify stores studied, average {BENCH['avg_pct_missing']}% missing):",
-        f"  This store has more missing descriptions than {worse_than:.0f}% of stores in the study.",
+        f"Benchmark ({BENCH['n_stores']} Shopify stores studied, average {avg_unusable:.0f}% missing or junk):",
+        f"  This store has more missing or junk descriptions than {worse_than:.0f}% of stores in the study.",
     ]
     if junk_examples:
         lines += ["", "Junk alt text examples (not real descriptions):"] + [f"  - {e}" for e in junk_examples]
