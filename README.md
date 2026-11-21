@@ -100,13 +100,14 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing feature, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server. The merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
 
-1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing or junk descriptions than 75% of stores studied."*
+1. **Audits** the store and gives it a **store accessibility score** out of 100, compared to the stores in the research. The score averages two parts, both measured exactly as in the research: product images (the share a screen reader can describe) and pages (the share of 5 shopper groups with no barriers when axe-core scans the live storefront).
 2. **Shows Claude the images** that need descriptions, so it can draft them.
 3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
-4. **Reminds merchants without being asked:** in watch mode, it notices when a merchant uploads a product photo with no description and sends a notification with the store's **accessibility score** (the share of images a screen reader can describe, out of 100). When the merchant opens the chat, it already has a description written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
+4. **Reminds merchants without being asked:** in watch mode, it notices when a merchant uploads a product photo with no description and sends a notification with the store accessibility score. When the merchant opens the chat, it already has a description written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
 
 #### 🛠️ Tools
-- `audit_store`: accessibility report, benchmarked against the research
+- `audit_store`: store accessibility score and report, benchmarked against the research
+- `scan_storefront`: runs axe-core on the live storefront (homepage + a product page)
 - `get_images_needing_alt`: images with missing or junk descriptions
 - `store_checkin`: proactive check for newly uploaded images with no description
 - `--watch` mode: polls the store and sends a desktop notification when a new image has no description
@@ -184,7 +185,7 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
    cd altwise-shopify-accessibility
    ```
 2. In the [Shopify Dev Dashboard](https://dev.shopify.com/dashboard), create a free dev store and an app with the scopes `read_products,write_products,read_files,write_files`, then install it on your store.
-3. Copy `.env.example` to `.env` and add your store address, Client ID and Client secret.
+3. Copy `.env.example` to `.env` and add your store address, Client ID, Client secret and storefront password (for dev stores).
 4. Install [uv](https://docs.astral.sh/uv/) and test the connection:
    ```bash
    uv run --script altwise/server.py --test

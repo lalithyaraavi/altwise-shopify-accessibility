@@ -7,3 +7,4 @@ data/axe/
 logs/
 __pycache__/
 .ipynb_checkpoints/
+altwise/page_scan.json

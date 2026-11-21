@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27"]
+# dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27", "playwright>=1.40"]
 # ///
 """
 AltWise: an accessibility audit + image-description fixer for a Shopify store, as an MCP server.
@@ -150,6 +150,86 @@ def accessibility_score(imgs):
     return round(100 * (1 - bad / len(imgs))), round(avg)
 
 
+PAGE_SCAN = os.path.join(HERE, "page_scan.json")
+GROUPS = {"screen_reader": "screen-reader users", "low_vision": "low-vision and older shoppers (contrast)",
+          "motor": "shoppers with tremors / keyboard users", "voice": "voice-control users",
+          "zoom": "shoppers who need to zoom"}
+
+
+def rule_group(rule_id):
+    """Same mapping as the research (analysis/step3_measure.sql)."""
+    if rule_id == "color-contrast": return "low_vision"
+    if rule_id == "label-content-name-mismatch": return "voice"
+    if rule_id in ("target-size", "scrollable-region-focusable", "nested-interactive"): return "motor"
+    if rule_id in ("meta-viewport", "meta-viewport-large"): return "zoom"
+    return "screen_reader"
+
+
+def scan_pages():
+    """Run axe-core (same settings as the research) on the storefront homepage and one product page.
+    Handles the dev-store password page using STOREFRONT_PASSWORD from .env. Saves altwise/page_scan.json."""
+    from datetime import datetime, timezone
+    from playwright.sync_api import sync_playwright
+    axe_js = open(os.path.join(ROOT, "tools", "axe.min.js"), encoding="utf-8").read()
+    opts = {"runOnly": {"type": "tag", "values": ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]},
+            "resultTypes": ["violations"]}
+    products = fetch_products()
+    prod = next((p for p in products if p["title"] == HOOK_PRODUCT), None) or next(
+        (p for p in products if p["media"]["nodes"]), products[0])
+    base = f"https://{STORE}"
+    urls = {"home": base + "/", "product": f"{base}/products/{prod['handle']}"}
+    pages = []
+    with sync_playwright() as pw:
+        try:
+            browser = pw.chromium.launch(headless=True)
+        except Exception:
+            import subprocess
+            subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"], check=True)
+            browser = pw.chromium.launch(headless=True)
+        ctx = browser.new_context(bypass_csp=True, viewport={"width": 1280, "height": 900})
+        ctx.add_init_script(axe_js)
+        page = ctx.new_page()
+        page.goto(base + "/", wait_until="domcontentloaded", timeout=30000)
+        if "/password" in page.url:
+            pw_ = ENV.get("STOREFRONT_PASSWORD", "")
+            if not pw_:
+                raise RuntimeError("Your storefront is password-protected: add STOREFRONT_PASSWORD=... to .env "
+                                   "(Shopify admin > Online Store > Preferences).")
+            page.fill("input[type=password]", pw_)
+            page.keyboard.press("Enter")
+            page.wait_for_load_state("domcontentloaded")
+        for kind, url in urls.items():
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
+            if not page.evaluate("typeof window.axe !== 'undefined'"):
+                page.add_script_tag(content=axe_js)
+            res = page.evaluate("opts => axe.run(document, opts)", opts)
+            pages.append({"page": kind, "url": url, "violations": [
+                {"id": v["id"], "impact": v.get("impact"), "help": v.get("help"), "n": len(v.get("nodes", []))}
+                for v in res["violations"]]})
+        browser.close()
+    groups = sorted({rule_group(v["id"]) for pg in pages for v in pg["violations"]})
+    out = {"scanned_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "pages": pages,
+           "groups_affected": groups}
+    json.dump(out, open(PAGE_SCAN, "w"), indent=1)
+    return out
+
+
+def store_score(imgs):
+    """Overall store accessibility score (0-100) = average of the image score and the page score.
+    Page score = share of the 5 shopper groups with no barriers found by axe-core.
+    Returns dict with parts, the research averages, and the share of research stores this beats."""
+    img, img_avg = accessibility_score(imgs)
+    scan = json.load(open(PAGE_SCAN)) if os.path.exists(PAGE_SCAN) else None
+    page = round(100 * (5 - len(scan["groups_affected"])) / 5) if scan else None
+    overall = round((img + page) / 2) if (img is not None and page is not None) else None
+    sb, pb = BENCH.get("store_score_by_store", []), BENCH.get("page_score_by_store", [])
+    beats = round(100 * sum(x < overall for x in sb) / len(sb)) if (overall is not None and sb) else None
+    return {"overall": overall, "images": img, "pages": page, "scan": scan, "beats_pct": beats,
+            "avg_overall": round(sum(sb) / len(sb)) if sb else None, "avg_images": img_avg,
+            "avg_pages": round(sum(pb) / len(pb)) if pb else None}
+
+
 _cache = {}  # media_id -> image info, so updates can be logged with context
 
 
@@ -199,8 +279,23 @@ def audit_store() -> str:
         f"ACCESSIBILITY REPORT: {STORE}",
         f"Products: {len(products)}   Product images: {n}",
         "",
-        f"ACCESSIBILITY SCORE: {accessibility_score(imgs)[0]}/100   (average Shopify store in the study: {accessibility_score(imgs)[1]}/100)",
-        "  = share of product images a screen reader can actually describe",
+    ]
+    sc = store_score(imgs)
+    if sc["overall"] is not None:
+        lines += [f"STORE ACCESSIBILITY SCORE: {sc['overall']}/100   (average Shopify store in the study: {sc['avg_overall']}/100;"
+                  f" better than {sc['beats_pct']}% of stores)",
+                  f"  Product images: {sc['images']}/100 (avg {sc['avg_images']})  = share a screen reader can describe",
+                  f"  Pages:          {sc['pages']}/100 (avg {sc['avg_pages']})  = shopper groups with no barriers (axe-core, homepage + product page)"]
+        for g in sc["scan"]["groups_affected"]:
+            pct = BENCH.get("page_groups_pct_stores", {}).get(g)
+            lines.append(f"    - barrier for {GROUPS[g]}" + (f" (also found on {pct:.0f}% of stores studied)" if pct else ""))
+        worst = sorted((v for pg in sc["scan"]["pages"] for v in pg["violations"]), key=lambda v: -v["n"])[:3]
+        if worst:
+            lines.append("  Top page issues: " + "; ".join(f"{v['help']} ({v['n']}x)" for v in worst))
+    else:
+        lines += [f"IMAGE ACCESSIBILITY SCORE: {sc['images']}/100 (average store: {sc['avg_images']}/100)",
+                  "  (Pages not scanned yet: call scan_storefront to get the full store score.)"]
+    lines += [
         "",
         "Image descriptions (what screen-reader users hear):",
         f"  descriptive {counts['descriptive']} | minimal {counts['minimal']} | junk {counts['junk']} | missing {counts['missing']}",
@@ -237,6 +332,22 @@ def get_images_needing_alt(limit: int = 5, include: str = "missing,junk") -> lis
 
 
 @mcp.tool()
+def scan_storefront() -> str:
+    """Scan the live storefront (homepage + a product page) with axe-core, the same checker used in the
+    research, to find barriers for screen-reader, low-vision, motor, voice and zoom users. Takes ~30 s.
+    Then call audit_store to see the full store accessibility score."""
+    import subprocess
+    r = subprocess.run([sys.executable, os.path.abspath(__file__), "--scan-pages"], capture_output=True,
+                       text=True, timeout=300)
+    if r.returncode != 0:
+        return "Scan failed: " + (r.stderr or r.stdout)[-800:]
+    scan = json.load(open(PAGE_SCAN))
+    n = sum(len(p["violations"]) for p in scan["pages"])
+    return (f"Scanned {len(scan['pages'])} pages: {n} types of accessibility issues. Groups affected: "
+            + (", ".join(GROUPS[g] for g in scan["groups_affected"]) or "none") + ". Now call audit_store.")
+
+
+@mcp.tool()
 def store_checkin(hours: int = 24) -> list:
     """Proactive check-in: call this at the start of a conversation or whenever the merchant asks
     what needs attention, even if they don't mention accessibility or alt text. Finds product images
@@ -253,8 +364,11 @@ def store_checkin(hours: int = 24) -> list:
             return False
     new_bad = [i for i in imgs if is_new(i) and i["class"] in ("missing", "junk")]
     store_bad = sum(i["class"] in ("missing", "junk") for i in imgs)
-    score, avg = accessibility_score(imgs)
-    out = [f"Accessibility score: {score}/100 (average store: {avg}/100).\n"
+    sc = store_score(imgs)
+    score_line = (f"Store accessibility score: {sc['overall']}/100 (average store: {sc['avg_overall']}/100). "
+                  if sc["overall"] is not None else
+                  f"Image accessibility score: {sc['images']}/100 (average store: {sc['avg_images']}/100). ")
+    out = [score_line + "\n"
            f"Store check-in: {len(new_bad)} product image(s) uploaded in the last {hours} hours have no "
            f"usable description. Store-wide, {store_bad} of {len(imgs)} images are missing or junk.\n"
            "Tell the merchant why it matters (screen-reader shoppers, search and AI shopping agents), "
@@ -436,7 +550,8 @@ def watch(every=20):
         seen |= {i["media_id"] for i in imgs}
         bad = [i for i in new if i["class"] in ("missing", "junk")]
         if bad:
-            score, avg = accessibility_score(imgs)
+            sc = store_score(imgs)
+            score, avg = (sc["overall"], sc["avg_overall"]) if sc["overall"] is not None else (sc["images"], sc["avg_images"])
             names = ", ".join(sorted({i["product_title"] for i in bad}))
             notify("AltWise: new photo has no description",
                    f"{names}: shoppers using screen readers can't see it. "
@@ -451,6 +566,8 @@ if __name__ == "__main__":
         make_demo(); print(); print(audit_store())
     elif "--restore-demo" in sys.argv:
         restore_demo()
+    elif "--scan-pages" in sys.argv:
+        r = scan_pages(); print("Groups affected:", r["groups_affected"])
     elif "--watch" in sys.argv:
         watch()
     else:
