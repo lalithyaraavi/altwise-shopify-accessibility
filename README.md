@@ -103,12 +103,13 @@ Sidekick, Shopify's AI assistant, already writes product descriptions and blog p
 1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing or junk descriptions than 75% of stores studied."*
 2. **Shows Claude the images** that need descriptions, so it can draft them.
 3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
-4. **Reminds merchants without being asked:** when a merchant opens a chat, it checks for product photos uploaded in the last day with no description and offers ones it has already written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
+4. **Reminds merchants without being asked:** in watch mode, it notices when a merchant uploads a product photo with no description and sends a notification with the store's **accessibility score** (the share of images a screen reader can describe, out of 100). When the merchant opens the chat, it already has a description written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
 
 #### 🛠️ Tools
 - `audit_store`: accessibility report, benchmarked against the research
 - `get_images_needing_alt`: images with missing or junk descriptions
 - `store_checkin`: proactive check for newly uploaded images with no description
+- `--watch` mode: polls the store and sends a desktop notification when a new image has no description
 - `update_image_alt`: saves an approved description to Shopify
 - `get_research_images`, `save_ai_description`: used for the AI evaluation below
 
@@ -194,7 +195,11 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
      "altwise": { "command": "/path/to/uv", "args": ["run", "--script", "/path/to/altwise/server.py"] }
    }
    ```
-6. Ask Claude: *"Audit my store's accessibility."*
+6. (Optional) Turn on proactive reminders in a separate terminal:
+   ```bash
+   uv run --script altwise/server.py --watch
+   ```
+7. Ask Claude: *"Audit my store's accessibility."*
 
 #### Rerun the research
 ```bash

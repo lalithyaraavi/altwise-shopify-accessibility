@@ -139,6 +139,17 @@ def images_of(products):
     return out
 
 
+def accessibility_score(imgs):
+    """0-100: share of product images a screen reader can actually describe (not missing or junk).
+    Returns (store score, average score across the research stores)."""
+    b = BENCH["pct_unusable_by_store"]
+    avg = 100 - sum(b) / len(b)
+    if not imgs:
+        return None, avg
+    bad = sum(i["class"] in ("missing", "junk") for i in imgs)
+    return round(100 * (1 - bad / len(imgs))), round(avg)
+
+
 _cache = {}  # media_id -> image info, so updates can be logged with context
 
 
@@ -187,6 +198,9 @@ def audit_store() -> str:
     lines = [
         f"ACCESSIBILITY REPORT: {STORE}",
         f"Products: {len(products)}   Product images: {n}",
+        "",
+        f"ACCESSIBILITY SCORE: {accessibility_score(imgs)[0]}/100   (average Shopify store in the study: {accessibility_score(imgs)[1]}/100)",
+        "  = share of product images a screen reader can actually describe",
         "",
         "Image descriptions (what screen-reader users hear):",
         f"  descriptive {counts['descriptive']} | minimal {counts['minimal']} | junk {counts['junk']} | missing {counts['missing']}",
@@ -239,7 +253,9 @@ def store_checkin(hours: int = 24) -> list:
             return False
     new_bad = [i for i in imgs if is_new(i) and i["class"] in ("missing", "junk")]
     store_bad = sum(i["class"] in ("missing", "junk") for i in imgs)
-    out = [f"Store check-in: {len(new_bad)} product image(s) uploaded in the last {hours} hours have no "
+    score, avg = accessibility_score(imgs)
+    out = [f"Accessibility score: {score}/100 (average store: {avg}/100).\n"
+           f"Store check-in: {len(new_bad)} product image(s) uploaded in the last {hours} hours have no "
            f"usable description. Store-wide, {store_bad} of {len(imgs)} images are missing or junk.\n"
            "Tell the merchant why it matters (screen-reader shoppers, search and AI shopping agents), "
            "suggest a description for each new image below (under 125 characters, describe what is "
@@ -392,6 +408,41 @@ def restore_demo():
     print(f"Restored original alt text for {len(backup)} images.")
 
 
+def notify(title, message):
+    """Show a macOS notification (falls back to printing on other systems)."""
+    import subprocess
+    esc = lambda t: t.replace("\\", "\\\\").replace('"', '\\"')
+    try:
+        subprocess.run(["osascript", "-e", f'display notification "{esc(message)}" with title "{esc(title)}" sound name "Glass"'],
+                       check=False, capture_output=True)
+    except FileNotFoundError:
+        pass
+    print(f"[{title}] {message}")
+
+
+def watch(every=20):
+    """Sidekick-style proactive reminders: check the store every `every` seconds and notify the
+    merchant, without being asked, when a newly uploaded product image has no usable description."""
+    import time
+    seen = {i["media_id"] for i in images_of(fetch_products())}
+    print(f"AltWise is watching {STORE} for new product images (Ctrl+C to stop)...")
+    while True:
+        time.sleep(every)
+        try:
+            imgs = images_of(fetch_products())
+        except Exception as e:
+            print("check failed, retrying:", e); continue
+        new = [i for i in imgs if i["media_id"] not in seen]
+        seen |= {i["media_id"] for i in imgs}
+        bad = [i for i in new if i["class"] in ("missing", "junk")]
+        if bad:
+            score, avg = accessibility_score(imgs)
+            names = ", ".join(sorted({i["product_title"] for i in bad}))
+            notify("AltWise: new photo has no description",
+                   f"{names}: shoppers using screen readers can't see it. "
+                   f"Accessibility score {score}/100 (avg store {avg}). Open Claude and say 'check in on my store'.")
+
+
 if __name__ == "__main__":
     if "--test" in sys.argv:
         print("Getting access token...", end=" "); get_token(); print("OK")
@@ -400,5 +451,7 @@ if __name__ == "__main__":
         make_demo(); print(); print(audit_store())
     elif "--restore-demo" in sys.argv:
         restore_demo()
+    elif "--watch" in sys.argv:
+        watch()
     else:
         mcp.run()
