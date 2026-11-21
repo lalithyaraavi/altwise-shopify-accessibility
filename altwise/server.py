@@ -83,7 +83,7 @@ query($cursor: String) {
     pageInfo { hasNextPage endCursor }
     nodes {
       id title handle productType description
-      media(first: 20) { nodes { ... on MediaImage { id alt image { url } } } }
+      media(first: 20) { nodes { ... on MediaImage { id alt createdAt image { url } } } }
     }
   }
 }"""
@@ -134,6 +134,7 @@ def images_of(products):
             if m and m.get("id"):
                 out.append({"product_id": p["id"], "product_title": p["title"], "media_id": m["id"],
                             "alt": m.get("alt") or "", "url": (m.get("image") or {}).get("url", ""),
+                            "created_at": m.get("createdAt", ""),
                             "class": classify_alt(m.get("alt"), p["title"])})
     return out
 
@@ -142,7 +143,23 @@ _cache = {}  # media_id -> image info, so updates can be logged with context
 
 
 # ---------------------------------------------------------------- MCP tools
-mcp = FastMCP("altwise")
+mcp = FastMCP("altwise", instructions=(
+    "AltWise helps Shopify merchants keep product images accessible. At the start of a conversation, "
+    "or whenever the merchant asks what needs attention in their store, call store_checkin first, "
+    "even if they don't mention accessibility, so merchants are reminded about undescribed images "
+    "they may not know about."))
+
+
+def _image_payload(i):
+    """Load a product image so the model can see it (smaller copy for speed)."""
+    try:
+        sep = "&" if "?" in i["url"] else "?"
+        r = httpx.get(i["url"] + sep + "width=600", timeout=30, follow_redirects=True)
+        ctype = r.headers.get("content-type", "image/jpeg")
+        fmt = "png" if "png" in ctype else "webp" if "webp" in ctype else "jpeg"
+        return Image(data=r.content, format=fmt)
+    except Exception as e:
+        return f"(couldn't load image: {e})"
 
 
 @mcp.tool()
@@ -201,14 +218,40 @@ def get_images_needing_alt(limit: int = 5, include: str = "missing,junk") -> lis
         out.append(f"Image {k}: product '{i['product_title']}' | media_id {i['media_id']} | "
                    f"current alt: '{i['alt']}' ({i['class']})")
         if i["url"]:
-            try:
-                sep = "&" if "?" in i["url"] else "?"
-                r = httpx.get(i["url"] + sep + "width=600", timeout=30, follow_redirects=True)
-                ctype = r.headers.get("content-type", "image/jpeg")
-                fmt = "png" if "png" in ctype else "webp" if "webp" in ctype else "jpeg"
-                out.append(Image(data=r.content, format=fmt))
-            except Exception as e:
-                out.append(f"(couldn't load image: {e})")
+            out.append(_image_payload(i))
+    return out
+
+
+@mcp.tool()
+def store_checkin(hours: int = 24) -> list:
+    """Proactive check-in: call this at the start of a conversation or whenever the merchant asks
+    what needs attention, even if they don't mention accessibility or alt text. Finds product images
+    uploaded in the last `hours` that have no description (or junk text), shows each image, and
+    reminds the merchant. Write a suggested description for each and ask the merchant to approve
+    before calling update_image_alt."""
+    from datetime import datetime, timedelta, timezone
+    imgs = images_of(fetch_products())
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    def is_new(i):
+        try:
+            return datetime.fromisoformat(i["created_at"].replace("Z", "+00:00")) >= cutoff
+        except Exception:
+            return False
+    new_bad = [i for i in imgs if is_new(i) and i["class"] in ("missing", "junk")]
+    store_bad = sum(i["class"] in ("missing", "junk") for i in imgs)
+    out = [f"Store check-in: {len(new_bad)} product image(s) uploaded in the last {hours} hours have no "
+           f"usable description. Store-wide, {store_bad} of {len(imgs)} images are missing or junk.\n"
+           "Tell the merchant why it matters (screen-reader shoppers, search and AI shopping agents), "
+           "suggest a description for each new image below (under 125 characters, describe what is "
+           "visible), and ask them to approve before saving."]
+    for k, i in enumerate(new_bad[:5], 1):
+        _cache[i["media_id"]] = i
+        out.append(f"New image {k}: product '{i['product_title']}' | media_id {i['media_id']} | "
+                   f"current alt: '{i['alt']}' ({i['class']}) | uploaded {i['created_at']}")
+        if i["url"]:
+            out.append(_image_payload(i))
+    if not new_bad:
+        out.append("No new undescribed images. If the merchant wants, offer to run audit_store.")
     return out
 
 

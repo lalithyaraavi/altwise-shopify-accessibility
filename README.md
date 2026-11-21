@@ -100,13 +100,15 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing feature, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server. The merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
 
-1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing descriptions than 52% of stores studied."*
+1. **Audits** the store with the same classifier from the research, and compares it to the 401 stores: *"This store has more missing or junk descriptions than 75% of stores studied."*
 2. **Shows Claude the images** that need descriptions, so it can draft them.
 3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
+4. **Reminds merchants without being asked:** when a merchant opens a chat, it checks for product photos uploaded in the last day with no description and offers ones it has already written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
 
 #### 🛠️ Tools
 - `audit_store`: accessibility report, benchmarked against the research
 - `get_images_needing_alt`: images with missing or junk descriptions
+- `store_checkin`: proactive check for newly uploaded images with no description
 - `update_image_alt`: saves an approved description to Shopify
 - `get_research_images`, `save_ai_description`: used for the AI evaluation below
 
