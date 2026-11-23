@@ -94,6 +94,8 @@ Share of stores where axe-core detected at least one barrier:
 #### 🧩 3. It's a merchant habit, not a theme problem
 With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect disappeared. A regression on 390 stores (theme, store size, brand vs. smaller merchant, category) found no significant predictors *(all p > 0.4, R² = 0.09)*. So the fix belongs where merchants add products, not in themes.
 
+![Missing descriptions by theme type](analysis/charts/2_missing_by_theme.png)
+
 ---
 
 ## ✨ AltWise: extending Shopify Sidekick to accessibility
