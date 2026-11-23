@@ -4,7 +4,9 @@
 
 I studied 422 Shopify stores and found that **the typical store leaves 47% of its product images undescribed**: invisible to screen readers, search engines and AI shopping agents. Then I built **AltWise**, a prototype that extends Shopify Sidekick to accessibility: it audits a store against this research and writes the missing image descriptions for the merchant to approve.
 
-🎥 **[Demo video](#)** · 📄 **[Product memo](MEMO.md)**
+🎥 **[Demo video](https://youtu.be/C0JD2wfppwM)** · 📄 **[Product memo](MEMO.md)**
+
+[![Watch the AltWise demo video](https://img.youtube.com/vi/C0JD2wfppwM/hqdefault.jpg)](https://youtu.be/C0JD2wfppwM)
 
 **Contents:** [The problem](#-the-problem) · [Why it matters](#-why-this-matters-to-shopify) · [How I did it](#-how-i-did-it) · [What I found](#-what-i-found) · [AltWise](#-altwise-extending-shopify-sidekick-to-accessibility) · [AI evaluation](#-is-the-ai-good-enough) · [A/B test](#-how-shopify-could-test-it) · [What I learned](#-what-i-learned) · [Next steps](#-next-steps) · [Try it yourself](#-try-it-yourself)
 
