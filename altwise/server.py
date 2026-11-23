@@ -248,17 +248,17 @@ _cache = {}  # media_id -> image info, so updates can be logged with context
 
 # ---------------------------------------------------------------- MCP tools
 mcp = FastMCP("altwise", instructions=(
-    "AltWise helps Shopify merchants keep product images accessible. At the start of a conversation, "
-    "or whenever the merchant asks what needs attention in their store, call store_checkin first, "
-    "even if they don't mention accessibility, so merchants are reminded about undescribed images "
-    "they may not know about."))
+    "AltWise helps Shopify merchants keep product images accessible. When asked to audit the store, call "
+    "audit_store and reply with only the score, one suggested description per image, and 'Want me to save "
+    "these?'. When the merchant approves, call save_descriptions once with all of them and report the new "
+    "score. If the merchant asks what needs attention in their store, call store_checkin."))
 
 
-def _image_payload(i):
+def _image_payload(i, width=600):
     """Load a product image so the model can see it (smaller copy for speed)."""
     try:
         sep = "&" if "?" in i["url"] else "?"
-        r = httpx.get(i["url"] + sep + "width=600", timeout=30, follow_redirects=True)
+        r = httpx.get(i["url"] + sep + f"width={width}", timeout=30, follow_redirects=True)
         ctype = r.headers.get("content-type", "image/jpeg")
         fmt = "png" if "png" in ctype else "webp" if "webp" in ctype else "jpeg"
         return Image(data=r.content, format=fmt)
@@ -268,75 +268,38 @@ def _image_payload(i):
 
 @mcp.tool()
 def audit_store() -> list:
-    """Audit the connected Shopify store's accessibility: store accessibility score, image descriptions
-    (alt text) and product-description readability, benchmarked against 401 Shopify stores.
-    Also shows the images that need a description (newest first), so you can suggest descriptions
-    right away for the merchant to approve."""
+    """Audit the store's accessibility. Returns the store accessibility score and EVERY product image that
+    needs a description, each with its picture. Reply in exactly this shape and nothing else:
+    (1) the score in 2-3 short lines, (2) a numbered list, one line per image:
+    product name - what a screen reader hears now - your suggested description,
+    (3) one closing question: "Want me to save these?". When the merchant agrees, call save_descriptions
+    once with ALL of them (it saves them and returns the new score)."""
     products = fetch_products()
     imgs = images_of(products)
     for i in imgs:
         _cache[i["media_id"]] = i
-    n = len(imgs)
-    if n == 0:
-        return f"{STORE}: {len(products)} products, but no product images to audit."
-    counts = {c: sum(i["class"] == c for i in imgs) for c in ["descriptive", "minimal", "junk", "missing"]}
-    pct_missing = 100 * counts["missing"] / n
-    pct_unusable = 100 * (counts["missing"] + counts["junk"]) / n
-    # Compare on images a screen reader can't use (missing or junk), so junk text isn't counted as fine
-    b = BENCH["pct_unusable_by_store"]
-    worse_than = 100 * sum(x < pct_unusable for x in b) / len(b)
-    avg_unusable = sum(b) / len(b)
-    scores = [s for s in (flesch(p["description"]) for p in products) if s is not None]
-    hard = sum(s < 30 for s in scores)
-    junk_examples = [f'"{i["alt"]}" ({i["product_title"]})' for i in imgs if i["class"] == "junk"][:3]
-
-    lines = [
-        f"ACCESSIBILITY REPORT: {STORE}",
-        f"Products: {len(products)}   Product images: {n}",
-        "",
-    ]
+    if not imgs:
+        return [f"{STORE}: no product images to audit."]
     sc = store_score(imgs)
-    if sc["overall"] is not None:
-        lines += [f"STORE ACCESSIBILITY SCORE: {sc['overall']}/100   (average Shopify store in the study: {sc['avg_overall']}/100;"
-                  f" better than {sc['beats_pct']}% of stores)",
-                  f"  Product images: {sc['images']}/100 (avg {sc['avg_images']})  = share a screen reader can describe",
-                  f"  Pages:          {sc['pages']}/100 (avg {sc['avg_pages']})  = shopper groups with no barriers (axe-core, homepage + product page)"]
-        for g in sc["scan"]["groups_affected"]:
-            pct = BENCH.get("page_groups_pct_stores", {}).get(g)
-            lines.append(f"    - barrier for {GROUPS[g]}" + (f" (also found on {pct:.0f}% of stores studied)" if pct else ""))
-        worst = sorted((v for pg in sc["scan"]["pages"] for v in pg["violations"]), key=lambda v: -v["n"])[:3]
-        if worst:
-            lines.append("  Top page issues: " + "; ".join(f"{v['help']} ({v['n']}x)" for v in worst))
-    else:
-        lines += [f"IMAGE ACCESSIBILITY SCORE: {sc['images']}/100 (average store: {sc['avg_images']}/100)",
-                  "  (Pages not scanned yet: call scan_storefront to get the full store score.)"]
-    lines += [
-        "",
-        "Image descriptions (what screen-reader users hear):",
-        f"  descriptive {counts['descriptive']} | minimal {counts['minimal']} | junk {counts['junk']} | missing {counts['missing']}",
-        f"  {pct_missing:.0f}% of images have NO description; {pct_unusable:.0f}% are missing or junk.",
-        "",
-        f"Benchmark ({BENCH['n_stores']} Shopify stores studied, average {avg_unusable:.0f}% missing or junk):",
-        f"  This store has more missing or junk descriptions than {worse_than:.0f}% of stores in the study.",
-    ]
-    if junk_examples:
-        lines += ["", "Junk alt text examples (not real descriptions):"] + [f"  - {e}" for e in junk_examples]
-    if scores:
-        lines += ["", f"Product descriptions: {len(scores)} long enough to score; {hard} are very hard to read (Flesch < 30)."]
-    # Show the images that need fixing right away (newest uploads first), so the merchant can act now
     bad = sorted((i for i in imgs if i["class"] in ("missing", "junk", "minimal")),
-                 key=lambda i: i.get("created_at", ""), reverse=True)[:5]
-    out = ["\n".join(lines)]
-    if bad:
-        out.append(f"IMAGES THAT NEED A DESCRIPTION ({len(bad)} shown, newest first). For each one, show the "
-                   "merchant what a screen reader hears now (the current alt text) and write a suggested "
-                   "description (under 125 characters, describe what is visible, don't start with 'image of'). "
-                   "Ask the merchant to approve before calling update_image_alt.")
-        for k, i in enumerate(bad, 1):
-            out.append(f"Image {k}: product '{i['product_title']}' | media_id {i['media_id']} | "
-                       f"current alt: '{i['alt']}' ({i['class']})")
-            if i["url"]:
-                out.append(_image_payload(i))
+                 key=lambda i: i.get("created_at", ""), reverse=True)
+    if sc["overall"] is not None:
+        score = (f"STORE ACCESSIBILITY SCORE: {sc['overall']}/100 (average Shopify store in my research: "
+                 f"{sc['avg_overall']}/100)\n"
+                 f"  Product images: {sc['images']}/100 (share a screen reader can describe)\n"
+                 f"  Pages: {sc['pages']}/100 (shopper groups with no barriers"
+                 + (": issue for " + ", ".join(GROUPS[g] for g in sc["scan"]["groups_affected"]) if sc["scan"]["groups_affected"] else "")
+                 + ")")
+    else:
+        score = f"IMAGE ACCESSIBILITY SCORE: {sc['images']}/100 (average store: {sc['avg_images']}/100)"
+    out = [score + f"\n\n{len(bad)} of {len(imgs)} product images need a description (newest first). "
+           "For each, suggest a description: under 125 characters, describe what is visible, "
+           "don't start with 'image of'."]
+    for k, i in enumerate(bad, 1):
+        cur = i["alt"] if i["alt"] else "(nothing, no description)"
+        out.append(f"Image {k}: '{i['product_title']}' | media_id {i['media_id']} | screen reader hears now: {cur}")
+        if i["url"]:
+            out.append(_image_payload(i, width=400))
     return out
 
 
@@ -433,6 +396,33 @@ def update_image_alt(media_id: str, new_alt: str) -> str:
         w.writerow([datetime.now(timezone.utc).isoformat(timespec="seconds"), info.get("product_title", ""),
                     media_id, info.get("url", ""), info.get("alt", ""), info.get("class", ""), new_alt])
     return f"Saved to Shopify: {media_id} -> \"{new_alt}\""
+
+
+@mcp.tool()
+def save_descriptions(descriptions: list[dict[str, str]]) -> str:
+    """Save several approved descriptions at once, then return the new store accessibility score.
+    `descriptions` is a list of {"media_id": "...", "alt": "..."}. Only call after the merchant approves.
+    Reply with the before and after score in one or two lines."""
+    before = store_score(images_of(fetch_products()))
+    saved, failed = 0, []
+    for d in descriptions:
+        mid, alt = d.get("media_id", ""), (d.get("alt") or "").strip()
+        if not mid or not alt:
+            continue
+        r = update_image_alt(mid, alt)
+        if r.startswith("Saved"):
+            saved += 1
+        else:
+            failed.append(mid)
+    after = store_score(images_of(fetch_products()))
+    key = "overall" if after["overall"] is not None else "images"
+    msg = (f"Saved {saved} new descriptions to Shopify.\n"
+           f"NEW STORE ACCESSIBILITY SCORE: {after[key]}/100 (was {before[key]}/100; "
+           f"average store: {after['avg_overall'] if key == 'overall' else after['avg_images']}/100)\n"
+           f"  Product images: {after['images']}/100 (was {before['images']}/100)")
+    if failed:
+        msg += f"\nCouldn't save {len(failed)}: {', '.join(failed)}"
+    return msg
 
 
 # ---------------------------------------------------------------- Step 6: AI quality evaluation
