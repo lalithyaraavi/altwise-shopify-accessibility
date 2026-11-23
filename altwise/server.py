@@ -267,9 +267,11 @@ def _image_payload(i):
 
 
 @mcp.tool()
-def audit_store() -> str:
-    """Audit the connected Shopify store's accessibility: image descriptions (alt text) and
-    product-description readability, benchmarked against a research sample of 401 Shopify stores."""
+def audit_store() -> list:
+    """Audit the connected Shopify store's accessibility: store accessibility score, image descriptions
+    (alt text) and product-description readability, benchmarked against 401 Shopify stores.
+    Also shows the images that need a description (newest first), so you can suggest descriptions
+    right away for the merchant to approve."""
     products = fetch_products()
     imgs = images_of(products)
     for i in imgs:
@@ -321,8 +323,21 @@ def audit_store() -> str:
         lines += ["", "Junk alt text examples (not real descriptions):"] + [f"  - {e}" for e in junk_examples]
     if scores:
         lines += ["", f"Product descriptions: {len(scores)} long enough to score; {hard} are very hard to read (Flesch < 30)."]
-    lines += ["", "Next step: call get_images_needing_alt to review the images and write descriptions."]
-    return "\n".join(lines)
+    # Show the images that need fixing right away (newest uploads first), so the merchant can act now
+    bad = sorted((i for i in imgs if i["class"] in ("missing", "junk", "minimal")),
+                 key=lambda i: i.get("created_at", ""), reverse=True)[:5]
+    out = ["\n".join(lines)]
+    if bad:
+        out.append(f"IMAGES THAT NEED A DESCRIPTION ({len(bad)} shown, newest first). For each one, show the "
+                   "merchant what a screen reader hears now (the current alt text) and write a suggested "
+                   "description (under 125 characters, describe what is visible, don't start with 'image of'). "
+                   "Ask the merchant to approve before calling update_image_alt.")
+        for k, i in enumerate(bad, 1):
+            out.append(f"Image {k}: product '{i['product_title']}' | media_id {i['media_id']} | "
+                       f"current alt: '{i['alt']}' ({i['class']})")
+            if i["url"]:
+                out.append(_image_payload(i))
+    return out
 
 
 @mcp.tool()
