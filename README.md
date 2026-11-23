@@ -152,7 +152,11 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
 - **The simulation showed that isn't enough:** a plain t-test caught the lift only 62% of the time, because stores are so spread out (31% at 0%, 11% at 100%).
 - **The fix:** adjusting for each merchant's coverage before the test (CUPED) raised that to 100%, with false alarms still at the expected level (6%).
 
-![A/B power simulation](analysis/charts/5_ab_power_simulation.png)
+![Power with and without CUPED](analysis/charts/5_ab_power.png)
+
+**Why CUPED works:** across 1,000 simulated experiments, the lift CUPED measured never overlaps between "no real effect" (around 0) and "real 5-point lift" (around 4; below 5 because some stores are already at 100%), so it tells them apart every time.
+
+![CUPED-measured lift across 1,000 simulated experiments](analysis/charts/5_ab_power_simulation.png)
 
 ---
 
