@@ -251,7 +251,7 @@ mcp = FastMCP("altwise", instructions=(
     "AltWise helps Shopify merchants keep product images accessible. When asked to audit the store, call "
     "audit_store and reply with only the score, one suggested description per image, 1-3 short "
     "recommendations, and 'Want me to save these descriptions?'. When the merchant approves, call save_descriptions once with all of them and report the new "
-    "score. If the merchant asks what needs attention in their store, call store_checkin."))
+    "score. If the merchant asks to check in on their store, call store_checkin (same reply shape)."))
 
 
 def _image_payload(i, width=600):
@@ -369,39 +369,26 @@ def scan_storefront() -> str:
 
 @mcp.tool()
 def store_checkin(hours: int = 24) -> list:
-    """Proactive check-in: call this at the start of a conversation or whenever the merchant asks
-    what needs attention, even if they don't mention accessibility or alt text. Finds product images
-    uploaded in the last `hours` that have no description (or junk text), shows each image, and
-    reminds the merchant. Write a suggested description for each and ask the merchant to approve
-    before calling update_image_alt."""
+    """Check in on the store (what the AltWise notification asks merchants to say). Same as audit_store:
+    returns the store accessibility score and EVERY product image that needs a description, with a note
+    about photos uploaded in the last `hours`. Reply in exactly this shape and nothing else:
+    (1) one line on the new upload(s) if any, (2) the score in 2-3 short lines, (3) a numbered list, one line
+    per image: product name - what a screen reader hears now - your suggested description,
+    (4) "Other ways to improve": the recommendations given, as 1-3 short bullets,
+    (5) one closing question: "Want me to save these descriptions?". When the merchant agrees, call
+    save_descriptions once with ALL of them (it saves them and returns the new score)."""
     from datetime import datetime, timedelta, timezone
-    imgs = images_of(fetch_products())
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     def is_new(i):
         try:
             return datetime.fromisoformat(i["created_at"].replace("Z", "+00:00")) >= cutoff
         except Exception:
             return False
-    new_bad = [i for i in imgs if is_new(i) and i["class"] in ("missing", "junk")]
-    store_bad = sum(i["class"] in ("missing", "junk") for i in imgs)
-    sc = store_score(imgs)
-    score_line = (f"Store accessibility score: {sc['overall']}/100 (average store: {sc['avg_overall']}/100). "
-                  if sc["overall"] is not None else
-                  f"Image accessibility score: {sc['images']}/100 (average store: {sc['avg_images']}/100). ")
-    out = [score_line + "\n"
-           f"Store check-in: {len(new_bad)} product image(s) uploaded in the last {hours} hours have no "
-           f"usable description. Store-wide, {store_bad} of {len(imgs)} images are missing or junk.\n"
-           "Tell the merchant why it matters (screen-reader shoppers, search and AI shopping agents), "
-           "suggest a description for each new image below (under 125 characters, describe what is "
-           "visible), and ask them to approve before saving."]
-    for k, i in enumerate(new_bad[:5], 1):
-        _cache[i["media_id"]] = i
-        out.append(f"New image {k}: product '{i['product_title']}' | media_id {i['media_id']} | "
-                   f"current alt: '{i['alt']}' ({i['class']}) | uploaded {i['created_at']}")
-        if i["url"]:
-            out.append(_image_payload(i))
-    if not new_bad:
-        out.append("No new undescribed images. If the merchant wants, offer to run audit_store.")
+    new_bad = [i for i in images_of(fetch_products()) if is_new(i) and i["class"] in ("missing", "junk")]
+    note = ("NEW UPLOADS WITH NO DESCRIPTION: " + ", ".join(sorted({i["product_title"] for i in new_bad}))
+            + "\n\n") if new_bad else ""
+    out = audit_store()
+    out[0] = note + out[0]
     return out
 
 
@@ -602,7 +589,7 @@ def watch(every=20):
             names = ", ".join(sorted({i["product_title"] for i in bad}))
             notify("AltWise: new photo has no description",
                    f"{names}: shoppers using screen readers can't see it. "
-                   f"Accessibility score {score}/100 (avg store {avg}). Open Claude and say 'check in on my store'.")
+                   f"Accessibility score {score}/100 (avg store {avg}). Open Claude and say 'Check in on my store'.")
 
 
 if __name__ == "__main__":
