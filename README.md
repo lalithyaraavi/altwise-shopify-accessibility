@@ -29,7 +29,15 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 
 - ⚖️ **Legal risk for merchants:** most e-commerce accessibility lawsuits in 2025 targeted companies with under $25M in revenue, Shopify's core base.[^1] A lawsuit can push a small merchant off the platform.
 - 🇪🇺 **Selling in Europe:** the European Accessibility Act has been enforced since June 2025.[^2]
-- 🤖 **AI shopping agents:** agents rely on structured product information, not photos.[^3] An undescribed image is close to invisible to them, as Shopify bets on agentic commerce.
+- 🤖 **AI shopping agents:** agents rely on structured product information, not photos.[^3] An undescribed image is close to invisible to them (more below).
+
+### 🤖 Why this matters for agentic commerce
+
+More and more shoppers find products by asking an AI agent instead of browsing a store. Shopify is building for this: **Agentic Storefronts** put merchants' products into ChatGPT, Gemini and other AI chats through **Shopify Catalog**.[^5] In Q1 2026, AI-driven traffic to Shopify stores grew 8x year over year, and orders from AI-powered searches grew nearly 13x.[^6]
+
+AI agents don't look at a store the way a person does. They **read** product data (titles, descriptions, images, pricing) to decide what to recommend, and data quality can affect ranking.[^6] Alt text is the text version of a product photo, so an image with no description, or one called `IMG_4821.jpg`, gives an agent nothing to read.
+
+That's why this project matters beyond screen readers: **fixing image descriptions makes a store readable to both people and AI agents.** The same fix helps a blind shopper, a search engine, and a shopping agent in ChatGPT.
 - 🛒 **More shoppers who can buy:** every shopper who can't use a store is a lost sale.
 
 > **What this project does *not* claim:** that fixing alt text increases sales. That's what the A/B test below is designed to measure.
@@ -245,3 +253,5 @@ Then run `analysis/step3_measure.sql` in BigQuery, or open the notebooks in `ana
 [^2]: [TestParty: Shopify digital accessibility guide](https://testparty.ai/blog/the-complete-guide-to-shopify-digital-accessibility-what-every-e-commerce-store-o)
 [^3]: [ChannelEngine: Ecommerce predictions 2026](https://www.channelengine.com/en/blog/ecommerce-predictions)
 [^4]: [Shopify Help Center: Sidekick](https://help.shopify.com/manual/shopify-admin/productivity-tools/sidekick)
+[^5]: [Shopify: Agentic Storefronts](https://www.shopify.com/agentic-storefronts)
+[^6]: [Shopify: How agentic commerce works](https://www.shopify.com/ca/blog/how-agentic-commerce-works)
