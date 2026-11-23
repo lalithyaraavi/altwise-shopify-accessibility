@@ -318,8 +318,10 @@ def audit_store() -> list:
     recs.append("Going forward, add a description whenever you upload a product photo (AltWise can remind you).")
     out = [score + "\n\nOTHER WAYS TO IMPROVE (recommendations):\n" + "\n".join(f"- {r}" for r in recs[:3])]
     out[0] += (f"\n\n{len(bad)} of {len(imgs)} product images need a description (newest first). "
-               "For each, suggest a description: under 125 characters, describe what is visible, "
-               "don't start with 'image of'.")
+               "For each, look closely at the picture and write a specific description a shopper could picture: "
+               "product type first, then main colours, graphics or pattern, and any text printed on it "
+               "(e.g. 'Snowboard with a navy base, a moonlit pine forest on top and \"Liquid\" in white script'). "
+               "Under 125 characters, no 'image of', don't repeat the product name word for word.")
     for k, i in enumerate(bad, 1):
         cur = i["alt"] if i["alt"] else "(nothing, no description)"
         out.append(f"Image {k}: '{i['product_title']}' | media_id {i['media_id']} | screen reader hears now: {cur}")
