@@ -189,17 +189,30 @@ def scan_pages():
         ctx = browser.new_context(bypass_csp=True, viewport={"width": 1280, "height": 900})
         ctx.add_init_script(axe_js)
         page = ctx.new_page()
-        page.goto(base + "/", wait_until="domcontentloaded", timeout=30000)
-        if "/password" in page.url:
+
+        def go(url):
+            # Shopify can redirect mid-load (e.g. to the password page), which Playwright reports as ERR_ABORTED
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e:
+                if "ERR_ABORTED" not in str(e):
+                    raise
+                page.wait_for_load_state("domcontentloaded", timeout=30000)
+            page.wait_for_timeout(1500)
+
+        go(base + "/password")
+        if page.locator("input[type=password]").count():
             pw_ = ENV.get("STOREFRONT_PASSWORD", "")
             if not pw_:
                 raise RuntimeError("Your storefront is password-protected: add STOREFRONT_PASSWORD=... to .env "
                                    "(Shopify admin > Online Store > Preferences).")
-            page.fill("input[type=password]", pw_)
+            page.locator("input[type=password]").first.fill(pw_)
             page.keyboard.press("Enter")
-            page.wait_for_load_state("domcontentloaded")
+            page.wait_for_timeout(3000)
         for kind, url in urls.items():
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            go(url)
+            if "/password" in page.url:
+                raise RuntimeError("Still on the password page: check STOREFRONT_PASSWORD in .env.")
             page.wait_for_timeout(3000)
             if not page.evaluate("typeof window.axe !== 'undefined'"):
                 page.add_script_tag(content=axe_js)
@@ -340,7 +353,9 @@ def scan_storefront() -> str:
     r = subprocess.run([sys.executable, os.path.abspath(__file__), "--scan-pages"], capture_output=True,
                        text=True, timeout=300)
     if r.returncode != 0:
-        return "Scan failed: " + (r.stderr or r.stdout)[-800:]
+        with open(os.path.join(HERE, "scan_error.log"), "w") as f:
+            f.write(r.stdout + "\n----\n" + r.stderr)
+        return "Scan failed (full log in altwise/scan_error.log): " + (r.stderr or r.stdout)[-800:]
     scan = json.load(open(PAGE_SCAN))
     n = sum(len(p["violations"]) for p in scan["pages"])
     return (f"Scanned {len(scan['pages'])} pages: {n} types of accessibility issues. Groups affected: "

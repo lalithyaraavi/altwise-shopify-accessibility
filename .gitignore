@@ -8,3 +8,4 @@ logs/
 __pycache__/
 .ipynb_checkpoints/
 altwise/page_scan.json
+altwise/scan_error.log
