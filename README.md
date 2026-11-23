@@ -30,6 +30,9 @@ Shopify grows when its merchants sell more and stay on Shopify. Missing image de
 - ⚖️ **Legal risk for merchants:** most e-commerce accessibility lawsuits in 2025 targeted companies with under $25M in revenue, Shopify's core base.[^1] A lawsuit can push a small merchant off the platform.
 - 🇪🇺 **Selling in Europe:** the European Accessibility Act has been enforced since June 2025.[^2]
 - 🤖 **AI shopping agents:** agents rely on structured product information, not photos.[^3] An undescribed image is close to invisible to them (more below).
+- 🛒 **More shoppers who can buy:** every shopper who can't use a store is a lost sale.
+
+> **What this project does *not* claim:** that fixing alt text increases sales. That's what the A/B test below is designed to measure.
 
 ### 🤖 Why this matters for agentic commerce
 
@@ -38,9 +41,6 @@ More and more shoppers find products by asking an AI agent instead of browsing a
 AI agents don't look at a store the way a person does. They **read** product data (titles, descriptions, images, pricing) to decide what to recommend, and data quality can affect ranking.[^6] Alt text is the text version of a product photo, so an image with no description, or one called `IMG_4821.jpg`, gives an agent nothing to read.
 
 That's why this project matters beyond screen readers: **fixing image descriptions makes a store readable to both people and AI agents.** The same fix helps a blind shopper, a search engine, and a shopping agent in ChatGPT.
-- 🛒 **More shoppers who can buy:** every shopper who can't use a store is a lost sale.
-
-> **What this project does *not* claim:** that fixing alt text increases sales. That's what the A/B test below is designed to measure.
 
 ---
 
