@@ -100,20 +100,26 @@ With 12 stores, off-the-shelf themes looked twice as good. With 52, the effect d
 
 ## ✨ AltWise: extending Shopify Sidekick to accessibility
 
-Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing feature, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server. The merchant asks *"audit my store and fix the image descriptions,"* and AltWise:
+Sidekick, Shopify's AI assistant, already writes product descriptions and blog posts and edits products when a merchant asks.[^4] But it doesn't check a store's accessibility or point out images with no description. AltWise prototypes that missing feature, backed by the research. It works the way Sidekick does: a merchant chats with an AI assistant (Claude), which connects to the store through the Shopify Admin API using an MCP server.
 
-1. **Audits** the store and gives it a **store accessibility score** out of 100, compared to the stores in the research. The score averages two parts, both measured exactly as in the research: product images (the share a screen reader can describe) and pages (the share of 5 shopper groups with no barriers when axe-core scans the live storefront).
-2. **Shows Claude the images** that need descriptions, so it can draft them.
-3. **Saves the descriptions the merchant approves** to Shopify, and logs every change.
-4. **Reminds merchants without being asked:** in watch mode, it notices when a merchant uploads a product photo with no description and sends a notification with the store accessibility score. When the merchant opens the chat, it already has a description written. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
+#### 🔁 How it works
+1. **🔔 It reminds the merchant, unprompted.** When a merchant uploads a product photo with no description, AltWise sends a notification with the store's accessibility score. Merchants forget, or don't know they should add descriptions, so the reminder has to come to them.
+2. **📊 "Check in on my store"** (or *"Audit my store's accessibility"*) returns:
+   - a **store accessibility score** out of 100, next to the average store from the research. It averages two parts, both measured exactly as in the research: **product images** (the share a screen reader can describe) and **pages** (the share of 5 shopper groups with no barriers when axe-core scans the live storefront);
+   - **every image that needs a description**, newest first, with what a screen reader hears now and a suggested description;
+   - **other ways to improve**, based on what the page scan found (for example, low colour contrast and where to fix it in the theme settings);
+   - and one question: *"Want me to save these descriptions?"*
+3. **✅ "Save them"** saves every approved description to Shopify in one step, logs each change, and shows the **new score** next to the old one.
+
+Nothing is saved without the merchant's approval.
 
 #### 🛠️ Tools
-- `audit_store`: store accessibility score and report, benchmarked against the research
+- `audit_store`: store accessibility score, a suggested description for every image that needs one, and recommendations
+- `store_checkin`: the same, plus a note about photos uploaded in the last day (what the notification asks merchants to say)
+- `save_descriptions`: saves all approved descriptions at once and returns the new score
 - `scan_storefront`: runs axe-core on the live storefront (homepage + a product page)
-- `get_images_needing_alt`: images with missing or junk descriptions
-- `store_checkin`: proactive check for newly uploaded images with no description
-- `--watch` mode: polls the store and sends a desktop notification when a new image has no description
-- `update_image_alt`: saves an approved description to Shopify
+- `--watch` mode: checks the store every 20 seconds and sends a desktop notification when a new photo has no description. In production this would use Shopify's product-created webhook instead, so the reminder fires instantly inside the admin.
+- `update_image_alt`, `get_images_needing_alt`: single-image versions
 - `get_research_images`, `save_ai_description`: used for the AI evaluation below
 
 ---
@@ -202,11 +208,15 @@ Only Shopify can randomise real merchants, so I designed the A/B test and checke
      "altwise": { "command": "/path/to/uv", "args": ["run", "--script", "/path/to/altwise/server.py"] }
    }
    ```
-6. (Optional) Turn on proactive reminders in a separate terminal:
+6. Scan the storefront once for the page part of the score:
+   ```bash
+   uv run --script altwise/server.py --scan-pages
+   ```
+7. (Optional) Turn on proactive reminders in a separate terminal:
    ```bash
    uv run --script altwise/server.py --watch
    ```
-7. Ask Claude: *"Audit my store's accessibility."*
+8. Ask Claude: *"Check in on my store"* or *"Audit my store's accessibility,"* then *"Save them."*
 
 #### Rerun the research
 ```bash
