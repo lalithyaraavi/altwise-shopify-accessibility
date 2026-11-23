@@ -249,8 +249,8 @@ _cache = {}  # media_id -> image info, so updates can be logged with context
 # ---------------------------------------------------------------- MCP tools
 mcp = FastMCP("altwise", instructions=(
     "AltWise helps Shopify merchants keep product images accessible. When asked to audit the store, call "
-    "audit_store and reply with only the score, one suggested description per image, and 'Want me to save "
-    "these?'. When the merchant approves, call save_descriptions once with all of them and report the new "
+    "audit_store and reply with only the score, one suggested description per image, 1-3 short "
+    "recommendations, and 'Want me to save these descriptions?'. When the merchant approves, call save_descriptions once with all of them and report the new "
     "score. If the merchant asks what needs attention in their store, call store_checkin."))
 
 
@@ -272,8 +272,9 @@ def audit_store() -> list:
     needs a description, each with its picture. Reply in exactly this shape and nothing else:
     (1) the score in 2-3 short lines, (2) a numbered list, one line per image:
     product name - what a screen reader hears now - your suggested description,
-    (3) one closing question: "Want me to save these?". When the merchant agrees, call save_descriptions
-    once with ALL of them (it saves them and returns the new score)."""
+    (3) "Other ways to improve": the recommendations given below, as 1-3 short bullets,
+    (4) one closing question: "Want me to save these descriptions?". When the merchant agrees, call
+    save_descriptions once with ALL of them (it saves them and returns the new score)."""
     products = fetch_products()
     imgs = images_of(products)
     for i in imgs:
@@ -292,9 +293,33 @@ def audit_store() -> list:
                  + ")")
     else:
         score = f"IMAGE ACCESSIBILITY SCORE: {sc['images']}/100 (average store: {sc['avg_images']}/100)"
-    out = [score + f"\n\n{len(bad)} of {len(imgs)} product images need a description (newest first). "
-           "For each, suggest a description: under 125 characters, describe what is visible, "
-           "don't start with 'image of'."]
+    ADVICE = {
+        "low_vision": "Some text is too faint to read (low colour contrast). In Online Store > Themes > Customize > "
+                      "Theme settings > Colors, darken text and button colours against their backgrounds.",
+        "screen_reader": "Some buttons, links or form fields have no label a screen reader can announce. Add clear "
+                         "labels (for example, name icon-only buttons like 'Search' or 'Cart').",
+        "motor": "Some buttons or links are too small or too close together to tap easily. Make tap targets at "
+                 "least 24x24 pixels.",
+        "voice": "Some buttons' accessible names don't match their visible text, so voice-control users can't "
+                 "say them. Make the label match what's shown.",
+        "zoom": "The page stops shoppers from zooming in. Remove 'user-scalable=no' / maximum-scale from the "
+                "theme's viewport setting.",
+    }
+    recs = []
+    if sc.get("scan"):
+        recs += [ADVICE[g] for g in sc["scan"]["groups_affected"] if g in ADVICE]
+    else:
+        recs.append("Run scan_storefront to check the store's pages for barriers (contrast, labels, tap size).")
+    scores_ = [x for x in (flesch(pr["description"]) for pr in products) if x is not None]
+    hard_ = sum(x < 30 for x in scores_)
+    if hard_:
+        recs.append(f"{hard_} product descriptions are very hard to read. Shorter sentences and plain words help "
+                    "everyone, including shoppers using screen readers.")
+    recs.append("Going forward, add a description whenever you upload a product photo (AltWise can remind you).")
+    out = [score + "\n\nOTHER WAYS TO IMPROVE (recommendations):\n" + "\n".join(f"- {r}" for r in recs[:3])]
+    out[0] += (f"\n\n{len(bad)} of {len(imgs)} product images need a description (newest first). "
+               "For each, suggest a description: under 125 characters, describe what is visible, "
+               "don't start with 'image of'.")
     for k, i in enumerate(bad, 1):
         cur = i["alt"] if i["alt"] else "(nothing, no description)"
         out.append(f"Image {k}: '{i['product_title']}' | media_id {i['media_id']} | screen reader hears now: {cur}")
