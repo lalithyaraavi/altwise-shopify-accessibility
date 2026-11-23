@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27", "playwright>=1.40"]
+# dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27", "playwright>=1.40", "pillow>=10"]
 # ///
 """
 AltWise: an accessibility audit + image-description fixer for a Shopify store, as an MCP server.
@@ -325,9 +325,38 @@ def audit_store() -> list:
     for k, i in enumerate(bad, 1):
         cur = i["alt"] if i["alt"] else "(nothing, no description)"
         out.append(f"Image {k}: '{i['product_title']}' | media_id {i['media_id']} | screen reader hears now: {cur}")
-        if i["url"]:
-            out.append(_image_payload(i, width=220))
+    # All pictures in numbered contact sheets (one image per 12 products), so every image fits in one reply
+    out += _contact_sheets(bad)
     return out
+
+
+def _contact_sheets(items, per_sheet=12, tile=300, cols=4):
+    """Download each product image and lay them out in numbered grids, so the model can see them all."""
+    from io import BytesIO
+    from PIL import Image as PILImage, ImageDraw
+    sheets = []
+    for start in range(0, len(items), per_sheet):
+        chunk = items[start:start + per_sheet]
+        rows = (len(chunk) + cols - 1) // cols
+        sheet = PILImage.new("RGB", (cols * tile, rows * tile), "white")
+        draw = ImageDraw.Draw(sheet)
+        for j, i in enumerate(chunk):
+            x, y = (j % cols) * tile, (j // cols) * tile
+            try:
+                sep = "&" if "?" in i["url"] else "?"
+                r = httpx.get(i["url"] + sep + f"width={tile}", timeout=30, follow_redirects=True)
+                im = PILImage.open(BytesIO(r.content)).convert("RGB")
+                im.thumbnail((tile - 10, tile - 10))
+                sheet.paste(im, (x + (tile - im.width) // 2, y + (tile - im.height) // 2))
+            except Exception:
+                draw.text((x + 20, y + tile // 2), "(couldn't load)", fill="black")
+            n = start + j + 1
+            draw.rectangle([x + 4, y + 4, x + 44, y + 34], fill="#004c3f")
+            draw.text((x + 12, y + 10), str(n), fill="white")
+        buf = BytesIO(); sheet.save(buf, format="JPEG", quality=85)
+        sheets.append(f"Contact sheet: images {start + 1}-{start + len(chunk)} (number in the top-left of each tile).")
+        sheets.append(Image(data=buf.getvalue(), format="jpeg"))
+    return sheets
 
 
 @mcp.tool()
