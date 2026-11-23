@@ -326,7 +326,7 @@ def audit_store() -> list:
         cur = i["alt"] if i["alt"] else "(nothing, no description)"
         out.append(f"Image {k}: '{i['product_title']}' | media_id {i['media_id']} | screen reader hears now: {cur}")
         if i["url"]:
-            out.append(_image_payload(i, width=400))
+            out.append(_image_payload(i, width=220))
     return out
 
 
